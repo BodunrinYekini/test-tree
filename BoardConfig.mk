@@ -143,6 +143,13 @@ BOARD_AVB_VENDOR_BOOT_ROLLBACK_INDEX_LOCATION := 1
 # VINTF
 DEVICE_MANIFEST_FILE += $(DEVICE_PATH)/manifest.xml
 
+#/vendor/etc/vintf/compatibility_matrix.xml
+DEVICE_MATRIX_FILE += $(DEVICE_PATH)/device_compatibility_matrix.xml
+
+#/product/etc/vintf/compatibility_matrix.xml 
+DEVICE_PRODUCT_COMPATIBILITY_MATRIX_FILE+= $(DEVICE_PATH)/product_compatibility_matrix.xml 
+
+
 BOARD_USES_RECOVERY_AS_BOOT :=
 BOARD_USES_GENERIC_KERNEL_IMAGE := true
 BOARD_MOVE_RECOVERY_RESOURCES_TO_VENDOR_BOOT := true
