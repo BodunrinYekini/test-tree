@@ -111,12 +111,7 @@ BOARD_OHRTECH_DYNAMIC_PARTITIONS_SIZE := 9122611200 # TODO: Fix hardcoded value
 
 BOARD_AVB_ALGORITHM ?= SHA256_RSA4096
 
-$(foreach p, $(call to-upper, $(BOARD_OHRTECH_DYNAMIC_PARTITIONS_PARTITION_LIST)), \
-    $(eval BOARD_$(p)IMAGE_FILE_SYSTEM_TYPE := erofs) \
-    $(eval TARGET_COPY_OUT_$(p) := $(call to-lower, $(p))))
 
-
-TARGET_COPY_OUT_VENDOR_RAMDISK := vendor_ramdisk
 
 # Platform
 TARGET_BOARD_PLATFORM := ums9230
