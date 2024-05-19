@@ -184,5 +184,5 @@ prebuilt_etc {
     name: "apns-conf",
     src: "etc/apns-conf.xml",
     sub_dir: "etc",
-    product: true,
+    product_specific: true,
 }
