@@ -178,3 +178,11 @@ prebuilt_etc {
     src: "etc/fstab.ums9230_1h10",
     vendor: true,
 }
+
+//apns-conf
+prebuilt_etc {
+    name: "apns-conf",
+    src: "etc/apns-conf.xml",
+    sub_dir: "etc",
+    product: true,
+}
