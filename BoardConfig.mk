@@ -153,12 +153,6 @@ DEVICE_MATRIX_FILE += $(DEVICE_PATH)/device_compatibility_matrix.xml
 DEVICE_PRODUCT_COMPATIBILITY_MATRIX_FILE+= $(DEVICE_PATH)/product_compatibility_matrix.xml 
 
 
-BOARD_RAMDISK_USE_LZ4 := true
-BOARD_USES_RECOVERY_AS_BOOT :=
-BOARD_USES_GENERIC_KERNEL_IMAGE := true
-BOARD_MOVE_RECOVERY_RESOURCES_TO_VENDOR_BOOT := true
-BOARD_EXCLUDE_KERNEL_FROM_RECOVERY_IMAGE :=
-BOARD_MOVE_GSI_AVB_KEYS_TO_VENDOR_BOOT := true
 
 # Inherit the proprietary files
 include vendor/ohrtech/aleph/BoardConfigVendor.mk
