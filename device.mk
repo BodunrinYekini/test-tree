@@ -92,7 +92,8 @@ PRODUCT_PACKAGES += \
     TeleServiceOverlay \
     unisoc-res__auto_generated_rro_product \
     WallpaperOverlay \
-    com.google.mainline.go.telemetry
+    com.google.mainline.go.telemetry \
+    apns-conf
 
 PRODUCT_PACKAGES += \
     fstab.ums9230_1h10 \
