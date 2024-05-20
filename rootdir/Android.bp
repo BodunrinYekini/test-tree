@@ -181,8 +181,7 @@ prebuilt_etc {
 
 //apns-conf
 prebuilt_etc {
-    name: "apns-conf",
+    name: "apns-conf.xml",
     src: "etc/apns-conf.xml",
-    sub_dir: "etc",
     product_specific: true,
 }
