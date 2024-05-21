@@ -119,7 +119,7 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/rootdir/etc/fstab.ums9230_1h10:$(TARGET_VENDOR_RAMDISK_OUT)/first_stage_ramdisk/fstab.ums9230_1h10
 
 VENDOR_DLKM_MODULES_PATH = $(DEVICE_PATH)/modules/vendor_dlkm/lib/modules
-BOARD_VENDOR_KERNEL_MODULES += \
+BOARD_VENDOR_KERNEL_MODULES := \
 $(VENDOR_DLKM_MODULES_PATH)/gslX680_sharkl3.ko \
 $(VENDOR_DLKM_MODULES_PATH)/sprd-top-dvfs.ko \
 $(VENDOR_DLKM_MODULES_PATH)/trusty-tui.ko \
@@ -243,7 +243,7 @@ $(VENDOR_DLKM_MODULES_PATH)/sprd_mipi.ko \
 $(VENDOR_DLKM_MODULES_PATH)/mipi_driver.ko \
 $(VENDOR_DLKM_MODULES_PATH)/sprd_suspend_helper.ko
 
-BOARD_VENDOR_CHARGER_KERNEL_MODULES += \
+BOARD_VENDOR_CHARGER_KERNEL_MODULES := \
 $(VENDOR_DLKM_MODULES_PATH)/sprd_systimer.ko \
 $(VENDOR_DLKM_MODULES_PATH)/sprd-sc27xx-spi.ko \
 $(VENDOR_DLKM_MODULES_PATH)/rtc-sc27xx.ko \
@@ -302,7 +302,71 @@ $(VENDOR_DLKM_MODULES_PATH)/nvt_nt36xxx_spi_ts.ko \
 $(VENDOR_DLKM_MODULES_PATH)/musb_hdrc.ko \
 $(VENDOR_DLKM_MODULES_PATH)/musb_sprd.ko
 
-
+VENDOR_BOOT_MODULES_PATH = $(DEVICE_PATH)/modules/vendor_boot/lib/modules
+BOARD_VENDOR_RAMDISK_KERNEL_MODULES := \
+$(VENDOR_BOOT_MODULES_PATH)/sprd_wdt_fiq.ko \
+$(VENDOR_BOOT_MODULES_PATH)/sprd_sip_svc.ko \
+$(VENDOR_BOOT_MODULES_PATH)/sprd_systimer.ko \
+$(VENDOR_BOOT_MODULES_PATH)/sprd_time_sync.ko \
+$(VENDOR_BOOT_MODULES_PATH)/sprd_time_sync_cp.ko \
+$(VENDOR_BOOT_MODULES_PATH)/clk-sprd.ko \
+$(VENDOR_BOOT_MODULES_PATH)/ums9230-clk.ko \
+$(VENDOR_BOOT_MODULES_PATH)/spi-sprd-adi.ko \
+$(VENDOR_BOOT_MODULES_PATH)/sprd-sc27xx-spi.ko \
+$(VENDOR_BOOT_MODULES_PATH)/rtc-sc27xx.ko \
+$(VENDOR_BOOT_MODULES_PATH)/sc2730-regulator.ko \
+$(VENDOR_BOOT_MODULES_PATH)/ump518-regulator.ko \
+$(VENDOR_BOOT_MODULES_PATH)/sprd_soc_id.ko \
+$(VENDOR_BOOT_MODULES_PATH)/rpmb.ko \
+$(VENDOR_BOOT_MODULES_PATH)/ufs-sprd_qogirl6.ko \
+$(VENDOR_BOOT_MODULES_PATH)/sprd_hwspinlock.ko \
+$(VENDOR_BOOT_MODULES_PATH)/nvmem-sc27xx-efuse.ko \
+$(VENDOR_BOOT_MODULES_PATH)/sprd_lookat.ko \
+$(VENDOR_BOOT_MODULES_PATH)/nvmem_sprd_cache_efuse.ko \
+$(VENDOR_BOOT_MODULES_PATH)/nvmem_sprd_efuse.ko \
+$(VENDOR_BOOT_MODULES_PATH)/i2c-sprd.ko \
+$(VENDOR_BOOT_MODULES_PATH)/i2c-sprd-hw-v2.ko \
+$(VENDOR_BOOT_MODULES_PATH)/sprd-cpufreq-v2.ko \
+$(VENDOR_BOOT_MODULES_PATH)/sprd-cpufreq-public.ko \
+$(VENDOR_BOOT_MODULES_PATH)/sprd_7sreset.ko \
+$(VENDOR_BOOT_MODULES_PATH)/sprd_manufacturer_model.ko \
+$(VENDOR_BOOT_MODULES_PATH)/trusty.ko \
+$(VENDOR_BOOT_MODULES_PATH)/trusty-pm.ko \
+$(VENDOR_BOOT_MODULES_PATH)/trusty-log.ko \
+$(VENDOR_BOOT_MODULES_PATH)/trusty-irq.ko \
+$(VENDOR_BOOT_MODULES_PATH)/trusty-ipc.ko \
+$(VENDOR_BOOT_MODULES_PATH)/trusty-virtio.ko \
+$(VENDOR_BOOT_MODULES_PATH)/sprd_shm.ko \
+$(VENDOR_BOOT_MODULES_PATH)/gpio-eic-sprd.ko \
+$(VENDOR_BOOT_MODULES_PATH)/gpio-sprd.ko \
+$(VENDOR_BOOT_MODULES_PATH)/gpio-pmic-eic-sprd.ko \
+$(VENDOR_BOOT_MODULES_PATH)/sdhci-sprd.ko \
+$(VENDOR_BOOT_MODULES_PATH)/mmc_hsq.ko \
+$(VENDOR_BOOT_MODULES_PATH)/mmc_swcq.ko \
+$(VENDOR_BOOT_MODULES_PATH)/sprd_pmic_syscon.ko \
+$(VENDOR_BOOT_MODULES_PATH)/sprd_pdbg.ko \
+$(VENDOR_BOOT_MODULES_PATH)/sprd_power_stat.ko \
+$(VENDOR_BOOT_MODULES_PATH)/kfifo_buf.ko \
+$(VENDOR_BOOT_MODULES_PATH)/sensorhub.ko \
+$(VENDOR_BOOT_MODULES_PATH)/sprd_power_manager.ko \
+$(VENDOR_BOOT_MODULES_PATH)/unisoc-mailbox.ko \
+$(VENDOR_BOOT_MODULES_PATH)/sprd-sipc-virt-bus.ko \
+$(VENDOR_BOOT_MODULES_PATH)/sipc-core.ko \
+$(VENDOR_BOOT_MODULES_PATH)/spipe.ko \
+$(VENDOR_BOOT_MODULES_PATH)/spool.ko \
+$(VENDOR_BOOT_MODULES_PATH)/sipx.ko \
+$(VENDOR_BOOT_MODULES_PATH)/seth.ko \
+$(VENDOR_BOOT_MODULES_PATH)/sprd_modem_loader.ko \
+$(VENDOR_BOOT_MODULES_PATH)/sprd_iq.ko \
+$(VENDOR_BOOT_MODULES_PATH)/slog_bridge.ko \
+$(VENDOR_BOOT_MODULES_PATH)/sbuf_bridge.ko \
+$(VENDOR_BOOT_MODULES_PATH)/sblock_bridge.ko \
+$(VENDOR_BOOT_MODULES_PATH)/usb_f_vser.ko \
+$(VENDOR_BOOT_MODULES_PATH)/sprd_apb_busmonitor.ko \
+$(VENDOR_BOOT_MODULES_PATH)/sprd_busmonitor.ko \
+$(VENDOR_BOOT_MODULES_PATH)/djtag_core.ko \
+$(VENDOR_BOOT_MODULES_PATH)/sprd_djtag.ko \
+$(VENDOR_BOOT_MODULES_PATH)/sprd_pmic_smpl.ko
 
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
