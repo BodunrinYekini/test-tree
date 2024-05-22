@@ -243,7 +243,7 @@ $(VENDOR_DLKM_MODULES_PATH)/sprd_mipi.ko \
 $(VENDOR_DLKM_MODULES_PATH)/mipi_driver.ko \
 $(VENDOR_DLKM_MODULES_PATH)/sprd_suspend_helper.ko
 
-BOARD_VENDOR_CHARGER_KERNEL_MODULES  := \
+BOARD_VENDOR_CHARGER_KERNEL_MODULES := \
 $(VENDOR_DLKM_MODULES_PATH)/sprd_systimer.ko \
 $(VENDOR_DLKM_MODULES_PATH)/sprd-sc27xx-spi.ko \
 $(VENDOR_DLKM_MODULES_PATH)/rtc-sc27xx.ko \
@@ -297,6 +297,57 @@ $(VENDOR_DLKM_MODULES_PATH)/hl1506_charger.ko \
 $(VENDOR_DLKM_MODULES_PATH)/nu1619_wireless_charger.ko \
 $(VENDOR_DLKM_MODULES_PATH)/sprd-charger-manager.ko \
 $(VENDOR_DLKM_MODULES_PATH)/sprd_map.ko \
+$(VENDOR_DLKM_MODULES_PATH)/focaltech_ft8756_spi_ts.ko \
+$(VENDOR_DLKM_MODULES_PATH)/nvt_nt36xxx_spi_ts.ko \
+$(VENDOR_DLKM_MODULES_PATH)/musb_hdrc.ko \
+$(VENDOR_DLKM_MODULES_PATH)/musb_sprd.ko
+
+BOARD_VENDOR_CALI_KERNEL_MODULES := \
+$(VENDOR_DLKM_MODULES_PATH)/sprd_systimer.ko \
+$(VENDOR_DLKM_MODULES_PATH)/sprd-sc27xx-spi.ko \
+$(VENDOR_DLKM_MODULES_PATH)/rtc-sc27xx.ko \
+$(VENDOR_DLKM_MODULES_PATH)/gslX680_sharkl3.ko \
+$(VENDOR_DLKM_MODULES_PATH)/trusty-tui.ko \
+$(VENDOR_DLKM_MODULES_PATH)/sprd_camsys_pw_domain.ko \
+$(VENDOR_DLKM_MODULES_PATH)/sprd_gpu_cooling.ko \
+$(VENDOR_DLKM_MODULES_PATH)/mali_kbase.ko \
+$(VENDOR_DLKM_MODULES_PATH)/extcon-usb-gpio.ko \
+$(VENDOR_DLKM_MODULES_PATH)/gpio-eic-sprd.ko \
+$(VENDOR_DLKM_MODULES_PATH)/gpio-sprd.ko \
+$(VENDOR_DLKM_MODULES_PATH)/gpio-pmic-eic-sprd.ko \
+$(VENDOR_DLKM_MODULES_PATH)/ledtrig-pattern.ko \
+$(VENDOR_DLKM_MODULES_PATH)/sc27xx_adc.ko \
+$(VENDOR_DLKM_MODULES_PATH)/sc27xx-poweroff.ko \
+$(VENDOR_DLKM_MODULES_PATH)/sprd_pmic_syscon.ko \
+$(VENDOR_DLKM_MODULES_PATH)/sc27xx_tsensor_thermal.ko \
+$(VENDOR_DLKM_MODULES_PATH)/sc27xx-vibra.ko \
+$(VENDOR_DLKM_MODULES_PATH)/sprd_usbpinmux_qogirl6.ko \
+$(VENDOR_DLKM_MODULES_PATH)/sprd-bc1p2.ko \
+$(VENDOR_DLKM_MODULES_PATH)/phy-sprd-commonphy.ko \
+$(VENDOR_DLKM_MODULES_PATH)/phy-sprd-qogirl6.ko \
+$(VENDOR_DLKM_MODULES_PATH)/sprd_tcpm.ko \
+$(VENDOR_DLKM_MODULES_PATH)/sc27xx_typec.ko \
+$(VENDOR_DLKM_MODULES_PATH)/sc27xx_pd.ko \
+$(VENDOR_DLKM_MODULES_PATH)/sc27xx_fast_charger.ko \
+$(VENDOR_DLKM_MODULES_PATH)/sprd_battery_info.ko \
+$(VENDOR_DLKM_MODULES_PATH)/sprd_fuel_gauge.ko \
+$(VENDOR_DLKM_MODULES_PATH)/sc27xx_fuel_gauge.ko \
+$(VENDOR_DLKM_MODULES_PATH)/bq2560x-charger.ko \
+$(VENDOR_DLKM_MODULES_PATH)/sgm41511-charger.ko \
+$(VENDOR_DLKM_MODULES_PATH)/bq2597x-charger.ko \
+$(VENDOR_DLKM_MODULES_PATH)/sc8549-charger.ko \
+$(VENDOR_DLKM_MODULES_PATH)/upm6710-charger.ko \
+$(VENDOR_DLKM_MODULES_PATH)/hl1506_charger.ko \
+$(VENDOR_DLKM_MODULES_PATH)/nu1619_wireless_charger.ko \
+$(VENDOR_DLKM_MODULES_PATH)/sprd-charger-manager.ko \
+$(VENDOR_DLKM_MODULES_PATH)/misc_sprd_uid.ko \
+$(VENDOR_DLKM_MODULES_PATH)/wcn_bsp.ko \
+$(VENDOR_DLKM_MODULES_PATH)/sprd_wlan_combo.ko \
+$(VENDOR_DLKM_MODULES_PATH)/sprdbt_tty.ko \
+$(VENDOR_DLKM_MODULES_PATH)/sprd_fm.ko \
+$(VENDOR_DLKM_MODULES_PATH)/gnss_common_ctl_all.ko \
+$(VENDOR_DLKM_MODULES_PATH)/gnss_dbg.ko \
+$(VENDOR_DLKM_MODULES_PATH)/gnss_pmnotify_ctl.ko \
 $(VENDOR_DLKM_MODULES_PATH)/focaltech_ft8756_spi_ts.ko \
 $(VENDOR_DLKM_MODULES_PATH)/nvt_nt36xxx_spi_ts.ko \
 $(VENDOR_DLKM_MODULES_PATH)/musb_hdrc.ko \
