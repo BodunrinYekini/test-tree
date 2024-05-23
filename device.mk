@@ -117,6 +117,7 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/rootdir/etc/fstab.ums9230_1h10:$(TARGET_VENDOR_RAMDISK_OUT)/first_stage_ramdisk/fstab.ums9230_1h10
+    $(LOCAL_PATH)/modules/vendor_dlkm/lib/modules/modules.load.charger:$(TARGET_COPY_OUT_VENDOR_DLKM)/lib/modules/modules.load.charger
     
 #vendor permissions
 PRODUCT_COPY_FILES += \
@@ -247,8 +248,6 @@ $(VENDOR_DLKM_MODULES_PATH)/sprd_mipi.ko \
 $(VENDOR_DLKM_MODULES_PATH)/mipi_driver.ko \
 $(VENDOR_DLKM_MODULES_PATH)/sprd_suspend_helper.ko
 
-BOARD_VENDOR_CHARGER_KERNEL_MODULES := \
-$(VENDOR_DLKM_MODULES_PATH)/gslX680_sharkl3.ko 
 
 BOARD_VENDOR_CHARGER_KERNEL_MODULES_LOAD := \
 $(VENDOR_DLKM_MODULES_PATH)/gslX680_sharkl3.ko \
