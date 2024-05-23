@@ -94,7 +94,19 @@ PRODUCT_PACKAGES += \
     unisoc-res__auto_generated_rro_product \
     WallpaperOverlay \
     com.google.mainline.go.telemetry \
-    apns-conf.xml
+    apns-conf.xml \
+    AospBtOverlay \
+    AospWifiOverlay_Marlin3 \
+    AospWifiOverlay_Marlin3_Mainline \
+    UniWifiOverlay_Marlin3 \
+    MultiuserOverlays \
+    NetworkStackOverlayGo \
+    NetworkStackOverlayGsi \
+    Settings__auto_generated_rro_vendor \
+    TetheringConfigOverlayGo \
+    TetheringConfigOverlayGsi \
+    unisoc_go_overlay_frameworks_res \
+    unisoc_overlay_frameworks_res
 
 PRODUCT_PACKAGES += \
     fstab.ums9230_1h10 \

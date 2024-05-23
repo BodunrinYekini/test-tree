@@ -183,3 +183,135 @@ LOCAL_MODULE_SUFFIX := $(COMMON_ANDROID_PACKAGE_SUFFIX)
 LOCAL_CERTIFICATE := platform
 LOCAL_MODULE_PATH := $(TARGET_OUT_PRODUCT)/app
 include $(BUILD_PREBUILT)
+
+include $(CLEAR_VARS)
+LOCAL_MODULE_TAGS := optional
+LOCAL_MODULE := MultiuserOverlays
+LOCAL_SRC_FILES := packages/vendor/overlay/MultiuserOverlays.apk
+LOCAL_MODULE_CLASS := APPS
+LOCAL_MODULE_SUFFIX := $(COMMON_ANDROID_PACKAGE_SUFFIX)
+LOCAL_CERTIFICATE := platform
+LOCAL_MODULE_PATH := $(TARGET_OUT_VENDOR)/overlay
+LOCAL_IS_RUNTIME_RESOURCE_OVERLAY := true
+include $(BUILD_PREBUILT)
+
+include $(CLEAR_VARS)
+LOCAL_MODULE_TAGS := optional
+LOCAL_MODULE := NetworkStackOverlayGo
+LOCAL_SRC_FILES := packages/vendor/overlay/NetworkStackOverlayGo.apk
+LOCAL_MODULE_CLASS := APPS
+LOCAL_MODULE_SUFFIX := $(COMMON_ANDROID_PACKAGE_SUFFIX)
+LOCAL_CERTIFICATE := platform
+LOCAL_MODULE_PATH := $(TARGET_OUT_VENDOR)/overlay
+LOCAL_IS_RUNTIME_RESOURCE_OVERLAY := true
+include $(BUILD_PREBUILT)
+
+include $(CLEAR_VARS)
+LOCAL_MODULE_TAGS := optional
+LOCAL_MODULE := NetworkStackOverlayGsi
+LOCAL_SRC_FILES := packages/vendor/overlay/NetworkStackOverlayGsi.apk
+LOCAL_MODULE_CLASS := APPS
+LOCAL_MODULE_SUFFIX := $(COMMON_ANDROID_PACKAGE_SUFFIX)
+LOCAL_CERTIFICATE := platform
+LOCAL_MODULE_PATH := $(TARGET_OUT_VENDOR)/overlay
+LOCAL_IS_RUNTIME_RESOURCE_OVERLAY := true
+include $(BUILD_PREBUILT)
+
+include $(CLEAR_VARS)
+LOCAL_MODULE_TAGS := optional
+LOCAL_MODULE := Settings__auto_generated_rro_vendor
+LOCAL_SRC_FILES := packages/vendor/overlay/Settings__auto_generated_rro_vendor.apk
+LOCAL_MODULE_CLASS := APPS
+LOCAL_MODULE_SUFFIX := $(COMMON_ANDROID_PACKAGE_SUFFIX)
+LOCAL_CERTIFICATE := platform
+LOCAL_MODULE_PATH := $(TARGET_OUT_VENDOR)/overlay
+LOCAL_IS_RUNTIME_RESOURCE_OVERLAY := true
+include $(BUILD_PREBUILT)
+
+include $(CLEAR_VARS)
+LOCAL_MODULE_TAGS := optional
+LOCAL_MODULE := TetheringConfigOverlayGo
+LOCAL_SRC_FILES := packages/vendor/overlay/TetheringConfigOverlayGo.apk
+LOCAL_MODULE_CLASS := APPS
+LOCAL_MODULE_SUFFIX := $(COMMON_ANDROID_PACKAGE_SUFFIX)
+LOCAL_CERTIFICATE := platform
+LOCAL_MODULE_PATH := $(TARGET_OUT_VENDOR)/overlay
+LOCAL_IS_RUNTIME_RESOURCE_OVERLAY := true
+include $(BUILD_PREBUILT)
+
+include $(CLEAR_VARS)
+LOCAL_MODULE_TAGS := optional
+LOCAL_MODULE := TetheringConfigOverlayGsi
+LOCAL_SRC_FILES := packages/vendor/overlay/TetheringConfigOverlayGsi.apk
+LOCAL_MODULE_CLASS := APPS
+LOCAL_MODULE_SUFFIX := $(COMMON_ANDROID_PACKAGE_SUFFIX)
+LOCAL_CERTIFICATE := platform
+LOCAL_MODULE_PATH := $(TARGET_OUT_VENDOR)/overlay
+LOCAL_IS_RUNTIME_RESOURCE_OVERLAY := true
+include $(BUILD_PREBUILT)
+
+include $(CLEAR_VARS)
+LOCAL_MODULE_TAGS := optional
+LOCAL_MODULE := unisoc_go_overlay_frameworks_res
+LOCAL_SRC_FILES := packages/vendor/overlay/unisoc_go_overlay_frameworks_res.apk
+LOCAL_MODULE_CLASS := APPS
+LOCAL_MODULE_SUFFIX := $(COMMON_ANDROID_PACKAGE_SUFFIX)
+LOCAL_CERTIFICATE := platform
+LOCAL_MODULE_PATH := $(TARGET_OUT_VENDOR)/overlay
+LOCAL_IS_RUNTIME_RESOURCE_OVERLAY := true
+include $(BUILD_PREBUILT)
+
+include $(CLEAR_VARS)
+LOCAL_MODULE_TAGS := optional
+LOCAL_MODULE := unisoc_overlay_frameworks_res
+LOCAL_SRC_FILES := packages/vendor/overlay/unisoc_overlay_frameworks_res.apk
+LOCAL_MODULE_CLASS := APPS
+LOCAL_MODULE_SUFFIX := $(COMMON_ANDROID_PACKAGE_SUFFIX)
+LOCAL_CERTIFICATE := platform
+LOCAL_MODULE_PATH := $(TARGET_OUT_VENDOR)/overlay
+LOCAL_IS_RUNTIME_RESOURCE_OVERLAY := true
+include $(BUILD_PREBUILT)
+
+include $(CLEAR_VARS)
+LOCAL_MODULE_TAGS := optional
+LOCAL_MODULE := AospBtOverlay
+LOCAL_SRC_FILES := packages/vendor/overlay/AospBtOverlay/AospBtOverlay.apk
+LOCAL_MODULE_CLASS := APPS
+LOCAL_MODULE_SUFFIX := $(COMMON_ANDROID_PACKAGE_SUFFIX)
+LOCAL_CERTIFICATE := platform
+LOCAL_MODULE_PATH := $(TARGET_OUT_VENDOR)/overlay/AospBtOverlay
+LOCAL_IS_RUNTIME_RESOURCE_OVERLAY := true
+include $(BUILD_PREBUILT)
+
+include $(CLEAR_VARS)
+LOCAL_MODULE_TAGS := optional
+LOCAL_MODULE := AospWifiOverlay_Marlin3
+LOCAL_SRC_FILES := packages/vendor/overlay/AospWifiOverlay_Marlin3/AospWifiOverlay_Marlin3.apk
+LOCAL_MODULE_CLASS := APPS
+LOCAL_MODULE_SUFFIX := $(COMMON_ANDROID_PACKAGE_SUFFIX)
+LOCAL_CERTIFICATE := platform
+LOCAL_MODULE_PATH := $(TARGET_OUT_VENDOR)/overlay/AospWifiOverlay_Marlin3
+LOCAL_IS_RUNTIME_RESOURCE_OVERLAY := true
+include $(BUILD_PREBUILT)
+
+include $(CLEAR_VARS)
+LOCAL_MODULE_TAGS := optional
+LOCAL_MODULE := AospWifiOverlay_Marlin3_Mainline
+LOCAL_SRC_FILES := packages/vendor/overlay/AospWifiOverlay_Marlin3_Mainline/AospWifiOverlay_Marlin3_Mainline.apk
+LOCAL_MODULE_CLASS := APPS
+LOCAL_MODULE_SUFFIX := $(COMMON_ANDROID_PACKAGE_SUFFIX)
+LOCAL_CERTIFICATE := platform
+LOCAL_MODULE_PATH := $(TARGET_OUT_VENDOR)/overlay/AospWifiOverlay_Marlin3_Mainline
+LOCAL_IS_RUNTIME_RESOURCE_OVERLAY := true
+include $(BUILD_PREBUILT)
+
+include $(CLEAR_VARS)
+LOCAL_MODULE_TAGS := optional
+LOCAL_MODULE := UniWifiOverlay_Marlin3
+LOCAL_SRC_FILES := packages/vendor/overlay/UniWifiOverlay_Marlin3/UniWifiOverlay_Marlin3.apk
+LOCAL_MODULE_CLASS := APPS
+LOCAL_MODULE_SUFFIX := $(COMMON_ANDROID_PACKAGE_SUFFIX)
+LOCAL_CERTIFICATE := platform
+LOCAL_MODULE_PATH := $(TARGET_OUT_VENDOR)/overlay/UniWifiOverlay_Marlin3
+LOCAL_IS_RUNTIME_RESOURCE_OVERLAY := true
+include $(BUILD_PREBUILT)
