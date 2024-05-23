@@ -117,7 +117,7 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/rootdir/etc/fstab.ums9230_1h10:$(TARGET_VENDOR_RAMDISK_OUT)/first_stage_ramdisk/fstab.ums9230_1h10
-    $(LOCAL_PATH)/modules/vendor_dlkm/lib/modules/modules.load.charger:$(TARGET_COPY_OUT_VENDOR_DLKM)/lib/modules/modules.load.charger
+    $(LOCAL_PATH)/modules/vendor_dlkm/lib/modules/modules.load.charger:$(TARGET_COPY_OUT_VENDOR_DLKM)/lib/modules
     
 #vendor permissions
 PRODUCT_COPY_FILES += \
