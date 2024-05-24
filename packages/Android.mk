@@ -329,56 +329,12 @@ include $(BUILD_PREBUILT)
 
 include $(CLEAR_VARS)
 LOCAL_MODULE_TAGS := optional
-LOCAL_MODULE := LogManagerodex
-LOCAL_SRC_FILES := packages/vendor/app/LogManager/oat/arm64/LogManager.odex
-LOCAL_MODULE_CLASS := APPS
-LOCAL_MODULE_SUFFIX := .odex
-LOCAL_CERTIFICATE := platform
-LOCAL_MODULE_PATH := $(TARGET_OUT_VENDOR)/app/LogManager/oat/arm64
-LOCAL_IS_RUNTIME_RESOURCE_OVERLAY := true
-include $(BUILD_PREBUILT)
-
-include $(CLEAR_VARS)
-LOCAL_MODULE_TAGS := optional
-LOCAL_MODULE := LogManagervdex
-LOCAL_SRC_FILES := packages/vendor/app/LogManager/oat/arm64/LogManager.vdex
-LOCAL_MODULE_CLASS := APPS
-LOCAL_MODULE_SUFFIX := .vdex
-LOCAL_CERTIFICATE := platform
-LOCAL_MODULE_PATH := $(TARGET_OUT_VENDOR)/app/LogManager/oat/arm64
-LOCAL_IS_RUNTIME_RESOURCE_OVERLAY := true
-include $(BUILD_PREBUILT)
-
-include $(CLEAR_VARS)
-LOCAL_MODULE_TAGS := optional
 LOCAL_MODULE := UASetting
 LOCAL_SRC_FILES := packages/vendor/app/UASetting/UASetting.apk
 LOCAL_MODULE_CLASS := APPS
 LOCAL_MODULE_SUFFIX := $(COMMON_ANDROID_PACKAGE_SUFFIX)
 LOCAL_CERTIFICATE := platform
 LOCAL_MODULE_PATH := $(TARGET_OUT_VENDOR)/app/UASetting
-LOCAL_IS_RUNTIME_RESOURCE_OVERLAY := true
-include $(BUILD_PREBUILT)
-
-include $(CLEAR_VARS)
-LOCAL_MODULE_TAGS := optional
-LOCAL_MODULE := UASettingodex
-LOCAL_SRC_FILES := packages/vendor/app/UASetting/oat/arm64/UASetting.odex
-LOCAL_MODULE_CLASS := APPS
-LOCAL_MODULE_SUFFIX := .odex
-LOCAL_CERTIFICATE := platform
-LOCAL_MODULE_PATH := $(TARGET_OUT_VENDOR)/app/UASetting/oat/arm64
-LOCAL_IS_RUNTIME_RESOURCE_OVERLAY := true
-include $(BUILD_PREBUILT)
-
-include $(CLEAR_VARS)
-LOCAL_MODULE_TAGS := optional
-LOCAL_MODULE := UASettingvdex
-LOCAL_SRC_FILES := packages/vendor/app/UASetting/oat/arm64/UASetting.vdex
-LOCAL_MODULE_CLASS := APPS
-LOCAL_MODULE_SUFFIX := .vdex
-LOCAL_CERTIFICATE := platform
-LOCAL_MODULE_PATH := $(TARGET_OUT_VENDOR)/app/UASetting/oat/arm64
 LOCAL_IS_RUNTIME_RESOURCE_OVERLAY := true
 include $(BUILD_PREBUILT)
 
