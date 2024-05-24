@@ -107,10 +107,10 @@ PRODUCT_PACKAGES += \
     TetheringConfigOverlayGsi \
     unisoc_go_overlay_frameworks_res \
     unisoc_overlay_frameworks_res \
-    LogManager
-#    ProxyNFwLocation \
-#    UASetting \
-#    WirelessTools
+    LogManager \
+    ProxyNFwLocation \
+    UASetting \
+    WirelessTools
 
 PRODUCT_PACKAGES += \
     fstab.ums9230_1h10 \
