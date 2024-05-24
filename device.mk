@@ -108,12 +108,8 @@ PRODUCT_PACKAGES += \
     unisoc_go_overlay_frameworks_res \
     unisoc_overlay_frameworks_res \
     LogManager \
-    LogManager.odex \
-    LogManager.vdex \
     ProxyNFwLocation \
     UASetting \
-    UASetting.odex \
-    UASetting.vdex \
     WirelessTools
 
 PRODUCT_PACKAGES += \
