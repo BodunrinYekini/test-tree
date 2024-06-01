@@ -72,6 +72,13 @@ PRODUCT_USE_DYNAMIC_PARTITION_SIZE := true
 # Product characteristics
 PRODUCT_CHARACTERISTICS := default
 
+# Force using the following regardless of shipping API level:
+#   PRODUCT_TREBLE_LINKER_NAMESPACES
+#   PRODUCT_SEPOLICY_SPLIT
+#   PRODUCT_ENFORCE_VINTF_MANIFEST
+#   PRODUCT_NOTICE_SPLIT
+PRODUCT_FULL_TREBLE_OVERRIDE := true
+
 # Rootdir
 PRODUCT_PACKAGES += \
     log_to_csv.sh \
