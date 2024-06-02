@@ -7,3 +7,5 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 ```
+Before build
+locate base_vendor.mk and comment out android.hardware.cas@1.2-service \

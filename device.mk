@@ -4,18 +4,13 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
-DEVICE_PATH := device/ohrtech/aleph
-
 # Enable updating of APEXes
 $(call inherit-product, $(SRC_TARGET_DIR)/product/updatable_apex.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/generic_ramdisk.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/virtual_ab_ota/compression.mk)
-$(call inherit-product, $(SRC_TARGET_DIR)/product/handheld_system.mk)
-$(call inherit-product, $(SRC_TARGET_DIR)/product/handheld_system_ext.mk)
-$(call inherit-product, $(DEVICE_PATH)/custom.mk)
-$(call inherit-product, $(SRC_TARGET_DIR)/product/handheld_product.mk)
+$(call inherit-product, $(SRC_TARGET_DIR)/product/aosp_base.mk)
 
-
+DEVICE_PATH := device/ohrtech/aleph
 TARGET_PREBUILT_KERNEL :=$(DEVICE_PATH)/prebuilts/kernel
 PRODUCT_COPY_FILES += \
 	$(TARGET_PREBUILT_KERNEL):kernel
@@ -24,6 +19,7 @@ PRODUCT_PACKAGES += \
     vndservicemanager \
     cpio \
     cplogctl \
+    vendor_compatibility_matrix.xml \
     messaging
 
     
