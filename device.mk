@@ -7,8 +7,18 @@
 # Enable updating of APEXes
 $(call inherit-product, $(SRC_TARGET_DIR)/product/updatable_apex.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/generic_ramdisk.mk)
-$(call inherit-product, $(SRC_TARGET_DIR)/product/aosp_base.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/virtual_ab_ota/compression.mk)
+$(call inherit-product, $(SRC_TARGET_DIR)/product/handheld_system.mk)
+$(call inherit-product, $(SRC_TARGET_DIR)/product/handheld_system_ext.mk)
+$(call inherit-product, $(SRC_TARGET_DIR)/product/handheld_product.mk)
+
+# /vendor packages
+PRODUCT_PACKAGES += \
+    audio.primary.default \
+    local_time.default \
+    power.default \
+    vibrator.default \
+
 
 DEVICE_PATH := device/ohrtech/aleph
 TARGET_PREBUILT_KERNEL :=$(DEVICE_PATH)/prebuilts/kernel
