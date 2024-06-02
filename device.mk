@@ -20,8 +20,8 @@ PRODUCT_PACKAGES += \
     cpio \
     cplogctl \
     vendor_compatibility_matrix.xml \
-    messaging \
-    RemoveApps
+    messaging
+
     
 #PRODUCT_PACKAGES += \
     android.hardware.boot@1.2-impl \
