@@ -6,12 +6,6 @@
 
 # Inherit from those products. Most specific first.
 $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
-$(call inherit-product, $(SRC_TARGET_DIR)/product/aosp_base_telephony.mk)
-$(call inherit-product, $(SRC_TARGET_DIR)/product/handheld_product.mk)
-$(call inherit-product, $(SRC_TARGET_DIR)/product/handheld_system.mk)
-$(call inherit-product, $(SRC_TARGET_DIR)/product/handheld_system_ext.mk)
-$(call inherit-product, $(SRC_TARGET_DIR)/product/handheld_vendor.mk)
-
 
 
 # Inherit from aleph device
