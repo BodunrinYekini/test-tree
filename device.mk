@@ -47,8 +47,8 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     vndservicemanager \
     cpio \
-    cplogctl \
-    rild
+    cplogctl
+    #rild
 
 # API levels
 PRODUCT_SHIPPING_API_LEVEL := 33
@@ -59,7 +59,7 @@ PRODUCT_PACKAGES += \
     fastbootd
 
 # Health
-PRODUCT_PACKAGES += \
+#PRODUCT_PACKAGES += \
     android.hardware.health@2.1-impl \
     android.hardware.health@2.1-service
 
