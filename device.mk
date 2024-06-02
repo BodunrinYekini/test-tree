@@ -45,7 +45,9 @@ PRODUCT_PACKAGES += \
     
 
 PRODUCT_PACKAGES += \
-    vndservicemanager
+    vndservicemanager \
+    cpio \
+    cplogctl
 
 # API levels
 PRODUCT_SHIPPING_API_LEVEL := 33
