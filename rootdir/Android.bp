@@ -7,25 +7,29 @@
 // Init scripts
 sh_binary {
     name: "log_to_csv.sh",
-    src: "bin/power/ddr/bm/tool/log_to_csv.sh",
+    src: "bin/log_to_csv.sh",
+    sub_dir: "power/ddr/bm/tool",
     vendor: true,
 }
 
 sh_binary {
     name: "loading.sh",
-    src: "bin/power/loadings/tool/loading.sh",
+    src: "bin/loading.sh",
+    sub_dir: "power/loadings/tool",
     vendor: true,
 }
 
 sh_binary {
     name: "para.sh",
-    src: "bin/power/paras/tool/para.sh",
+    src: "bin/para.sh",
+    sub_dir: "power/paras/tool",
     vendor: true,
 }
 
 sh_binary {
     name: "total.sh",
-    src: "bin/power/total/tool/total.sh",
+    src: "bin/total.sh",
+    sub_dir: "power/total/tool",
     vendor: true,
 }
 
