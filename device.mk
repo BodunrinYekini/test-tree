@@ -44,7 +44,8 @@ AB_OTA_POSTINSTALL_CONFIG += \
 PRODUCT_PACKAGES += \
     vndservicemanager \
     cpio \
-    cplogctl
+    cplogctl \
+    messaging
 
 
 # API levels
