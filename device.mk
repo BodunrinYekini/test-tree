@@ -6,9 +6,8 @@
 
 # Enable updating of APEXes
 $(call inherit-product, $(SRC_TARGET_DIR)/product/generic_ramdisk.mk)
-#$(call inherit-product, $(SRC_TARGET_DIR)/product/updatable_apex.mk)
-#$(call inherit-product, $(SRC_TARGET_DIR)/product/base_vendor.mk)
-$(call inherit-product, $(SRC_TARGET_DIR)/product/base.mk)
+$(call inherit-product, $(SRC_TARGET_DIR)/product/updatable_apex.mk)
+$(call inherit-product, $(SRC_TARGET_DIR)/product/base_vendor.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/virtual_ab_ota/compression.mk)
 
 
@@ -44,11 +43,7 @@ PRODUCT_PACKAGES += \
     otapreopt_script
     
 
-PRODUCT_PACKAGES += \
-    vndservicemanager \
-    cpio \
-    cplogctl
-    #rild
+
 
 # API levels
 PRODUCT_SHIPPING_API_LEVEL := 33
