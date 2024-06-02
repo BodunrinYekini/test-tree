@@ -42,6 +42,10 @@ AB_OTA_POSTINSTALL_CONFIG += \
 PRODUCT_PACKAGES += \
     checkpoint_gc \
     otapreopt_script
+    
+
+PRODUCT_PACKAGES += \
+    vndservicemanager
 
 # API levels
 PRODUCT_SHIPPING_API_LEVEL := 33
