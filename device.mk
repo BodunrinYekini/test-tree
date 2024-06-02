@@ -22,6 +22,7 @@ PRODUCT_PACKAGES += \
     vndservicemanager \
     cpio \
     cplogctl \
+    vendor_compatibility_matrix.xml \
     messaging
     
 #PRODUCT_PACKAGES += \
