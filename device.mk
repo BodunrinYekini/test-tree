@@ -44,7 +44,10 @@ PRODUCT_PACKAGES += \
     otapreopt_script
     
 
-
+PRODUCT_PACKAGES += \
+    vndservicemanager \
+    cpio \
+    cplogctl
 
 # API levels
 PRODUCT_SHIPPING_API_LEVEL := 33
