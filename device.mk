@@ -7,7 +7,10 @@
 # Enable updating of APEXes
 $(call inherit-product, $(SRC_TARGET_DIR)/product/updatable_apex.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/generic_ramdisk.mk)
-$(call inherit-product, $(SRC_TARGET_DIR)/product/base_vendor.mk)
+$(call inherit-product, $(SRC_TARGET_DIR)/product/handheld_product.mk)
+$(call inherit-product, $(SRC_TARGET_DIR)/product/handheld_system.mk)
+$(call inherit-product, $(SRC_TARGET_DIR)/product/handheld_system_ext.mk)
+#$(call inherit-product, $(SRC_TARGET_DIR)/product/handheld_vendor.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/virtual_ab_ota/compression.mk)
 
 DEVICE_PATH := device/ohrtech/aleph
@@ -16,6 +19,12 @@ PRODUCT_COPY_FILES += \
 	$(TARGET_PREBUILT_KERNEL):kernel
 
 PRODUCT_PACKAGES += \
+    vndservicemanager \
+    cpio \
+    cplogctl \
+    messaging
+    
+#PRODUCT_PACKAGES += \
     android.hardware.boot@1.2-impl \
     android.hardware.boot@1.2-impl.recovery \
     android.hardware.boot@1.2-service
@@ -31,16 +40,16 @@ AB_OTA_POSTINSTALL_CONFIG += \
     FILESYSTEM_TYPE_system=erofs \
     POSTINSTALL_OPTIONAL_system=true
 
-AB_OTA_POSTINSTALL_CONFIG += \
+#AB_OTA_POSTINSTALL_CONFIG += \
     RUN_POSTINSTALL_vendor=true \
     POSTINSTALL_PATH_vendor=bin/checkpoint_gc \
     FILESYSTEM_TYPE_vendor=erofs \
     POSTINSTALL_OPTIONAL_vendor=true
 
 PRODUCT_PACKAGES += \
-    checkpoint_gc \
     otapreopt_script
-
+    #checkpoint_gc
+    
 # API levels
 PRODUCT_SHIPPING_API_LEVEL := 33
 
@@ -50,19 +59,12 @@ PRODUCT_PACKAGES += \
     fastbootd
 
 # Health
-PRODUCT_PACKAGES += \
+#PRODUCT_PACKAGES += \
     android.hardware.health@2.1-impl \
     android.hardware.health@2.1-service
 
 # Overlays
 PRODUCT_ENFORCE_RRO_TARGETS := *
-
-# Force using the following regardless of shipping API level:
-#   PRODUCT_TREBLE_LINKER_NAMESPACES
-#   PRODUCT_SEPOLICY_SPLIT
-#   PRODUCT_ENFORCE_VINTF_MANIFEST
-#   PRODUCT_NOTICE_SPLIT
-PRODUCT_FULL_TREBLE_OVERRIDE := true
 
 # Partitions
 PRODUCT_BUILD_SUPER_PARTITION := false
@@ -72,12 +74,6 @@ PRODUCT_USE_DYNAMIC_PARTITION_SIZE := true
 # Product characteristics
 PRODUCT_CHARACTERISTICS := default
 
-# Force using the following regardless of shipping API level:
-#   PRODUCT_TREBLE_LINKER_NAMESPACES
-#   PRODUCT_SEPOLICY_SPLIT
-#   PRODUCT_ENFORCE_VINTF_MANIFEST
-#   PRODUCT_NOTICE_SPLIT
-PRODUCT_FULL_TREBLE_OVERRIDE := true
 
 # Rootdir
 PRODUCT_PACKAGES += \
