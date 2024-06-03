@@ -24,28 +24,8 @@ PRODUCT_PACKAGES += \
 
 #vendor
 PRODUCT_PACKAGES += \
-android.hardware.audio@7.0-util \
+android.hardware.audio@7.0-impl_default \
 android.hardware.camera.device@3.6 \
-android.hardware.camera.provider@2.4-external-sprd \
-android.hardware.camera.provider@2.4-legacy-sprd \
-android.hardware.gnss.measurement_corrections@1.0 \
-android.hardware.gnss.measurement_corrections@1.1 \
-android.hardware.gnss.visibility_control@1.0 \
-android.hardware.gnss@1.0 \
-android.hardware.gnss@1.1 \
-android.hardware.gnss@2.0 \
-android.hardware.gnss@2.1 \
-android.hardware.radio.deprecated@1.0 \
-android.hardware.radio@1.2 \
-android.hardware.secure_element@1.0 \
-android.hardware.sensors@2.0-ScopedWakelock \
-android.hardware.sensors@2.0 \
-android.hardware.sensors@2.1 \
-android.hardware.sensors@2.X-sprd_subhal \
-android.hardware.thermal@1.0 \
-android.hardware.thermal@2.0 \
-libdrm \
-libhwbinder \
 libhwc2on1adapter \
 libtinycompress
     
