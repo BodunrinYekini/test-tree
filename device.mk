@@ -149,6 +149,7 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     $(call find-copy-subdir-files,*,$(LOCAL_PATH)/modules/vendor/etc/permissions/,$(TARGET_COPY_OUT_VENDOR)/etc/permissions) \
      $(call find-copy-subdir-files,*,$(LOCAL_PATH)/modules/vendor/lib/hw/,$(TARGET_COPY_OUT_VENDOR)/lib/hw) \
+     $(call find-copy-subdir-files,*,$(LOCAL_PATH)/modules/vendor/lib64/hw/,$(TARGET_COPY_OUT_VENDOR)/lib64/hw) \
      $(call find-copy-subdir-files,*,$(LOCAL_PATH)/modules/vendor/lib/,$(TARGET_COPY_OUT_VENDOR)/lib) \
      $(call find-copy-subdir-files,*,$(LOCAL_PATH)/modules/vendor/lib64/,$(TARGET_COPY_OUT_VENDOR)/lib64)
 
