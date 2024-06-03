@@ -8,4 +8,9 @@
 #
 ```
 Before build
-locate base_vendor.mk and delete android.hardware.cas@1.2-service \ then run make installclean
+locate base_vendor.mk and delete 
+android.hardware.cas@1.2-service \ 
+libreference-ril \
+libril \
+    
+then run make installclean
