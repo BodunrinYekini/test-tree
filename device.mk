@@ -24,8 +24,6 @@ PRODUCT_PACKAGES += \
 
 #vendor
 PRODUCT_PACKAGES += \
-android.hardware.audio@7.0-impl \
-android.hardware.gnss@1.0-impl \
 libhwc2on1adapter \
 libtinycompress
     
@@ -150,7 +148,8 @@ PRODUCT_COPY_FILES += \
 #vendor items
 PRODUCT_COPY_FILES += \
     $(call find-copy-subdir-files,*,$(LOCAL_PATH)/modules/vendor/etc/permissions/,$(TARGET_COPY_OUT_VENDOR)/etc/permissions) \
-     $(call find-copy-subdir-files,*,$(LOCAL_PATH)/modules/vendor/lib/,$(TARGET_COPY_OUT_VENDOR)/lib)
+     $(call find-copy-subdir-files,*,$(LOCAL_PATH)/modules/vendor/lib/hw/,$(TARGET_COPY_OUT_VENDOR)/lib/hw) \
+     $(call find-copy-subdir-files,*.ko,$(LOCAL_PATH)/modules/vendor/lib/,$(TARGET_COPY_OUT_VENDOR)/lib)
 
 VENDOR_DLKM_MODULES_PATH = $(DEVICE_PATH)/modules/vendor_dlkm/lib/modules
 PRODUCT_COPY_FILES += \
