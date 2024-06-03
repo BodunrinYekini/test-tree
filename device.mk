@@ -24,8 +24,8 @@ PRODUCT_PACKAGES += \
 
 #vendor
 PRODUCT_PACKAGES += \
-android.hardware.audio@7.0-impl_default \
-android.hardware.camera.device@3.6 \
+android.hardware.audio@7.0-impl \
+android.hardware.gnss@1.0-impl \
 libhwc2on1adapter \
 libtinycompress
     
