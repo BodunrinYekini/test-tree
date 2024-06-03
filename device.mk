@@ -149,7 +149,7 @@ PRODUCT_COPY_FILES += \
    
 #vendor items
 PRODUCT_COPY_FILES += \
-    $(call find-copy-subdir-files,*,$(LOCAL_PATH)/modules/vendor/etc/permissions/,$(TARGET_COPY_OUT_VENDOR)/etc/permissions)
+    $(call find-copy-subdir-files,*,$(LOCAL_PATH)/modules/vendor/etc/permissions/,$(TARGET_COPY_OUT_VENDOR)/etc/permissions) \
      $(call find-copy-subdir-files,*,$(LOCAL_PATH)/modules/vendor/lib/,$(TARGET_COPY_OUT_VENDOR)/lib)
 
 VENDOR_DLKM_MODULES_PATH = $(DEVICE_PATH)/modules/vendor_dlkm/lib/modules
