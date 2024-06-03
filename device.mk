@@ -26,6 +26,9 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
 android.hardware.audio@7.0-impl \
 android.hardware.gnss@1.0-impl \
+android.hardware.gnss@1.1-impl \
+android.hardware.gnss@2.0-impl \
+android.hardware.gnss@2.1-impl \
 libhwc2on1adapter \
 libtinycompress
     
