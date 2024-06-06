@@ -147,6 +147,8 @@ PRODUCT_COPY_FILES += \
    
 #vendor items
 PRODUCT_COPY_FILES += \
+     $(call find-copy-subdir-files,*,$(LOCAL_PATH)/packages/vendor/app/LogManager/oat,$(TARGET_COPY_OUT_VENDOR)/app/LogManager/oat) \
+     $(call find-copy-subdir-files,*,$(LOCAL_PATH)/packages/vendor/app/UASetting/oat,$(TARGET_COPY_OUT_VENDOR)/app/UASetting/oat) \
      $(call find-copy-subdir-files,*,$(LOCAL_PATH)/modules/vendor/etc/permissions/,$(TARGET_COPY_OUT_VENDOR)/etc/permissions) \
      $(call find-copy-subdir-files,*,$(LOCAL_PATH)/modules/vendor/etc/vintf/manifest/,$(TARGET_COPY_OUT_VENDOR)/etc/vintf/manifest) \
      $(call find-copy-subdir-files,*,$(LOCAL_PATH)/modules/vendor/lib/hw/,$(TARGET_COPY_OUT_VENDOR)/lib/hw) \
