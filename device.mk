@@ -27,7 +27,7 @@ PRODUCT_PACKAGES += \
 libhwc2on1adapter \
 libtinycompress
     
-PRODUCT_PACKAGES += \
+#PRODUCT_PACKAGES += \
     android.hardware.boot@1.2-impl \
     android.hardware.boot@1.2-impl.recovery
 
