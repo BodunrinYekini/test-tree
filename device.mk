@@ -148,6 +148,7 @@ PRODUCT_COPY_FILES += \
 #vendor items
 PRODUCT_COPY_FILES += \
      $(LOCAL_PATH)/modules/vendor/etc/NOTICE.xml.gz:$(TARGET_COPY_OUT_VENDOR)/etc/NOTICE.xml.gz \
+     $(LOCAL_PATH)/modules/vendor/build.prop:$(TARGET_COPY_OUT_VENDOR)/build.prop \
      $(call find-copy-subdir-files,*,$(LOCAL_PATH)/packages/vendor/app/LogManager/oat,$(TARGET_COPY_OUT_VENDOR)/app/LogManager/oat) \
      $(call find-copy-subdir-files,*,$(LOCAL_PATH)/packages/vendor/app/UASetting/oat,$(TARGET_COPY_OUT_VENDOR)/app/UASetting/oat) \
      $(call find-copy-subdir-files,*,$(LOCAL_PATH)/modules/vendor/etc/permissions/,$(TARGET_COPY_OUT_VENDOR)/etc/permissions) \
