@@ -156,11 +156,7 @@ PRODUCT_COPY_FILES += \
      $(call find-copy-subdir-files,*,$(LOCAL_PATH)/modules/vendor/lib64/hw/,$(TARGET_COPY_OUT_VENDOR)/lib64/hw) \
      $(call find-copy-subdir-files,*,$(LOCAL_PATH)/modules/vendor/lib/,$(TARGET_COPY_OUT_VENDOR)/lib) \
      $(call find-copy-subdir-files,*,$(LOCAL_PATH)/modules/vendor/lib64/,$(TARGET_COPY_OUT_VENDOR)/lib64)
-     
-# vendor/build.prop
-PRODUCT_VENDOR_PROPERTIES += ro.product.vendor.manufacturer=OhrTech
-PRODUCT_VENDOR_PROPERTIES += ro.vendor.build.type=userdebug
-PRODUCT_VENDOR_PROPERTIES += ro.product.vendor.name=aleph_Natv
+
 
 
 VENDOR_DLKM_MODULES_PATH = $(DEVICE_PATH)/modules/vendor_dlkm/lib/modules
