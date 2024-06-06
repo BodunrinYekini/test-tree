@@ -148,7 +148,6 @@ PRODUCT_COPY_FILES += \
 #vendor items
 PRODUCT_COPY_FILES += \
      $(LOCAL_PATH)/modules/vendor/etc/NOTICE.xml.gz:$(TARGET_COPY_OUT_VENDOR)/etc/NOTICE.xml.gz \
-     $(LOCAL_PATH)/modules/vendor/build.prop:$(TARGET_COPY_OUT_VENDOR)/build.prop \
      $(call find-copy-subdir-files,*,$(LOCAL_PATH)/packages/vendor/app/LogManager/oat,$(TARGET_COPY_OUT_VENDOR)/app/LogManager/oat) \
      $(call find-copy-subdir-files,*,$(LOCAL_PATH)/packages/vendor/app/UASetting/oat,$(TARGET_COPY_OUT_VENDOR)/app/UASetting/oat) \
      $(call find-copy-subdir-files,*,$(LOCAL_PATH)/modules/vendor/etc/permissions/,$(TARGET_COPY_OUT_VENDOR)/etc/permissions) \
@@ -157,6 +156,12 @@ PRODUCT_COPY_FILES += \
      $(call find-copy-subdir-files,*,$(LOCAL_PATH)/modules/vendor/lib64/hw/,$(TARGET_COPY_OUT_VENDOR)/lib64/hw) \
      $(call find-copy-subdir-files,*,$(LOCAL_PATH)/modules/vendor/lib/,$(TARGET_COPY_OUT_VENDOR)/lib) \
      $(call find-copy-subdir-files,*,$(LOCAL_PATH)/modules/vendor/lib64/,$(TARGET_COPY_OUT_VENDOR)/lib64)
+     
+# vendor/build.prop
+PRODUCT_SYSTEM_PROPERTIES += ro.product.vendor.manufacturer=OhrTech
+PRODUCT_SYSTEM_PROPERTIES += ro.vendor.build.type=userdebug
+PRODUCT_SYSTEM_PROPERTIES += ro.product.vendor.name=aleph_Natv
+
 
 VENDOR_DLKM_MODULES_PATH = $(DEVICE_PATH)/modules/vendor_dlkm/lib/modules
 PRODUCT_COPY_FILES += \
