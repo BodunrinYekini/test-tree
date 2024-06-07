@@ -22,7 +22,7 @@ soong_namespace {
 android_app_import {
 	name: "CameraCalibration",
 	owner: "ohrtech",
-	apk: "packages/system_ext/app/CameraCalibration/CameraCalibration.apk",
+	apk: "system_ext/app/CameraCalibration/CameraCalibration.apk",
 	certificate: "platform",
 	dex_preopt: {
 		enabled: false,
@@ -33,7 +33,7 @@ android_app_import {
 android_app_import {
 	name: "AIEngineService",
 	owner: "ohrtech",
-	apk: "packages/system_ext/priv-app/AIEngineService/AIEngineService.apk",
+	apk: "system_ext/priv-app/AIEngineService/AIEngineService.apk",
 	certificate: "platform",
 	dex_preopt: {
 		enabled: false,
