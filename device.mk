@@ -8,11 +8,8 @@
 $(call inherit-product, $(SRC_TARGET_DIR)/product/updatable_apex.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/generic_ramdisk.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/virtual_ab_ota/compression.mk)
-$(call inherit-product, $(SRC_TARGET_DIR)/product/handheld_system.mk)
-$(call inherit-product, $(SRC_TARGET_DIR)/product/handheld_product.mk)
-$(call inherit-product, $(SRC_TARGET_DIR)/product/handheld_vendor.mk)
+$(call inherit-product, $(SRC_TARGET_DIR)/product/aosp_base.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/go_defaults.mk)
-
 
 DEVICE_PATH := device/ohrtech/aleph
 TARGET_PREBUILT_KERNEL :=$(DEVICE_PATH)/prebuilts/kernel
