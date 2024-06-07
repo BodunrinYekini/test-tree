@@ -30,6 +30,14 @@ libhwc2on1adapter \
 libtinycompress \
 librilutils
 
+#vendor/lib
+
+PRODUCT_COPY_FILES += \
+$(call find-copy-subdir-files,*,$(LOCAL_PATH)/modules/vendor/lib/,$(TARGET_COPY_OUT_VENDOR)/lib) \
+$(call find-copy-subdir-files,*,$(LOCAL_PATH)/modules/vendor/lib64/,$(TARGET_COPY_OUT_VENDOR)/lib64) \
+$(call find-copy-subdir-files,*,$(LOCAL_PATH)/packages/vendor/app/LogManager/oat,$(TARGET_COPY_OUT_VENDOR)/app/LogManager/oat) \
+     $(call find-copy-subdir-files,*,$(LOCAL_PATH)/packages/vendor/app/UASetting/oat,$(TARGET_COPY_OUT_VENDOR)/app/UASetting/oat)
+
 #system_ext
 PRODUCT_PACKAGES += \
 Launcher3QuickStep \
