@@ -43,13 +43,3 @@ android_app_import {
 	system_ext_specific: true,
 }
 
-android_app_import {
-	name: "framework-res__auto_generated_rro_product",
-	owner: "ohrtech",
-	apk: "product/app/framework-res__auto_generated_rro_product.apk",
-    presigned: true,
-	dex_preopt: {
-		enabled: true,
-	},
-	product_specific: true,
-}
