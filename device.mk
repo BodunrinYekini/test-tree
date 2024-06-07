@@ -29,6 +29,30 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
 libhwc2on1adapter \
 libtinycompress
+
+#system_ext
+PRODUCT_PACKAGES += \
+AIEngineService \
+CarrierConfig \
+EmergencyInfo \
+ims \
+NetworkSliceAgent \
+NewMusic \
+OmacpPrebuilt \
+PowerSaveModeLauncherPrebuilt \
+QuickCamera \
+radio_interactor_service \
+RemoteProvisioner \
+ServiceUniWifiResources \
+SprdCalendarProviderPrebuilt \
+SprdContacts \
+SprdContactsProvider \
+SprdDialerGo \
+Srmi \
+ThemePicker \
+UniSilentReboot \
+UniTelephony \
+UniWifiDialog
     
 #PRODUCT_PACKAGES += \
     android.hardware.boot@1.2-impl \
