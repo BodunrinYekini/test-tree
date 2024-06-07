@@ -39,8 +39,9 @@ WallpaperCropper \
 ThemePicker \
 RemoteProvisioner \
 CarrierConfig \
-EmergencyInfo
-
+EmergencyInfo \
+CameraCalibration \
+AIEngineService
     
 #PRODUCT_PACKAGES += \
     android.hardware.boot@1.2-impl \
