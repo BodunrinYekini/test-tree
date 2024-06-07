@@ -52,5 +52,4 @@ android_app_import {
 		enabled: true,
 	},
 	product_specific: true,
-    sub_dir: "overlay",
 }
