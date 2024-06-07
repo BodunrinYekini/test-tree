@@ -168,7 +168,7 @@ PRODUCT_COPY_FILES += \
 VENDOR_MODULES_PATH = $(DEVICE_PATH)/modules/vendor_dlkm/lib/modules
 
 PRODUCT_COPY_FILES += \
-    $(VENDOR_MODULES_PATH)/init.insmod.cfg:$(TARGET_VENDOR_DLKM_OUT)/lib/modules/init.insmod.cfg
+    $(VENDOR_MODULES_PATH)/init.insmod.cfg:$(TARGET_COPY_OUT_VENDOR_DLKM)/lib/modules/init.insmod.cfg
     
 BOARD_VENDOR_KERNEL_MODULES := \
 $(VENDOR_MODULES_PATH)/aes-ce-ccm.ko \
