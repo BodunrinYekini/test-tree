@@ -23,11 +23,11 @@ android_app_import {
 	name: "CameraCalibration",
 	owner: "ohrtech",
 	apk: "system_ext/app/CameraCalibration/CameraCalibration.apk",
-	certificate: "platform",
+    presigned: true,
 	dex_preopt: {
-		enabled: false,
+		enabled: true,
 	},
-    system_ext_specific: true,
+	system_ext_specific: true,
 }
 
 
@@ -35,10 +35,10 @@ android_app_import {
 	name: "AIEngineService",
 	owner: "ohrtech",
 	apk: "system_ext/priv-app/AIEngineService/AIEngineService.apk",
-	certificate: "platform",
+    presigned: true,
 	dex_preopt: {
-		enabled: false,
+		enabled: true,
 	},
-    privileged: true,
-    system_ext_specific: true,
+	privileged: true,
+	system_ext_specific: true,
 }
