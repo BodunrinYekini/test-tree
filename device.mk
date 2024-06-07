@@ -8,7 +8,7 @@
 $(call inherit-product, $(SRC_TARGET_DIR)/product/updatable_apex.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/generic_ramdisk.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/virtual_ab_ota/compression.mk)
-$(call inherit-product, $(SRC_TARGET_DIR)/product/aosp_base.mk)
+#$(call inherit-product, $(SRC_TARGET_DIR)/product/aosp_base.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/handheld_system_ext.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/telephony_system_ext.mk)
 
@@ -32,27 +32,17 @@ libtinycompress
 
 #system_ext
 PRODUCT_PACKAGES += \
-AIEngineService \
-CarrierConfig \
-EmergencyInfo \
-ims \
-NetworkSliceAgent \
-NewMusic \
-OmacpPrebuilt \
-PowerSaveModeLauncherPrebuilt \
-QuickCamera \
-radio_interactor_service \
-RemoteProvisioner \
-ServiceUniWifiResources \
-SprdCalendarProviderPrebuilt \
-SprdContacts \
-SprdContactsProvider \
-SprdDialerGo \
-Srmi \
+Launcher3QuickStep \
+Provision \
+Settings \
+StorageManager \
+SystemUI \
+WallpaperCropper \
 ThemePicker \
-UniSilentReboot \
-UniTelephony \
-UniWifiDialog
+RemoteProvisioner \
+CarrierConfig \
+EmergencyInfo
+
     
 #PRODUCT_PACKAGES += \
     android.hardware.boot@1.2-impl \
@@ -172,18 +162,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/rootdir/etc/fstab.ums9230_1h10:$(TARGET_VENDOR_RAMDISK_OUT)/first_stage_ramdisk/fstab.ums9230_1h10
    
-#vendor items
-PRODUCT_COPY_FILES += \
-     $(LOCAL_PATH)/modules/vendor/etc/NOTICE.xml.gz:$(TARGET_COPY_OUT_VENDOR)/etc/NOTICE.xml.gz \
-     $(call find-copy-subdir-files,*,$(LOCAL_PATH)/packages/vendor/app/LogManager/oat,$(TARGET_COPY_OUT_VENDOR)/app/LogManager/oat) \
-     $(call find-copy-subdir-files,*,$(LOCAL_PATH)/packages/vendor/app/UASetting/oat,$(TARGET_COPY_OUT_VENDOR)/app/UASetting/oat) \
-     $(call find-copy-subdir-files,*,$(LOCAL_PATH)/modules/vendor/etc/permissions/,$(TARGET_COPY_OUT_VENDOR)/etc/permissions) \
-     $(call find-copy-subdir-files,*,$(LOCAL_PATH)/modules/vendor/etc/vintf/manifest/,$(TARGET_COPY_OUT_VENDOR)/etc/vintf/manifest) \
-     $(call find-copy-subdir-files,*,$(LOCAL_PATH)/modules/vendor/lib/hw/,$(TARGET_COPY_OUT_VENDOR)/lib/hw) \
-     $(call find-copy-subdir-files,*,$(LOCAL_PATH)/modules/vendor/lib64/hw/,$(TARGET_COPY_OUT_VENDOR)/lib64/hw) \
-     $(call find-copy-subdir-files,*,$(LOCAL_PATH)/modules/vendor/lib/,$(TARGET_COPY_OUT_VENDOR)/lib) \
-     $(call find-copy-subdir-files,*,$(LOCAL_PATH)/modules/vendor/lib64/,$(TARGET_COPY_OUT_VENDOR)/lib64)
-
 
 
 VENDOR_DLKM_MODULES_PATH = $(DEVICE_PATH)/modules/vendor_dlkm/lib/modules
