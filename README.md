@@ -12,5 +12,8 @@ locate base_vendor.mk and delete
 android.hardware.cas@1.2-service \ 
 libreference-ril \
 libril \
+
+locate full_base.mk and delete
+WAPPushManager
     
 then run make installclean
