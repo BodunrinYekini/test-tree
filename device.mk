@@ -214,7 +214,6 @@ $(VENDOR_MODULES_PATH)/mmdvfs.ko \
 $(VENDOR_MODULES_PATH)/musb_hdrc.ko \
 $(VENDOR_MODULES_PATH)/musb_sprd.ko \
 $(VENDOR_MODULES_PATH)/nu1619_wireless_charger.ko \
-$(VENDOR_MODULES_PATH)/nu1619_wireless_charger.zip \
 $(VENDOR_MODULES_PATH)/nvt_nt36xxx_spi_ts.ko \
 $(VENDOR_MODULES_PATH)/phy-sprd-commonphy.ko \
 $(VENDOR_MODULES_PATH)/phy-sprd-qogirl6.ko \
