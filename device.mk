@@ -306,6 +306,66 @@ $(VENDOR_MODULES_PATH)/zram.ko \
 $(VENDOR_MODULES_PATH)/zsmalloc.ko
 
 
+BOARD_VENDOR_CHARGER_KERNEL_MODULES := \
+$(VENDOR_MODULES_PATH)/sprd_systimer.ko \
+$(VENDOR_MODULES_PATH)/sprd-sc27xx-spi.ko \
+$(VENDOR_MODULES_PATH)/rtc-sc27xx.ko \
+$(VENDOR_MODULES_PATH)/gslX680_sharkl3.ko \
+$(VENDOR_MODULES_PATH)/sprd_soc_id.ko \
+$(VENDOR_MODULES_PATH)/trusty-tui.ko \
+$(VENDOR_MODULES_PATH)/flash_ic_sc2730_rgb.ko \
+$(VENDOR_MODULES_PATH)/flash_ic_aw3641.ko \
+$(VENDOR_MODULES_PATH)/sprd-dma.ko \
+$(VENDOR_MODULES_PATH)/virt-dma.ko \
+$(VENDOR_MODULES_PATH)/ion_ipc_trusty.ko \
+$(VENDOR_MODULES_PATH)/ion_cma_heap.ko \
+$(VENDOR_MODULES_PATH)/sprd-ion.ko \
+$(VENDOR_MODULES_PATH)/unisoc-iommu.ko \
+$(VENDOR_MODULES_PATH)/sprd-drm.ko \
+$(VENDOR_MODULES_PATH)/sprd-gsp.ko \
+$(VENDOR_MODULES_PATH)/apsys-dvfs.ko \
+$(VENDOR_MODULES_PATH)/sprd_cpu_cooling.ko \
+$(VENDOR_MODULES_PATH)/sprd_gpu_cooling.ko \
+$(VENDOR_MODULES_PATH)/sprd_soc_thm.ko \
+$(VENDOR_MODULES_PATH)/extcon-usb-gpio.ko \
+$(VENDOR_MODULES_PATH)/leds-sc27xx-bltc.ko \
+$(VENDOR_MODULES_PATH)/ledtrig-pattern.ko \
+$(VENDOR_MODULES_PATH)/pinctrl-sprd.ko \
+$(VENDOR_MODULES_PATH)/pinctrl-sprd-qogirl6.ko \
+$(VENDOR_MODULES_PATH)/pwm-sprd.ko \
+$(VENDOR_MODULES_PATH)/sc27xx_adc.ko \
+$(VENDOR_MODULES_PATH)/sc27xx-poweroff.ko \
+$(VENDOR_MODULES_PATH)/sprd_pmic_syscon.ko \
+$(VENDOR_MODULES_PATH)/sc27xx_tsensor_thermal.ko \
+$(VENDOR_MODULES_PATH)/sprd_thermal.ko \
+$(VENDOR_MODULES_PATH)/thermal-generic-adc.ko \
+$(VENDOR_MODULES_PATH)/sc27xx-vibra.ko \
+$(VENDOR_MODULES_PATH)/sprd_usbpinmux_qogirl6.ko \
+$(VENDOR_MODULES_PATH)/sprd-bc1p2.ko \
+$(VENDOR_MODULES_PATH)/phy-sprd-commonphy.ko \
+$(VENDOR_MODULES_PATH)/phy-sprd-qogirl6.ko \
+$(VENDOR_MODULES_PATH)/sprd_tcpm.ko \
+$(VENDOR_MODULES_PATH)/sc27xx_typec.ko \
+$(VENDOR_MODULES_PATH)/sc27xx_pd.ko \
+$(VENDOR_MODULES_PATH)/sc27xx_fast_charger.ko \
+$(VENDOR_MODULES_PATH)/sprd_battery_info.ko \
+$(VENDOR_MODULES_PATH)/sprd_fuel_gauge.ko \
+$(VENDOR_MODULES_PATH)/sc27xx_fuel_gauge.ko \
+$(VENDOR_MODULES_PATH)/bq2560x-charger.ko \
+$(VENDOR_MODULES_PATH)/sgm41511-charger.ko \
+$(VENDOR_MODULES_PATH)/bq2597x-charger.ko \
+$(VENDOR_MODULES_PATH)/sc8549-charger.ko \
+$(VENDOR_MODULES_PATH)/upm6710-charger.ko \
+$(VENDOR_MODULES_PATH)/hl1506_charger.ko \
+$(VENDOR_MODULES_PATH)/nu1619_wireless_charger.ko \
+$(VENDOR_MODULES_PATH)/sprd-charger-manager.ko \
+$(VENDOR_MODULES_PATH)/sprd_map.ko \
+$(VENDOR_MODULES_PATH)/focaltech_ft8756_spi_ts.ko \
+$(VENDOR_MODULES_PATH)/nvt_nt36xxx_spi_ts.ko \
+$(VENDOR_MODULES_PATH)/musb_hdrc.ko \
+$(VENDOR_MODULES_PATH)/musb_sprd.ko
+
+
 VENDOR_BOOT_MODULES_PATH = $(DEVICE_PATH)/modules/vendor_boot/lib/modules
 BOARD_VENDOR_RAMDISK_KERNEL_MODULES := \
 $(VENDOR_BOOT_MODULES_PATH)/sprd_wdt_fiq.ko \
