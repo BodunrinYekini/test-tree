@@ -6,19 +6,15 @@
 
 
 $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
-$(call inherit-product, $(SRC_TARGET_DIR)/product/generic_system.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/go_defaults.mk)
+$(call inherit-product, $(SRC_TARGET_DIR)/product/updatable_apex.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/generic_ramdisk.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/virtual_ab_ota/compression.mk)
+$(call inherit-product, $(SRC_TARGET_DIR)/product/handheld_system.mk)
+$(call inherit-product, $(SRC_TARGET_DIR)/product/handheld_system_ext.mk)
+$(call inherit-product, $(SRC_TARGET_DIR)/product/handheld_vendor.mk)
+$(call inherit-product, $(SRC_TARGET_DIR)/product/handheld_product.mk)
 
-
-PRODUCT_PACKAGES += \
-    fs_config_dirs_system_ext \
-    fs_config_files_system_ext \
-    group_system_ext \
-    passwd_system_ext \
-    selinux_policy_system_ext \
-    system_ext_manifest.xml \
 
 
 DEVICE_PATH := device/ohrtech/aleph
@@ -62,6 +58,16 @@ EmergencyInfo \
 CameraCalibration \
 AIEngineService
     
+
+
+PRODUCT_COPY_FILES += \
+$(call find-copy-subdir-files,*,$(LOCAL_PATH)/modules/system_ext/bin/,$(TARGET_COPY_OUT_SYSTEM_EXT)/bin) \
+$(call find-copy-subdir-files,*,$(LOCAL_PATH)/modules/system_ext/framework/,$(TARGET_COPY_OUT_SYSTEM_EXT)/jframework) \
+$(call find-copy-subdir-files,*,$(LOCAL_PATH)/modules/system_ext/lib/,$(TARGET_COPY_OUT_SYSTEM_EXT)/lib) \
+$(call find-copy-subdir-files,*,$(LOCAL_PATH)/modules/system_ext/lib64/,$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64)
+
+
+
 #PRODUCT_PACKAGES += \
     android.hardware.boot@1.2-impl \
     android.hardware.boot@1.2-impl.recovery
