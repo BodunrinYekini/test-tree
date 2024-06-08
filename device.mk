@@ -15,7 +15,13 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/handheld_system_ext.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/handheld_vendor.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/handheld_product.mk)
 
-
+PRODUCT_PACKAGES += \
+    fs_config_dirs_system_ext \
+    fs_config_files_system_ext \
+    group_system_ext \
+    passwd_system_ext \
+    selinux_policy_system_ext \
+    system_ext_manifest.xml \
 
 
 DEVICE_PATH := device/ohrtech/aleph
