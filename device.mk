@@ -62,7 +62,6 @@ AIEngineService
 
 PRODUCT_COPY_FILES += \
 $(call find-copy-subdir-files,*,$(LOCAL_PATH)/modules/system_ext/bin/,$(TARGET_COPY_OUT_SYSTEM_EXT)/bin) \
-$(call find-copy-subdir-files,*,$(LOCAL_PATH)/modules/system_ext/framework/,$(TARGET_COPY_OUT_SYSTEM_EXT)/jframework) \
 $(call find-copy-subdir-files,*,$(LOCAL_PATH)/modules/system_ext/lib/,$(TARGET_COPY_OUT_SYSTEM_EXT)/lib) \
 $(call find-copy-subdir-files,*,$(LOCAL_PATH)/modules/system_ext/lib64/,$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64)
 
