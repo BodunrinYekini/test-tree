@@ -14,7 +14,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/handheld_system.mk)
 #$(call inherit-product, $(SRC_TARGET_DIR)/product/handheld_vendor.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/handheld_product.mk)
 
-system_ext
+#system_ext
 PRODUCT_PACKAGES += \
     fs_config_dirs_system_ext \
     fs_config_files_system_ext \
