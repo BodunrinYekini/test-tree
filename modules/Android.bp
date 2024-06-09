@@ -359,7 +359,7 @@ dex_import {
 dex_import {
 	name: "smartlink_sdk",
 	owner: "ohrtech",
-	jars: ["system_ext/framework/smartlink_sdk"],
+	jars: ["system_ext/framework/smartlink_sdk.jar"],
 	system_ext_specific: true,
 }
 
