@@ -87,7 +87,8 @@ com.unisoc.sdk.common \
 smartlink_sdk \
 unipnp-framework \
 unisoc-framework \
-uni-telephony-common
+uni-telephony-common \
+unisoc-res
     
 
 PRODUCT_COPY_FILES += \

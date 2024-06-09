@@ -385,3 +385,10 @@ dex_import {
 	system_ext_specific: true,
 }
 
+
+dex_import {
+	name: "unisoc-res",
+	owner: "ohrtech",
+	jars: ["system_ext/framework/unisoc-res.apk"],
+	system_ext_specific: true,
+}
