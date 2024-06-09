@@ -15,3 +15,183 @@ android_app_import {
 	system_ext_specific: true,
     privileged: true,
 }
+
+android_app_import {
+	name: "ims",
+	owner: "ohrtech",
+	apk: "system_ext/priv-app/ims/ims.apk",
+	certificate: "platform",
+	dex_preopt: {
+		enabled: false,
+	},
+	system_ext_specific: true,
+    privileged: true,
+}
+
+android_app_import {
+	name: "NetworkSliceAgent",
+	owner: "ohrtech",
+	apk: "system_ext/priv-app/NetworkSliceAgent/NetworkSliceAgent.apk",
+	certificate: "platform",
+	dex_preopt: {
+		enabled: false,
+	},
+	system_ext_specific: true,
+    privileged: true,
+}
+
+android_app_import {
+	name: "NewMusic",
+	owner: "ohrtech",
+	apk: "system_ext/priv-app/NewMusic/NewMusic.apk",
+	certificate: "platform",
+	dex_preopt: {
+		enabled: false,
+	},
+	system_ext_specific: true,
+    privileged: true,
+}
+
+android_app_import {
+	name: "OmacpPrebuilt",
+	owner: "ohrtech",
+	apk: "system_ext/priv-app/OmacpPrebuilt/OmacpPrebuilt.apk",
+	certificate: "platform",
+	dex_preopt: {
+		enabled: false,
+	},
+	system_ext_specific: true,
+    privileged: true,
+}
+
+android_app_import {
+	name: "QuickCamera",
+	owner: "ohrtech",
+	apk: "system_ext/priv-app/QuickCamera/QuickCamera.apk",
+	certificate: "platform",
+	dex_preopt: {
+		enabled: false,
+	},
+	system_ext_specific: true,
+    privileged: true,
+}
+
+android_app_import {
+	name: "radio_interactor_service",
+	owner: "ohrtech",
+	apk: "system_ext/priv-app/radio_interactor_service/radio_interactor_service.apk",
+	certificate: "platform",
+	dex_preopt: {
+		enabled: false,
+	},
+	system_ext_specific: true,
+    privileged: true,
+}
+
+android_app_import {
+	name: "ServiceUniWifiResources",
+	owner: "ohrtech",
+	apk: "system_ext/priv-app/ServiceUniWifiResources/ServiceUniWifiResources.apk",
+	certificate: "platform",
+	dex_preopt: {
+		enabled: false,
+	},
+	system_ext_specific: true,
+    privileged: true,
+}
+
+android_app_import {
+	name: "SprdCalendarProviderPrebuilt",
+	owner: "ohrtech",
+	apk: "system_ext/priv-app/SprdCalendarProviderPrebuilt/SprdCalendarProviderPrebuilt.apk",
+	certificate: "platform",
+	dex_preopt: {
+		enabled: false,
+	},
+	system_ext_specific: true,
+    privileged: true,
+}
+
+android_app_import {
+	name: "SprdContacts",
+	owner: "ohrtech",
+	apk: "system_ext/priv-app/SprdContacts/SprdContacts.apk",
+	certificate: "platform",
+	dex_preopt: {
+		enabled: false,
+	},
+	system_ext_specific: true,
+    privileged: true,
+}
+
+android_app_import {
+	name: "SprdContactsProvider",
+	owner: "ohrtech",
+	apk: "system_ext/priv-app/SprdContactsProvider/SprdContactsProvider.apk",
+	certificate: "platform",
+	dex_preopt: {
+		enabled: false,
+	},
+	system_ext_specific: true,
+    privileged: true,
+}
+
+android_app_import {
+	name: "SprdDialerGo",
+	owner: "ohrtech",
+	apk: "system_ext/priv-app/SprdDialerGo/SprdDialerGo.apk",
+	certificate: "platform",
+	dex_preopt: {
+		enabled: false,
+	},
+	system_ext_specific: true,
+    privileged: true,
+}
+
+android_app_import {
+	name: "Srmi",
+	owner: "ohrtech",
+	apk: "system_ext/priv-app/Srmi/Srmi.apk",
+	certificate: "platform",
+	dex_preopt: {
+		enabled: false,
+	},
+	system_ext_specific: true,
+    privileged: true,
+}
+
+android_app_import {
+	name: "UniSilentReboot",
+	owner: "ohrtech",
+	apk: "system_ext/priv-app/UniSilentReboot/UniSilentReboot.apk",
+	certificate: "platform",
+	dex_preopt: {
+		enabled: false,
+	},
+	system_ext_specific: true,
+    privileged: true,
+}
+
+android_app_import {
+	name: "UniTelephony",
+	owner: "ohrtech",
+	apk: "system_ext/priv-app/UniTelephony/UniTelephony.apk",
+	certificate: "platform",
+	dex_preopt: {
+		enabled: false,
+	},
+	system_ext_specific: true,
+    privileged: true,
+}
+
+android_app_import {
+	name: "UniWifiDialog",
+	owner: "ohrtech",
+	apk: "system_ext/priv-app/UniWifiDialog/UniWifiDialog.apk",
+	certificate: "platform",
+	dex_preopt: {
+		enabled: false,
+	},
+	system_ext_specific: true,
+    privileged: true,
+}
