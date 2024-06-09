@@ -53,8 +53,7 @@ ThemePicker \
 RemoteProvisioner \
 CarrierConfig \
 EmergencyInfo \
-CameraCalibration \
-AIEngineService
+CameraCalibration
     
 
 PRODUCT_COPY_FILES += \
