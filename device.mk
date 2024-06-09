@@ -62,7 +62,22 @@ $(call find-copy-subdir-files,*,$(LOCAL_PATH)/modules/system_ext/lib/,$(TARGET_C
 $(call find-copy-subdir-files,*,$(LOCAL_PATH)/modules/system_ext/lib64/,$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64)
 
 PRODUCT_PACKAGES += \
-AIEngineService
+AIEngineService \
+ims \
+NetworkSliceAgent \
+NewMusic \
+OmacpPrebuilt \
+QuickCamera \
+radio_interactor_service \
+ServiceUniWifiResources \
+SprdCalendarProviderPrebuilt \
+SprdContacts \
+SprdContactsProvider \
+SprdDialerGo \
+Srmi \
+UniSilentReboot \
+UniTelephony \
+UniWifiDialog
 
 
 #PRODUCT_PACKAGES += \
