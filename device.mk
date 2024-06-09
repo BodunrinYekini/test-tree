@@ -88,7 +88,7 @@ smartlink_sdk \
 unipnp-framework \
 unisoc-framework \
 uni-telephony-common \
-unisoc-res
+CameraCalibrationDex
     
 
 PRODUCT_COPY_FILES += \
