@@ -384,3 +384,11 @@ dex_import {
 	jars: ["system_ext/framework/uni-telephony-common.jar"],
 	system_ext_specific: true,
 }
+
+prebuilt_etc {
+	name: "unisoc-res",
+	owner: "ohrtech",
+	src: "system_ext/framework/unisoc-res.apk",
+	sub_dir: "framework",
+	system_ext_specific: true,
+}
