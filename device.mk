@@ -63,7 +63,7 @@ $(call find-copy-subdir-files,*,$(LOCAL_PATH)/modules/system_ext/lib/,$(TARGET_C
 $(call find-copy-subdir-files,*,$(LOCAL_PATH)/modules/system_ext/lib64/,$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64)
 
 PRODUCT_PACKAGES += \
-com.unisoc.sdk.common
+unisoc-res
 
 
 #PRODUCT_PACKAGES += \
