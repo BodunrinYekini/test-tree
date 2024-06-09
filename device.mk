@@ -83,7 +83,7 @@ SprdCommLogService \
 UnisocStk \
 USCPhotosProvider \
 ValidationTools \
-unisoc-res
+uni-telephony-common
     
 
 PRODUCT_COPY_FILES += \
