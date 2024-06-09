@@ -358,5 +358,6 @@ android_app_import {
 		enabled: false,
 	},
 	system_ext_specific: true,
+	sub_dir: "framework",
 }
 
