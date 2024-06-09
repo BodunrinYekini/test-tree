@@ -82,7 +82,8 @@ SoterService \
 SprdCommLogService \
 UnisocStk \
 USCPhotosProvider \
-ValidationTools
+ValidationTools \
+unisoc-res
     
 
 PRODUCT_COPY_FILES += \
