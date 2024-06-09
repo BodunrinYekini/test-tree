@@ -195,3 +195,156 @@ android_app_import {
 	system_ext_specific: true,
     privileged: true,
 }
+
+android_app_import {
+	name: "CameraCalibration",
+	owner: "ohrtech",
+	apk: "system_ext/app/CameraCalibration/CameraCalibration.apk",
+	certificate: "platform",
+	dex_preopt: {
+		enabled: false,
+	},
+	system_ext_specific: true,
+}
+
+android_app_import {
+	name: "CamTa",
+	owner: "ohrtech",
+	apk: "system_ext/app/CamTa/CamTa.apk",
+	certificate: "platform",
+	dex_preopt: {
+		enabled: false,
+	},
+	system_ext_specific: true,
+}
+
+android_app_import {
+	name: "DreamCamera2",
+	owner: "ohrtech",
+	apk: "system_ext/app/DreamCamera2/DreamCamera2.apk",
+	certificate: "platform",
+	dex_preopt: {
+		enabled: false,
+	},
+	system_ext_specific: true,
+}
+
+android_app_import {
+	name: "DreamFMRadioPrebuilt",
+	owner: "ohrtech",
+	apk: "system_ext/app/DreamFMRadioPrebuilt/DreamFMRadioPrebuilt.apk",
+	certificate: "platform",
+	dex_preopt: {
+		enabled: false,
+	},
+	system_ext_specific: true,
+}
+android_app_import {
+	name: "DreamSoundRecorderPrebuilt",
+	owner: "ohrtech",
+	apk: "system_ext/app/DreamSoundRecorderPrebuilt/DreamSoundRecorderPrebuilt.apk",
+	certificate: "platform",
+	dex_preopt: {
+		enabled: false,
+	},
+	system_ext_specific: true,
+}
+
+android_app_import {
+	name: "EngineerMode",
+	owner: "ohrtech",
+	apk: "system_ext/app/EngineerMode/EngineerMode.apk",
+	certificate: "platform",
+	dex_preopt: {
+		enabled: false,
+	},
+	system_ext_specific: true,
+}
+
+android_app_import {
+	name: "LinkTurbo",
+	owner: "ohrtech",
+	apk: "system_ext/app/LinkTurbo/LinkTurbo.apk",
+	certificate: "platform",
+	dex_preopt: {
+		enabled: false,
+	},
+	system_ext_specific: true,
+}
+
+android_app_import {
+	name: "NewGallery2_prebuilt",
+	owner: "ohrtech",
+	apk: "system_ext/app/NewGallery2_prebuilt/NewGallery2_prebuilt.apk",
+	certificate: "platform",
+	dex_preopt: {
+		enabled: false,
+	},
+	system_ext_specific: true,
+}
+
+android_app_import {
+	name: "SGPS",
+	owner: "ohrtech",
+	apk: "system_ext/app/SGPS/SGPS.apk",
+	certificate: "platform",
+	dex_preopt: {
+		enabled: false,
+	},
+	system_ext_specific: true,
+}
+
+android_app_import {
+	name: "SoterService",
+	owner: "ohrtech",
+	apk: "system_ext/app/SoterService/SoterService.apk",
+	certificate: "platform",
+	dex_preopt: {
+		enabled: false,
+	},
+	system_ext_specific: true,
+}
+
+android_app_import {
+	name: "SprdCommLogService",
+	owner: "ohrtech",
+	apk: "system_ext/app/SprdCommLogService/SprdCommLogService.apk",
+	certificate: "platform",
+	dex_preopt: {
+		enabled: false,
+	},
+	system_ext_specific: true,
+}
+
+android_app_import {
+	name: "UnisocStk",
+	owner: "ohrtech",
+	apk: "system_ext/app/UnisocStk/UnisocStk.apk",
+	certificate: "platform",
+	dex_preopt: {
+		enabled: false,
+	},
+	system_ext_specific: true,
+}
+
+android_app_import {
+	name: "USCPhotosProvider",
+	owner: "ohrtech",
+	apk: "system_ext/app/USCPhotosProvider/USCPhotosProvider.apk",
+	certificate: "platform",
+	dex_preopt: {
+		enabled: false,
+	},
+	system_ext_specific: true,
+}
+
+android_app_import {
+	name: "ValidationTools",
+	owner: "ohrtech",
+	apk: "system_ext/app/ValidationTools/ValidationTools.apk",
+	certificate: "platform",
+	dex_preopt: {
+		enabled: false,
+	},
+	system_ext_specific: true,
+}

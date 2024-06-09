@@ -52,15 +52,7 @@ ThemePicker \
 RemoteProvisioner \
 CarrierConfig \
 EmergencyInfo \
-CameraCalibration
-    
-
-PRODUCT_COPY_FILES += \
-$(call find-copy-subdir-files,*,$(LOCAL_PATH)/modules/system_ext/bin/,$(TARGET_COPY_OUT_SYSTEM_EXT)/bin) \
-$(call find-copy-subdir-files,*,$(LOCAL_PATH)/modules/system_ext/lib/,$(TARGET_COPY_OUT_SYSTEM_EXT)/lib) \
-$(call find-copy-subdir-files,*,$(LOCAL_PATH)/modules/system_ext/lib64/,$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64)
-
-PRODUCT_PACKAGES += \
+CameraCalibration \
 AIEngineService \
 ims \
 NetworkSliceAgent \
@@ -76,8 +68,27 @@ SprdDialerGo \
 Srmi \
 UniSilentReboot \
 UniTelephony \
-UniWifiDialog
+UniWifiDialog \
+CameraCalibration \
+CamTa \
+DreamCamera2 \
+DreamFMRadioPrebuilt \
+DreamSoundRecorderPrebuilt \
+EngineerMode \
+LinkTurbo \
+NewGallery2_prebuilt \
+SGPS \
+SoterService \
+SprdCommLogService \
+UnisocStk \
+USCPhotosProvider \
+ValidationTools
+    
 
+PRODUCT_COPY_FILES += \
+$(call find-copy-subdir-files,*,$(LOCAL_PATH)/modules/system_ext/bin/,$(TARGET_COPY_OUT_SYSTEM_EXT)/bin) \
+$(call find-copy-subdir-files,*,$(LOCAL_PATH)/modules/system_ext/lib/,$(TARGET_COPY_OUT_SYSTEM_EXT)/lib) \
+$(call find-copy-subdir-files,*,$(LOCAL_PATH)/modules/system_ext/lib64/,$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64)
 
 #PRODUCT_PACKAGES += \
     android.hardware.boot@1.2-impl \
