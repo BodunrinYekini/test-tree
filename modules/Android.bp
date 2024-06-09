@@ -350,9 +350,37 @@ android_app_import {
 }
 
 dex_import {
+	name: "com.unisoc.sdk.common",
+	owner: "ohrtech",
+	jars: ["system_ext/framework/com.unisoc.sdk.common.jar"],
+	system_ext_specific: true,
+}
+
+dex_import {
+	name: "smartlink_sdk",
+	owner: "ohrtech",
+	jars: ["system_ext/framework/smartlink_sdk"],
+	system_ext_specific: true,
+}
+
+
+dex_import {
+	name: "unipnp-framework",
+	owner: "ohrtech",
+	jars: ["system_ext/framework/unipnp-framework.jar"],
+	system_ext_specific: true,
+}
+
+dex_import {
+	name: "unisoc-framework",
+	owner: "ohrtech",
+	jars: ["system_ext/framework/unisoc-framework.jar"],
+	system_ext_specific: true,
+}
+
+dex_import {
 	name: "uni-telephony-common",
 	owner: "ohrtech",
 	jars: ["system_ext/framework/uni-telephony-common.jar"],
 	system_ext_specific: true,
 }
-
