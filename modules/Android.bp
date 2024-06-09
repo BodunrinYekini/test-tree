@@ -207,13 +207,6 @@ android_app_import {
 	system_ext_specific: true,
 }
 
-dex_import {
-	name: "CameraCalibrationDex",
-	owner: "ohrtech",
-	jars: ["system_ext/app/CameraCalibration/oat/arm64/CameraCalibration.odex"],
-	system_ext_specific: true,
-}
-
 android_app_import {
 	name: "CamTa",
 	owner: "ohrtech",
