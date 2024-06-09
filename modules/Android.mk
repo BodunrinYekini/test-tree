@@ -3,7 +3,7 @@ LOCAL_MODULE := com.unisoc.sdk.common
 LOCAL_MODULE_TAGS := optional
 LOCAL_MODULE_OWNER := ohrtech
 LOCAL_MODULE_PATH := $(TARGET_COPY_OUT_SYSTEM_EXT)/framework
-LOCAL_SRC_FILES := framework/com.unisoc.sdk.common.jar
+LOCAL_SRC_FILES := modules/system_ext/framework/com.unisoc.sdk.common.jar
 LOCAL_CERTIFICATE := PRESIGNED
 LOCAL_MODULE_CLASS := JAVA_LIBRARIES
 LOCAL_MODULE_SUFFIX := $(COMMON_JAVA_PACKAGE_SUFFIX)
@@ -13,7 +13,7 @@ include $(BUILD_PREBUILT)
 include $(CLEAR_VARS)
 LOCAL_MODULE_TAGS := optional
 LOCAL_MODULE := unisoc-res
-LOCAL_SRC_FILES := framework/unisoc-res.apk
+LOCAL_SRC_FILES := modules/system_ext/framework/unisoc-res.apk
 LOCAL_MODULE_CLASS := APPS
 LOCAL_MODULE_SUFFIX := $(COMMON_ANDROID_PACKAGE_SUFFIX)
 LOCAL_CERTIFICATE := platform
