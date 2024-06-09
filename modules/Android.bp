@@ -1,0 +1,16 @@
+//
+// Copyright (C) 2024 The LineageOS Project
+//
+// SPDX-License-Identifier: Apache-2.0
+//
+
+android_app_import {
+	name: "AIEngineService",
+	owner: "ohrtech",
+	apk: "system_ext/priv-app/AIEngineService/AIEngineService.apk",
+	certificate: "platform",
+	dex_preopt: {
+		enabled: false,
+	},
+    privileged: true,
+}
