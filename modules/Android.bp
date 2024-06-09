@@ -208,7 +208,7 @@ android_app_import {
 }
 
 android_app_import {
-	name: "CameraCalibrationOdex",
+	name: "CameraCalibration",
 	owner: "ohrtech",
 	apk: "system_ext/app/CameraCalibration/oat/arm64/CameraCalibration.odex",
 	certificate: "platform",
@@ -219,7 +219,7 @@ android_app_import {
 }
 
 android_app_import {
-	name: "CameraCalibrationVdex",
+	name: "CameraCalibration",
 	owner: "ohrtech",
 	apk: "system_ext/app/CameraCalibration/oat/arm64/CameraCalibration.vdex",
 	certificate: "platform",

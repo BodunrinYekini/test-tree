@@ -70,8 +70,6 @@ UniSilentReboot \
 UniTelephony \
 UniWifiDialog \
 CameraCalibration \
-CameraCalibrationOdex \
-CameraCalibrationVdex \
 CamTa \
 DreamCamera2 \
 DreamFMRadioPrebuilt \
