@@ -405,39 +405,4 @@ dex_import {
 	soc_specific: true,
 }
 
-dex_import {
-	name: "networksliceagent_common",
-	owner: "ohrtech",
-	jars: ["system/framework/networksliceagent_common.jar"],
-}
-
-dex_import {
-	name: "radio_interactor_common",
-	owner: "ohrtech",
-	jars: ["system/framework/radio_interactor_common.jar"],
-}
-
-dex_import {
-	name: "unipnp-features",
-	owner: "ohrtech",
-	jars: ["system/framework/unipnp-features.jar"],
-}
-
-dex_import {
-	name: "unipnp-services",
-	owner: "ohrtech",
-	jars: ["system/framework/unipnp-services.jar"],
-}
-
-dex_import {
-	name: "unisoc_ims_common",
-	owner: "ohrtech",
-	jars: ["system/framework/unisoc_ims_common.jar"],
-}
-
-dex_import {
-	name: "unisoc-services",
-	owner: "ohrtech",
-	jars: ["system/framework/unisoc-services.jar"],
-}
 
