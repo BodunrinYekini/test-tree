@@ -52,43 +52,14 @@ ThemePicker \
 RemoteProvisioner \
 CarrierConfig \
 EmergencyInfo \
-CameraCalibration \
-AIEngineService \
-ims \
-NetworkSliceAgent \
-NewMusic \
-OmacpPrebuilt \
-QuickCamera \
-radio_interactor_service \
-ServiceUniWifiResources \
-SprdCalendarProviderPrebuilt \
-SprdContacts \
-SprdContactsProvider \
-SprdDialerGo \
-Srmi \
-UniSilentReboot \
-UniTelephony \
-UniWifiDialog \
-CamTa \
-DreamCamera2 \
-DreamFMRadioPrebuilt \
-DreamSoundRecorderPrebuilt \
-EngineerMode \
-LinkTurbo \
-NewGallery2_prebuilt \
-SGPS \
-SoterService \
-SprdCommLogService \
-UnisocStk \
-USCPhotosProvider \
-ValidationTools \
+DevCamera \
+Camera \
+Camera2 \
 com.unisoc.sdk.common \
 smartlink_sdk \
 unipnp-framework \
 unisoc-framework \
-uni-telephony-common \
-unisoc-res
-    
+uni-telephony-common
 
 PRODUCT_COPY_FILES += \
 $(call find-copy-subdir-files,*,$(LOCAL_PATH)/modules/system_ext/bin/,$(TARGET_COPY_OUT_SYSTEM_EXT)/bin) \
