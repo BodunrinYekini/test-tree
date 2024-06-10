@@ -93,7 +93,9 @@ PRODUCT_COPY_FILES += \
 $(call find-copy-subdir-files,*,$(LOCAL_PATH)/modules/system_ext/bin/,$(TARGET_COPY_OUT_SYSTEM_EXT)/bin) \
 $(call find-copy-subdir-files,*,$(LOCAL_PATH)/modules/system_ext/lib/,$(TARGET_COPY_OUT_SYSTEM_EXT)/lib) \
 $(call find-copy-subdir-files,*,$(LOCAL_PATH)/modules/system_ext/lib64/,$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64) \
-$(call find-copy-subdir-files,*,$(LOCAL_PATH)/modules/system_ext/app/CameraCalibration/oat/,$(TARGET_COPY_OUT_SYSTEM_EXT)/app/CameraCalibration/oat)
+$(call find-copy-subdir-files,*,$(LOCAL_PATH)/modules/system_ext/app/CameraCalibration/oat/,$(TARGET_COPY_OUT_SYSTEM_EXT)/app/CameraCalibration/oat) \
+$(call find-copy-subdir-files,*,$(LOCAL_PATH)/modules/system_ext/app/DreamCamera2/oat/,$(TARGET_COPY_OUT_SYSTEM_EXT)/app/DreamCamera2/oat) \
+$(LOCAL_PATH)/modules/system_ext/app/DreamCamera2/DreamCamera2.apk.prof:$(TARGET_COPY_OUT_SYSTEM_EXT)/app/DreamCamera2/DreamCamera2.apk.prof
 
 
 #PRODUCT_PACKAGES += \
