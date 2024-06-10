@@ -67,7 +67,11 @@ $(call find-copy-subdir-files,*,$(LOCAL_PATH)/modules/system_ext/lib64/,$(TARGET
 
 #system
 PRODUCT_PACKAGES += \
-CarrierDefaultApp
+CarrierDefaultApp \
+CallLogBackup \
+com.google.mainline.primary \
+LiveWallpapersPicker \
+ONS
 
 #PRODUCT_PACKAGES += \
     android.hardware.boot@1.2-impl \
