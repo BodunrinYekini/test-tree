@@ -65,6 +65,11 @@ $(call find-copy-subdir-files,*,$(LOCAL_PATH)/modules/system_ext/bin/,$(TARGET_C
 $(call find-copy-subdir-files,*,$(LOCAL_PATH)/modules/system_ext/lib/,$(TARGET_COPY_OUT_SYSTEM_EXT)/lib) \
 $(call find-copy-subdir-files,*,$(LOCAL_PATH)/modules/system_ext/lib64/,$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64)
 
+
+#system
+PRODUCT_PACKAGES += \
+CarrierDefaultApp
+
 #PRODUCT_PACKAGES += \
     android.hardware.boot@1.2-impl \
     android.hardware.boot@1.2-impl.recovery
