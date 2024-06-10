@@ -53,8 +53,8 @@ RemoteProvisioner \
 CarrierConfig \
 EmergencyInfo \
 CameraCalibration \
-CameraCalibration \
-CameraCalibration \
+CameraCalibrationOdex \
+CameraCalibrationVdex \
 AIEngineService \
 ims \
 NetworkSliceAgent \

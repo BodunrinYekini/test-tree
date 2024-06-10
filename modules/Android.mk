@@ -11,7 +11,7 @@ LOCAL_VENDOR_MODULE := true
 include $(BUILD_PREBUILT)
 
 include $(CLEAR_VARS)
-LOCAL_MODULE := CameraCalibration
+LOCAL_MODULE := CameraCalibrationOdex
 LOCAL_MODULE_OWNER := ohrtech
 LOCAL_SRC_FILES := modules/system_ext/app/CameraCalibration/oat/arm64/CameraCalibration.odex
 LOCAL_CERTIFICATE := platform
@@ -23,7 +23,7 @@ LOCAL_VENDOR_MODULE := true
 include $(BUILD_PREBUILT)
 
 include $(CLEAR_VARS)
-LOCAL_MODULE := CameraCalibration
+LOCAL_MODULE := CameraCalibrationVdex
 LOCAL_MODULE_OWNER := ohrtech
 LOCAL_SRC_FILES := modules/system_ext/app/CameraCalibration/oat/arm64/CameraCalibration.vdex
 LOCAL_CERTIFICATE := platform
