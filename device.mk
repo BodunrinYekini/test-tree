@@ -33,7 +33,7 @@ librilutils \
 androidx.camera.extensions.impl
 
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/compatibility_matrix.xml:$(TARGET_VENDOR_OUT)/etc/vintf/compatibility_matrix.xml
+    $(LOCAL_PATH)/compatibility_matrix.xml:$(TARGET_COPY_OUT_VENDOR)/etc/vintf/compatibility_matrix.xml
 
 #vendor/lib
 
