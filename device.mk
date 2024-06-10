@@ -71,7 +71,13 @@ CarrierDefaultApp \
 CallLogBackup \
 LiveWallpapersPicker \
 ONS \
-libyuv
+libyuv \
+networksliceagent_common \
+radio_interactor_common \
+unipnp-features \
+unipnp-services \
+unisoc_ims_common \
+unisoc-services
 
 PRODUCT_COPY_FILES += \
 $(call find-copy-subdir-files,*,$(LOCAL_PATH)/modules/system/lib/,$(TARGET_COPY_OUT_SYSTEM)/lib) \
