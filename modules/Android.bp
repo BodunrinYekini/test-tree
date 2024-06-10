@@ -401,7 +401,7 @@ dex_import {
 dex_import {
 	name: "androidx.camera.extensions.impl",
 	owner: "ohrtech",
-	jars: [vendor/framework/androidx.camera.extensions.impl.jar"],
+	jars: ["vendor/framework/androidx.camera.extensions.impl.jar"],
 	vendor_specific: true,
 }
 
