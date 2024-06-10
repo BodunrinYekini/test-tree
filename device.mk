@@ -69,9 +69,9 @@ $(call find-copy-subdir-files,*,$(LOCAL_PATH)/modules/system_ext/lib64/,$(TARGET
 PRODUCT_PACKAGES += \
 CarrierDefaultApp \
 CallLogBackup \
-com.google.mainline.primary \
 LiveWallpapersPicker \
-ONS
+ONS \
+libyuv
 
 #PRODUCT_PACKAGES += \
     android.hardware.boot@1.2-impl \
