@@ -58,7 +58,6 @@ ims \
 NetworkSliceAgent \
 NewMusic \
 OmacpPrebuilt \
-PowerSaveModeLauncherPrebuilt \
 QuickCamera \
 radio_interactor_service \
 ServiceUniWifiResources \
@@ -109,7 +108,6 @@ $(call find-copy-subdir-files,*,$(LOCAL_PATH)/modules/system_ext/app/ValidationT
 $(call find-copy-subdir-files,*,$(LOCAL_PATH)/modules/system_ext/priv-app/ims/oat/,$(TARGET_COPY_OUT_SYSTEM_EXT)/priv-app/ims/oat) \
 $(call find-copy-subdir-files,*,$(LOCAL_PATH)/modules/system_ext/priv-app/NewMusic/oat/,$(TARGET_COPY_OUT_SYSTEM_EXT)/priv-app/NewMusic/oat) \
 $(call find-copy-subdir-files,*,$(LOCAL_PATH)/modules/system_ext/priv-app/OmacpPrebuilt/oat/,$(TARGET_COPY_OUT_SYSTEM_EXT)/priv-app/OmacpPrebuilt/oat) \
-$(call find-copy-subdir-files,*,$(LOCAL_PATH)/modules/system_ext/priv-app/OmacpPrebuilt/PowerSaveModeLauncherPrebuilt/oat/,$(TARGET_COPY_OUT_SYSTEM_EXT)/priv-app/OmacpPrebuilt/PowerSaveModeLauncherPrebuilt/oat) \
 $(call find-copy-subdir-files,*,$(LOCAL_PATH)/modules/system_ext/priv-app/QuickCamera/oat/,$(TARGET_COPY_OUT_SYSTEM_EXT)/priv-app/QuickCamera/oat) \
 $(call find-copy-subdir-files,*,$(LOCAL_PATH)/modules/system_ext/priv-app/radio_interactor_service/oat/,$(TARGET_COPY_OUT_SYSTEM_EXT)/priv-app/radio_interactor_service/oat) \
 $(call find-copy-subdir-files,*,$(LOCAL_PATH)/modules/system_ext/priv-app/SprdCalendarProviderPrebuilt/oat/,$(TARGET_COPY_OUT_SYSTEM_EXT)/priv-app/SprdCalendarProviderPrebuilt/oat) \
@@ -118,7 +116,10 @@ $(call find-copy-subdir-files,*,$(LOCAL_PATH)/modules/system_ext/priv-app/SprdCo
 $(call find-copy-subdir-files,*,$(LOCAL_PATH)/modules/system_ext/priv-app/SprdDialerGo/oat/,$(TARGET_COPY_OUT_SYSTEM_EXT)/priv-app/SprdDialerGo/oat) \
 $(call find-copy-subdir-files,*,$(LOCAL_PATH)/modules/system_ext/priv-app/UniSilentReboot/oat/,$(TARGET_COPY_OUT_SYSTEM_EXT)/priv-app/UniSilentReboot/oat) \
 $(call find-copy-subdir-files,*,$(LOCAL_PATH)/modules/system_ext/priv-app/UniTelephony/oat/,$(TARGET_COPY_OUT_SYSTEM_EXT)/priv-app/UniTelephony/oat) \
-$(call find-copy-subdir-files,*,$(LOCAL_PATH)/modules/system_ext/priv-app/UniWifiDialog/oat/,$(TARGET_COPY_OUT_SYSTEM_EXT)/priv-app/UniWifiDialog/oat) 
+$(call find-copy-subdir-files,*,$(LOCAL_PATH)/modules/system_ext/priv-app/UniWifiDialog/oat/,$(TARGET_COPY_OUT_SYSTEM_EXT)/priv-app/UniWifiDialog/oat)
+
+#$(call find-copy-subdir-files,*,$(LOCAL_PATH)/modules/system_ext/priv-app/OmacpPrebuilt/PowerSaveModeLauncherPrebuilt/oat/,$(TARGET_COPY_OUT_SYSTEM_EXT)/priv-app/OmacpPrebuilt/PowerSaveModeLauncherPrebuilt/oat) \
+
 
 #PRODUCT_PACKAGES += \
     android.hardware.boot@1.2-impl \
