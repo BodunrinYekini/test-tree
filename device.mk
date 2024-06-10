@@ -58,6 +58,7 @@ ims \
 NetworkSliceAgent \
 NewMusic \
 OmacpPrebuilt \
+PowerSaveModeLauncherPrebuilt \
 QuickCamera \
 radio_interactor_service \
 ServiceUniWifiResources \
@@ -95,8 +96,29 @@ $(call find-copy-subdir-files,*,$(LOCAL_PATH)/modules/system_ext/lib/,$(TARGET_C
 $(call find-copy-subdir-files,*,$(LOCAL_PATH)/modules/system_ext/lib64/,$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64) \
 $(call find-copy-subdir-files,*,$(LOCAL_PATH)/modules/system_ext/app/CameraCalibration/oat/,$(TARGET_COPY_OUT_SYSTEM_EXT)/app/CameraCalibration/oat) \
 $(call find-copy-subdir-files,*,$(LOCAL_PATH)/modules/system_ext/app/DreamCamera2/oat/,$(TARGET_COPY_OUT_SYSTEM_EXT)/app/DreamCamera2/oat) \
-$(LOCAL_PATH)/modules/system_ext/app/DreamCamera2/DreamCamera2.apk.prof:$(TARGET_COPY_OUT_SYSTEM_EXT)/app/DreamCamera2/DreamCamera2.apk.prof
-
+$(LOCAL_PATH)/modules/system_ext/app/DreamCamera2/DreamCamera2.apk.prof:$(TARGET_COPY_OUT_SYSTEM_EXT)/app/DreamCamera2/DreamCamera2.apk.prof \
+$(call find-copy-subdir-files,*,$(LOCAL_PATH)/modules/system_ext/app/DreamFMRadioPrebuilt/oat/,$(TARGET_COPY_OUT_SYSTEM_EXT)/app/DreamFMRadioPrebuilt/oat) \
+$(call find-copy-subdir-files,*,$(LOCAL_PATH)/modules/system_ext/app/DreamSoundRecorderPrebuilt/oat/,$(TARGET_COPY_OUT_SYSTEM_EXT)/app/DreamSoundRecorderPrebuilt/oat) \
+$(call find-copy-subdir-files,*,$(LOCAL_PATH)/modules/system_ext/app/EngineerMode/oat/,$(TARGET_COPY_OUT_SYSTEM_EXT)/app/EngineerMode/oat) \
+$(call find-copy-subdir-files,*,$(LOCAL_PATH)/modules/system_ext/app/NewGallery2_prebuilt/oat/,$(TARGET_COPY_OUT_SYSTEM_EXT)/app/NewGallery2_prebuilt/oat) \
+$(call find-copy-subdir-files,*,$(LOCAL_PATH)/modules/system_ext/app/SGPS/oat/,$(TARGET_COPY_OUT_SYSTEM_EXT)/app/SGPS/oat) \
+$(call find-copy-subdir-files,*,$(LOCAL_PATH)/modules/system_ext/app/SoterService/oat/,$(TARGET_COPY_OUT_SYSTEM_EXT)/app/SoterService/oat) \
+$(call find-copy-subdir-files,*,$(LOCAL_PATH)/modules/system_ext/app/UnisocStk/oat/,$(TARGET_COPY_OUT_SYSTEM_EXT)/app/UnisocStk/oat) \
+$(call find-copy-subdir-files,*,$(LOCAL_PATH)/modules/system_ext/app/USCPhotosProvider/oat/,$(TARGET_COPY_OUT_SYSTEM_EXT)/app/USCPhotosProvider/oat) \
+$(call find-copy-subdir-files,*,$(LOCAL_PATH)/modules/system_ext/app/ValidationTools/oat/,$(TARGET_COPY_OUT_SYSTEM_EXT)/app/ValidationTools/oat) \
+$(call find-copy-subdir-files,*,$(LOCAL_PATH)/modules/system_ext/priv-app/ims/oat/,$(TARGET_COPY_OUT_SYSTEM_EXT)/priv-app/ims/oat) \
+$(call find-copy-subdir-files,*,$(LOCAL_PATH)/modules/system_ext/priv-app/NewMusic/oat/,$(TARGET_COPY_OUT_SYSTEM_EXT)/priv-app/NewMusic/oat) \
+$(call find-copy-subdir-files,*,$(LOCAL_PATH)/modules/system_ext/priv-app/OmacpPrebuilt/oat/,$(TARGET_COPY_OUT_SYSTEM_EXT)/priv-app/OmacpPrebuilt/oat) \
+$(call find-copy-subdir-files,*,$(LOCAL_PATH)/modules/system_ext/priv-app/OmacpPrebuilt/PowerSaveModeLauncherPrebuilt/oat/,$(TARGET_COPY_OUT_SYSTEM_EXT)/priv-app/OmacpPrebuilt/PowerSaveModeLauncherPrebuilt/oat) \
+$(call find-copy-subdir-files,*,$(LOCAL_PATH)/modules/system_ext/priv-app/QuickCamera/oat/,$(TARGET_COPY_OUT_SYSTEM_EXT)/priv-app/QuickCamera/oat) \
+$(call find-copy-subdir-files,*,$(LOCAL_PATH)/modules/system_ext/priv-app/radio_interactor_service/oat/,$(TARGET_COPY_OUT_SYSTEM_EXT)/priv-app/radio_interactor_service/oat) \
+$(call find-copy-subdir-files,*,$(LOCAL_PATH)/modules/system_ext/priv-app/SprdCalendarProviderPrebuilt/oat/,$(TARGET_COPY_OUT_SYSTEM_EXT)/priv-app/SprdCalendarProviderPrebuilt/oat) \
+$(call find-copy-subdir-files,*,$(LOCAL_PATH)/modules/system_ext/priv-app/SprdContacts/oat/,$(TARGET_COPY_OUT_SYSTEM_EXT)/priv-app/SprdContacts/oat) \
+$(call find-copy-subdir-files,*,$(LOCAL_PATH)/modules/system_ext/priv-app/SprdContactsProvider/oat/,$(TARGET_COPY_OUT_SYSTEM_EXT)/priv-app/SprdContactsProvider/oat) \
+$(call find-copy-subdir-files,*,$(LOCAL_PATH)/modules/system_ext/priv-app/SprdDialerGo/oat/,$(TARGET_COPY_OUT_SYSTEM_EXT)/priv-app/SprdDialerGo/oat) \
+$(call find-copy-subdir-files,*,$(LOCAL_PATH)/modules/system_ext/priv-app/UniSilentReboot/oat/,$(TARGET_COPY_OUT_SYSTEM_EXT)/priv-app/UniSilentReboot/oat) \
+$(call find-copy-subdir-files,*,$(LOCAL_PATH)/modules/system_ext/priv-app/UniTelephony/oat/,$(TARGET_COPY_OUT_SYSTEM_EXT)/priv-app/UniTelephony/oat) \
+$(call find-copy-subdir-files,*,$(LOCAL_PATH)/modules/system_ext/priv-app/UniWifiDialog/oat/,$(TARGET_COPY_OUT_SYSTEM_EXT)/priv-app/UniWifiDialog/oat) 
 
 #PRODUCT_PACKAGES += \
     android.hardware.boot@1.2-impl \

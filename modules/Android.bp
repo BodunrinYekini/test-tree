@@ -65,6 +65,18 @@ android_app_import {
 }
 
 android_app_import {
+	name: "PowerSaveModeLauncherPrebuilt",
+	owner: "ohrtech",
+	apk: "system_ext/priv-app/OmacpPrebuilt/PowerSaveModeLauncherPrebuilt/PowerSaveModeLauncherPrebuilt.apk",
+	certificate: "platform",
+	dex_preopt: {
+		enabled: false,
+	},
+	system_ext_specific: true,
+    privileged: true,
+}
+
+android_app_import {
 	name: "QuickCamera",
 	owner: "ohrtech",
 	apk: "system_ext/priv-app/QuickCamera/QuickCamera.apk",
