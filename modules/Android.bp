@@ -197,17 +197,6 @@ android_app_import {
 }
 
 android_app_import {
-	name: "CameraCalibration",
-	owner: "ohrtech",
-	apk: "system_ext/app/CameraCalibration/CameraCalibration.apk",
-	certificate: "platform",
-	dex_preopt: {
-		enabled: false,
-	},
-	system_ext_specific: true,
-}
-
-android_app_import {
 	name: "CamTa",
 	owner: "ohrtech",
 	apk: "system_ext/app/CamTa/CamTa.apk",
