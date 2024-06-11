@@ -70,9 +70,15 @@ PRODUCT_PACKAGES += \
 CarrierDefaultApp \
 CallLogBackup \
 LiveWallpapersPicker \
-ONS
+ONS \
+Gallery2
 
-PRODUCT_COPY_FILES += \
+PRODUCT_EXTRA_VNDK_VERSIONS := \
+33
+
+
+
+#PRODUCT_COPY_FILES += \
 $(call find-copy-subdir-files,*,$(LOCAL_PATH)/modules/system/lib/,$(TARGET_COPY_OUT_SYSTEM)/lib) \
 $(call find-copy-subdir-files,*,$(LOCAL_PATH)/modules/system/lib64/,$(TARGET_COPY_OUT_SYSTEM)/lib64) \
 
