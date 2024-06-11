@@ -75,7 +75,7 @@ ONS \
 Gallery2 \
 libmedia_codeclist
 
-
+LATEST_VNDK_LIB_LIST := $(LOCAL_PATH)/$(PLATFORM_VNDK_VERSION).txt
 
 
 #PRODUCT_COPY_FILES += \
