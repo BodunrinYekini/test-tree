@@ -10,8 +10,6 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/updatable_apex.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/generic_ramdisk.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/virtual_ab_ota/compression.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/aosp_base_telephony.mk)
-$(call inherit-product, $(SRC_TARGET_DIR)/product/generic_system.mk)
-
 
 
 
@@ -51,9 +49,15 @@ WallpaperCropper \
 ThemePicker \
 RemoteProvisioner \
 CarrierConfig \
-EmergencyInfo
+EmergencyInfo \
+com.unisoc.sdk.common \
+smartlink_sdk \
+unipnp-framework \
+unisoc-framework \
+uni-telephony-common
 
-#PRODUCT_COPY_FILES += \
+
+PRODUCT_COPY_FILES += \
 $(call find-copy-subdir-files,*,$(LOCAL_PATH)/modules/system_ext/bin/,$(TARGET_COPY_OUT_SYSTEM_EXT)/bin) \
 $(call find-copy-subdir-files,*,$(LOCAL_PATH)/modules/system_ext/lib/,$(TARGET_COPY_OUT_SYSTEM_EXT)/lib) \
 $(call find-copy-subdir-files,*,$(LOCAL_PATH)/modules/system_ext/lib64/,$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64)
@@ -64,7 +68,7 @@ PRODUCT_PACKAGES += \
 LiveWallpapersPicker \
 libyuv
 
-#PRODUCT_COPY_FILES += \
+PRODUCT_COPY_FILES += \
 $(call find-copy-subdir-files,*,$(LOCAL_PATH)/modules/system/lib/,$(TARGET_COPY_OUT_SYSTEM)/lib) \
 $(call find-copy-subdir-files,*,$(LOCAL_PATH)/modules/system/lib64/,$(TARGET_COPY_OUT_SYSTEM)/lib64) \
 
