@@ -51,15 +51,9 @@ WallpaperCropper \
 ThemePicker \
 RemoteProvisioner \
 CarrierConfig \
-EmergencyInfo \
-com.unisoc.sdk.common \
-smartlink_sdk \
-unipnp-framework \
-unisoc-framework \
-uni-telephony-common
+EmergencyInfo
 
-
-PRODUCT_COPY_FILES += \
+#PRODUCT_COPY_FILES += \
 $(call find-copy-subdir-files,*,$(LOCAL_PATH)/modules/system_ext/bin/,$(TARGET_COPY_OUT_SYSTEM_EXT)/bin) \
 $(call find-copy-subdir-files,*,$(LOCAL_PATH)/modules/system_ext/lib/,$(TARGET_COPY_OUT_SYSTEM_EXT)/lib) \
 $(call find-copy-subdir-files,*,$(LOCAL_PATH)/modules/system_ext/lib64/,$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64)
@@ -73,6 +67,7 @@ LiveWallpapersPicker \
 ONS \
 libyuv \
 Gallery2 \
+Camera2 \
 libmedia_codeclist
 
 #PRODUCT_COPY_FILES += \
