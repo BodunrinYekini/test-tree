@@ -73,6 +73,8 @@ LiveWallpapersPicker \
 ONS \
 Gallery2
 
+BOARD_VNDK_VERSION := current
+
 PRODUCT_EXTRA_VNDK_VERSIONS := \
 33
 
