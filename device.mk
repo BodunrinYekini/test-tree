@@ -10,7 +10,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/updatable_apex.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/generic_ramdisk.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/virtual_ab_ota/compression.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/aosp_base.mk)
-#$(call inherit-product, $(SRC_TARGET_DIR)/product/gsi_release.mk)
+$(call inherit-product, $(SRC_TARGET_DIR)/product/gsi_release.mk)
 
 
 DEVICE_PATH := device/ohrtech/aleph
@@ -71,7 +71,7 @@ CallLogBackup \
 LiveWallpapersPicker \
 ONS \
 Gallery2 \
-update-vndk-list.sh
+libmedia_codeclist
 
 LATEST_VNDK_LIB_LIST := $(LOCAL_PATH)/$(PLATFORM_VNDK_VERSION).txt
 
