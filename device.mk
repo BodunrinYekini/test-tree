@@ -61,10 +61,7 @@ $(call find-copy-subdir-files,*,$(LOCAL_PATH)/modules/system_ext/lib64/,$(TARGET
 
 #system
 PRODUCT_PACKAGES += \
-CarrierDefaultApp \
-CallLogBackup \
 LiveWallpapersPicker \
-ONS \
 libyuv
 
 #PRODUCT_COPY_FILES += \
