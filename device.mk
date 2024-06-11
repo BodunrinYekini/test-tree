@@ -71,7 +71,8 @@ CarrierDefaultApp \
 CallLogBackup \
 LiveWallpapersPicker \
 ONS \
-Gallery2
+Gallery2 \
+libmedia_codeclist
 
 
 
