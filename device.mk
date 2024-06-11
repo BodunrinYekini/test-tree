@@ -54,7 +54,10 @@ com.unisoc.sdk.common \
 smartlink_sdk \
 unipnp-framework \
 unisoc-framework \
-uni-telephony-common
+uni-telephony-common \
+CamTa \
+DreamCamera2 \
+SprdCommLogService
 
 
 PRODUCT_COPY_FILES += \
