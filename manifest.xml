@@ -209,12 +209,7 @@
     </hal>
     <hal format="aidl">
         <name>android.hardware.power</name>
-        <transport>hwbinder</transport>
-        <version>1.1</version>
-        <interface>
-            <name>IPower</name>
-            <instance>default</instance>
-        </interface>
+        <fqname>IPower/default</fqname>
     </hal>
     <sepolicy>
         <version>33.0</version>
