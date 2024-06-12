@@ -207,8 +207,9 @@
         </interface>
         <fqname>@2.0::IThermal/default</fqname>
     </hal>
-        <hal format="aidl" optional="true">
+    <hal format="hidl" optional="true">
         <name>android.hardware.power</name>
+        <version>3</version>
         <interface>
             <name>IPower</name>
             <instance>default</instance>
