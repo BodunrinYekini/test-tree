@@ -9,7 +9,6 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/updatable_apex.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/generic_ramdisk.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/virtual_ab_ota/compression.mk)
-$(call inherit-product-if-exists, vendor/google/security/adb/vendor_key.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/aosp_base_telephony.mk)
 
 
@@ -29,11 +28,11 @@ PRODUCT_PACKAGES += \
 libhwc2on1adapter \
 libtinycompress \
 librilutils \
-androidx.camera.extensions.impl
+#androidx.camera.extensions.impl
 
 #vendor/lib
 
-PRODUCT_COPY_FILES += \
+#PRODUCT_COPY_FILES += \
 $(call find-copy-subdir-files,*,$(LOCAL_PATH)/modules/vendor/lib/,$(TARGET_COPY_OUT_VENDOR)/lib) \
 $(call find-copy-subdir-files,*,$(LOCAL_PATH)/modules/vendor/lib64/,$(TARGET_COPY_OUT_VENDOR)/lib64) \
 $(call find-copy-subdir-files,*,$(LOCAL_PATH)/packages/vendor/app/LogManager/oat,$(TARGET_COPY_OUT_VENDOR)/app/LogManager/oat) \
@@ -50,26 +49,13 @@ WallpaperCropper \
 ThemePicker \
 RemoteProvisioner \
 CarrierConfig \
-EmergencyInfo \
-com.unisoc.sdk.common \
-smartlink_sdk \
-unipnp-framework \
-unisoc-framework \
-uni-telephony-common \
-CamTa \
-DreamCamera2 \
-SprdCommLogService \
-AIEngineService \
-NetworkSliceAgent \
-ServiceUniWifiResources \
-Srmi
+EmergencyInfo
 
 
-PRODUCT_COPY_FILES += \
+#PRODUCT_COPY_FILES += \
 $(call find-copy-subdir-files,*,$(LOCAL_PATH)/modules/system_ext/bin/,$(TARGET_COPY_OUT_SYSTEM_EXT)/bin) \
 $(call find-copy-subdir-files,*,$(LOCAL_PATH)/modules/system_ext/lib/,$(TARGET_COPY_OUT_SYSTEM_EXT)/lib) \
-$(call find-copy-subdir-files,*,$(LOCAL_PATH)/modules/system_ext/lib64/,$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64) \
-$(call find-copy-subdir-files,*,$(LOCAL_PATH)/modules/system_ext/etc/,$(TARGET_COPY_OUT_SYSTEM_EXT)/etc)
+$(call find-copy-subdir-files,*,$(LOCAL_PATH)/modules/system_ext/lib64/,$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64)
 
 
 #system
@@ -77,7 +63,7 @@ PRODUCT_PACKAGES += \
 LiveWallpapersPicker \
 libyuv
 
-PRODUCT_COPY_FILES += \
+#PRODUCT_COPY_FILES += \
 $(call find-copy-subdir-files,*,$(LOCAL_PATH)/modules/system/lib/,$(TARGET_COPY_OUT_SYSTEM)/lib) \
 $(call find-copy-subdir-files,*,$(LOCAL_PATH)/modules/system/lib64/,$(TARGET_COPY_OUT_SYSTEM)/lib64) \
 
@@ -96,15 +82,15 @@ AB_OTA_POSTINSTALL_CONFIG += \
     FILESYSTEM_TYPE_system=erofs \
     POSTINSTALL_OPTIONAL_system=true
 
-AB_OTA_POSTINSTALL_CONFIG += \
+#AB_OTA_POSTINSTALL_CONFIG += \
     RUN_POSTINSTALL_vendor=true \
     POSTINSTALL_PATH_vendor=bin/checkpoint_gc \
     FILESYSTEM_TYPE_vendor=erofs \
     POSTINSTALL_OPTIONAL_vendor=true
 
 PRODUCT_PACKAGES += \
-    otapreopt_script \
-    checkpoint_gc
+    otapreopt_script
+    #checkpoint_gc
     
 # API levels
 PRODUCT_SHIPPING_API_LEVEL := 33
@@ -141,39 +127,7 @@ PRODUCT_PACKAGES += \
     idlefast.sh \
     init.insmod.sh \
     setup_console.sh \
-    zramwb.sh \
-    framework-res__auto_generated_rro_product \
-    framework-res_navbar_rro \
-    FrameworkResOverlay \
-    GoogleCaptivePortalLoginGoOverlay \
-    GoogleDocumentsUIOverlay \
-    GoogleExtServicesConfigOverlay \
-    GooglePermissionControllerFrameworkOverlay \
-    GooglePermissionControllerOverlay \
-    ModuleMetadataGoogleOverlay \
-    Settings__auto_generated_rro_product \
-    SettingsProvider__auto_generated_rro_product \
-    SysuiGoConfigOverlay \
-    TeleService__auto_generated_rro_product \
-    TeleServiceOverlay \
-    unisoc-res__auto_generated_rro_product \
-    WallpaperOverlay \
-    com.google.mainline.go.telemetry \
-    apns-conf.xml \
-    AospBtOverlay \
-    AospWifiOverlay_Marlin3 \
-    AospWifiOverlay_Marlin3_Mainline \
-    UniWifiOverlay_Marlin3 \
-    MultiuserOverlays \
-    NetworkStackOverlayGo \
-    NetworkStackOverlayGsi \
-    Settings__auto_generated_rro_vendor \
-    TetheringConfigOverlayGo \
-    TetheringConfigOverlayGsi \
-    unisoc_go_overlay_frameworks_res \
-    unisoc_overlay_frameworks_res \
-    ProxyNFwLocation \
-    WirelessTools
+    zramwb.sh
 
 PRODUCT_PACKAGES += \
     fstab.ums9230_1h10 \

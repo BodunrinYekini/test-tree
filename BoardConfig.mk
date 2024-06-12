@@ -225,4 +225,4 @@ ODM_MANIFEST_FILES+= $(DEVICE_PATH)/odm_manifest.xml
 
 
 # Inherit the proprietary files
-include vendor/ohrtech/aleph/BoardConfigVendor.mk
+#include vendor/ohrtech/aleph/BoardConfigVendor.mk
