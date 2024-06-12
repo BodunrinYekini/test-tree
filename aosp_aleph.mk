@@ -5,7 +5,7 @@
 #
 
 # Inherit from aleph device
-#$(call inherit-product, device/ohrtech/aleph/device.mk)
+$(call inherit-product, device/ohrtech/aleph/device.mk)
 
 PRODUCT_DEVICE := aleph
 PRODUCT_NAME := aosp_aleph
