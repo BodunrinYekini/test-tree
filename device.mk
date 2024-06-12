@@ -28,7 +28,7 @@ PRODUCT_PACKAGES += \
 libhwc2on1adapter \
 libtinycompress \
 librilutils \
-#androidx.camera.extensions.impl
+androidx.camera.extensions.impl
 
 #vendor/lib
 
@@ -49,10 +49,18 @@ WallpaperCropper \
 ThemePicker \
 RemoteProvisioner \
 CarrierConfig \
-EmergencyInfo
+EmergencyInfo \
+com.unisoc.sdk.common \
+smartlink_sdk \
+unipnp-framework \
+unisoc-framework \
+uni-telephony-common \
+CamTa \
+DreamCamera2 \
+SprdCommLogService
 
 
-#PRODUCT_COPY_FILES += \
+PRODUCT_COPY_FILES += \
 $(call find-copy-subdir-files,*,$(LOCAL_PATH)/modules/system_ext/bin/,$(TARGET_COPY_OUT_SYSTEM_EXT)/bin) \
 $(call find-copy-subdir-files,*,$(LOCAL_PATH)/modules/system_ext/lib/,$(TARGET_COPY_OUT_SYSTEM_EXT)/lib) \
 $(call find-copy-subdir-files,*,$(LOCAL_PATH)/modules/system_ext/lib64/,$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64)
@@ -63,7 +71,7 @@ PRODUCT_PACKAGES += \
 LiveWallpapersPicker \
 libyuv
 
-#PRODUCT_COPY_FILES += \
+PRODUCT_COPY_FILES += \
 $(call find-copy-subdir-files,*,$(LOCAL_PATH)/modules/system/lib/,$(TARGET_COPY_OUT_SYSTEM)/lib) \
 $(call find-copy-subdir-files,*,$(LOCAL_PATH)/modules/system/lib64/,$(TARGET_COPY_OUT_SYSTEM)/lib64) \
 
@@ -127,7 +135,39 @@ PRODUCT_PACKAGES += \
     idlefast.sh \
     init.insmod.sh \
     setup_console.sh \
-    zramwb.sh
+    zramwb.sh \
+    framework-res__auto_generated_rro_product \
+    framework-res_navbar_rro \
+    FrameworkResOverlay \
+    GoogleCaptivePortalLoginGoOverlay \
+    GoogleDocumentsUIOverlay \
+    GoogleExtServicesConfigOverlay \
+    GooglePermissionControllerFrameworkOverlay \
+    GooglePermissionControllerOverlay \
+    ModuleMetadataGoogleOverlay \
+    Settings__auto_generated_rro_product \
+    SettingsProvider__auto_generated_rro_product \
+    SysuiGoConfigOverlay \
+    TeleService__auto_generated_rro_product \
+    TeleServiceOverlay \
+    unisoc-res__auto_generated_rro_product \
+    WallpaperOverlay \
+    com.google.mainline.go.telemetry \
+    apns-conf.xml \
+    AospBtOverlay \
+    AospWifiOverlay_Marlin3 \
+    AospWifiOverlay_Marlin3_Mainline \
+    UniWifiOverlay_Marlin3 \
+    MultiuserOverlays \
+    NetworkStackOverlayGo \
+    NetworkStackOverlayGsi \
+    Settings__auto_generated_rro_vendor \
+    TetheringConfigOverlayGo \
+    TetheringConfigOverlayGsi \
+    unisoc_go_overlay_frameworks_res \
+    unisoc_overlay_frameworks_res \
+    ProxyNFwLocation \
+    WirelessTools
 
 PRODUCT_PACKAGES += \
     fstab.ums9230_1h10 \
