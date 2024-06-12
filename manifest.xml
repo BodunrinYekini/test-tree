@@ -209,6 +209,7 @@
     </hal>
     <hal format="hidl">
         <name>android.hardware.power</name>
+        <transport>hwbinder</transport>
         <version>3.0</version>
         <interface>
             <name>IPower</name>
