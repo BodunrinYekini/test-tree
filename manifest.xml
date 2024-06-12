@@ -207,7 +207,7 @@
         </interface>
         <fqname>@2.0::IThermal/default</fqname>
     </hal>
-    <hal format="hidl" optional="true">
+        <hal format="aidl" optional="true">
         <name>android.hardware.power</name>
         <version>2.0</version>
         <interface>
