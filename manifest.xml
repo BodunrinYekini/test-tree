@@ -187,6 +187,10 @@
         <name>android.hardware.health</name>
         <fqname>IHealth/default</fqname>
     </hal>
+    <hal format="aidl">
+        <name>android.hardware.power</name>
+        <fqname>IPower/default</fqname>
+    </hal>
     <sepolicy>
         <version>33.0</version>
     </sepolicy>
