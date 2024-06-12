@@ -214,7 +214,6 @@
             <name>IPower</name>
             <instance>default</instance>
         </interface>
-        <fqname>@2.0::IPower/default</fqname>
     </hal>
     <sepolicy>
         <version>33.0</version>
