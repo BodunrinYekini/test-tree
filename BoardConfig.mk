@@ -16,6 +16,7 @@ BOARD_VNDK_VERSION := current
 TARGET_NO_KERNEL := true
 BOARD_PREBUILT_BOOTIMAGE := $(DEVICE_PATH)/prebuilts/boot.img
 TARGET_PREBUILT_DTB := $(DEVICE_PATH)/prebuilts/dtb.img
+BOARD_PREBUILT_DTBOIMAGE := $(DEVICE_PATH)/prebuilts/dtbo.img
 # A/B
 AB_OTA_UPDATER := true
 AB_OTA_PARTITIONS += \
