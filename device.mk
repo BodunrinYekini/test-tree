@@ -13,9 +13,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/aosp_base_telephony.mk)
 
 
 DEVICE_PATH := device/ohrtech/aleph
-#TARGET_PREBUILT_KERNEL :=$(DEVICE_PATH)/prebuilts/kernel
-#PRODUCT_COPY_FILES += \
-	$(TARGET_PREBUILT_KERNEL):kernel
+
 
 PRODUCT_PACKAGES += \
     vndservicemanager \
