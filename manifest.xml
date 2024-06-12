@@ -189,7 +189,6 @@
     </hal>
     <hal format="aidl">
         <name>android.hardware.power</name>
-         <version>2.0</version>
         <fqname>IPower/default</fqname>
     </hal>
     <hal format="hidl">
