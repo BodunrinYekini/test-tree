@@ -1,0 +1,14 @@
+        <!--
+    Input:
+        device_framework_matrix_product.xml
+-->
+<compatibility-matrix version="5.0" type="framework">
+<hal format="hidl" optional="true">
+        <name>android.hardware.gatekeeper</name>
+        <version>1.0</version>
+        <interface>
+            <name>IGatekeeper</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+</compatibility-matrix>
