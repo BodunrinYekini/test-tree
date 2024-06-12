@@ -223,6 +223,9 @@ DEVICE_PRODUCT_COMPATIBILITY_MATRIX_FILE+= $(DEVICE_PATH)/product_compatibility_
 #/odm/etc/vintf/manifest.xml
 ODM_MANIFEST_FILES+= $(DEVICE_PATH)/odm_manifest.xml
 
+DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE := \
+$(DEVICE_PATH)/compatibility_matrix.xml \
+
 
 # Inherit the proprietary files
 #include vendor/ohrtech/aleph/BoardConfigVendor.mk
