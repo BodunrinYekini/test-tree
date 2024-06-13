@@ -20,7 +20,6 @@ PRODUCT_PACKAGES += \
     WallpaperPicker \
     apns-conf.xml \
     framework-res__auto_generated_rro_product \
-    framework-res_navbar_rro \
     FrameworkResOverlay
 
 # PRODUCT_PACKAGES += \
