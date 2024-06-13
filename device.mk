@@ -10,7 +10,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/updatable_apex.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/virtual_ab_ota.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/aosp_base_telephony.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/generic_system_arm64.mk)
-
+$(call inherit-product, $(SRC_TARGET_DIR)/product/gsi_release.mk)
 
 
 
@@ -76,7 +76,7 @@ PRODUCT_PACKAGES += \
 LiveWallpapersPicker \
 libyuv
 
-PRODUCT_COPY_FILES += \
+#PRODUCT_COPY_FILES += \
 $(call find-copy-subdir-files,*,$(LOCAL_PATH)/modules/system/lib/,$(TARGET_COPY_OUT_SYSTEM)/lib) \
 $(call find-copy-subdir-files,*,$(LOCAL_PATH)/modules/system/lib64/,$(TARGET_COPY_OUT_SYSTEM)/lib64) \
 
