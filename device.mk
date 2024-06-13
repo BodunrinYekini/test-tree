@@ -22,6 +22,8 @@ PRODUCT_PACKAGES += \
     WallpaperPicker \
     apns-conf.xml
 
+PRODUCT_INSTALL_EXTRA_FLATTENED_APEXES := true
+
 # PRODUCT_PACKAGES += \
 #     vndservicemanager \
 #     cpio \
