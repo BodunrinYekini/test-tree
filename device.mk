@@ -22,16 +22,6 @@ PRODUCT_PACKAGES += \
     WallpaperPicker \
     apns-conf.xml
 
-PRODUCT_PACKAGES += com.android.apex.cts.shim.v1_with_prebuilts.flattened
-
-# Support additional VNDK snapshots
-PRODUCT_EXTRA_VNDK_VERSIONS := \
-    28 \
-    29 \
-    30 \
-    31 \
-    32 \
-
 # PRODUCT_PACKAGES += \
 #     vndservicemanager \
 #     cpio \
