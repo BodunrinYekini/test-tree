@@ -17,19 +17,36 @@ DEVICE_PATH := device/ohrtech/aleph
 
 #product
 PRODUCT_PACKAGES += \
-WallpaperPicker \
-apns-conf.xml
+    WallpaperPicker \
+    apns-conf.xml \
+    framework-res__auto_generated_rro_product \
+    framework-res_navbar_rro \
+    FrameworkResOverlay \
+    GoogleCaptivePortalLoginGoOverlay \
+    GoogleDocumentsUIOverlay \
+    GoogleExtServicesConfigOverlay \
+    GooglePermissionControllerFrameworkOverlay \
+    GooglePermissionControllerOverlay \
+    ModuleMetadataGoogleOverlay \
+    Settings__auto_generated_rro_product \
+    SettingsProvider__auto_generated_rro_product \
+    SysuiGoConfigOverlay \
+    TeleService__auto_generated_rro_product \
+    TeleServiceOverlay \
+    unisoc-res__auto_generated_rro_product \
+    WallpaperOverlay \
+    com.google.mainline.go.telemetry
 
-PRODUCT_PACKAGES += \
-    vndservicemanager \
-    cpio \
-    cplogctl
+# PRODUCT_PACKAGES += \
+#     vndservicemanager \
+#     cpio \
+#     cplogctl
 
-#vendor
-PRODUCT_PACKAGES += \
-libhwc2on1adapter \
-libtinycompress \
-librilutils \
+# #vendor
+# PRODUCT_PACKAGES += \
+# libhwc2on1adapter \
+# libtinycompress \
+# librilutils \
 #androidx.camera.extensions.impl
 
 #vendor/lib
@@ -62,8 +79,7 @@ $(call find-copy-subdir-files,*,$(LOCAL_PATH)/modules/system_ext/lib64/,$(TARGET
 
 #system
 PRODUCT_PACKAGES += \
-LiveWallpapersPicker \
-libyuv
+LiveWallpapersPicker
 
 #PRODUCT_COPY_FILES += \
 $(call find-copy-subdir-files,*,$(LOCAL_PATH)/modules/system/lib/,$(TARGET_COPY_OUT_SYSTEM)/lib) \
@@ -119,36 +135,36 @@ PRODUCT_USE_DYNAMIC_PARTITION_SIZE := true
 PRODUCT_CHARACTERISTICS := default
 
 
-# Rootdir
-PRODUCT_PACKAGES += \
-    log_to_csv.sh \
-    loading.sh \
-    para.sh \
-    total.sh \
-    create_splloader_dual_slot_byname_path.sh \
-    idlefast.sh \
-    init.insmod.sh \
-    setup_console.sh \
-    zramwb.sh
+# # Rootdir
+# PRODUCT_PACKAGES += \
+#     log_to_csv.sh \
+#     loading.sh \
+#     para.sh \
+#     total.sh \
+#     create_splloader_dual_slot_byname_path.sh \
+#     idlefast.sh \
+#     init.insmod.sh \
+#     setup_console.sh \
+#     zramwb.sh
 
-PRODUCT_PACKAGES += \
-    fstab.ums9230_1h10 \
-    init.cali.rc \
-    init.ram.gms.rc \
-    init.ram.native.rc \
-    init.ram.rc \
-    init.storage.rc \
-    init.ums9230_1h10.rc \
-    init.ums9230_1h10.usb.rc \
-    init.ums9230_1h10_go.rc \
-    init.ums9230_1h10_go.usb.rc \
-    init.ums9230_4h10.rc \
-    init.ums9230_4h10.usb.rc \
-    init.ums9230_4h10_go.rc \
-    init.ums9230_4h10_go.usb.rc \
-    init.ums9230_4h10_go_AG801.rc \
-    init.ums9230_4h10_go_AG801.usb.rc \
-    init.zramwb.rc \ 
+# PRODUCT_PACKAGES += \
+#     fstab.ums9230_1h10 \
+#     init.cali.rc \
+#     init.ram.gms.rc \
+#     init.ram.native.rc \
+#     init.ram.rc \
+#     init.storage.rc \
+#     init.ums9230_1h10.rc \
+#     init.ums9230_1h10.usb.rc \
+#     init.ums9230_1h10_go.rc \
+#     init.ums9230_1h10_go.usb.rc \
+#     init.ums9230_4h10.rc \
+#     init.ums9230_4h10.usb.rc \
+#     init.ums9230_4h10_go.rc \
+#     init.ums9230_4h10_go.usb.rc \
+#     init.ums9230_4h10_go_AG801.rc \
+#     init.ums9230_4h10_go_AG801.usb.rc \
+#     init.zramwb.rc \ 
 
 
 PRODUCT_COPY_FILES += \
