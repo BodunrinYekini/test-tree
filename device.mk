@@ -20,7 +20,14 @@ PRODUCT_PACKAGES += \
     WallpaperPicker \
     apns-conf.xml \
     framework-res__auto_generated_rro_product \
-    FrameworkResOverlay
+    FrameworkResOverlay \
+    framework-res_navbar_rro \
+    Settings__auto_generated_rro_product \
+    SettingsProvider__auto_generated_rro_product \
+    SysuiGoConfigOverlay \
+    TeleService__auto_generated_rro_product \
+    TeleServiceOverlay \
+    WallpaperOverlay
 
 # PRODUCT_PACKAGES += \
 #     vndservicemanager \
