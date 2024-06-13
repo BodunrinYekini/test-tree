@@ -183,7 +183,7 @@ prebuilt_etc {
     vendor: true,
 }
 
-//apns-conf
+apns-conf
 prebuilt_etc {
     name: "apns-conf.xml",
     src: "etc/apns-conf.xml",

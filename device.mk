@@ -14,6 +14,9 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/aosp_base_telephony.mk)
 
 DEVICE_PATH := device/ohrtech/aleph
 
+#product
+PRODUCT_PACKAGES += \
+WallpaperPicker
 
 PRODUCT_PACKAGES += \
     vndservicemanager \
@@ -143,7 +146,8 @@ PRODUCT_PACKAGES += \
     init.ums9230_4h10_go.usb.rc \
     init.ums9230_4h10_go_AG801.rc \
     init.ums9230_4h10_go_AG801.usb.rc \
-    init.zramwb.rc \
+    init.zramwb.rc \ 
+    apns-conf
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/rootdir/etc/fstab.ums9230_1h10:$(TARGET_VENDOR_RAMDISK_OUT)/first_stage_ramdisk/fstab.ums9230_1h10
