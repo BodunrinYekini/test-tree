@@ -24,6 +24,10 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_INSTALL_EXTRA_FLATTENED_APEXES := true
 
+PRODUCT_ARTIFACT_PATH_REQUIREMENT_ALLOWED_LIST += \
+    system/product/% \
+    system/system_ext/%
+
 # PRODUCT_PACKAGES += \
 #     vndservicemanager \
 #     cpio \
