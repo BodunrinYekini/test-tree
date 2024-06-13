@@ -21,10 +21,7 @@ PRODUCT_PACKAGES += \
     apns-conf.xml \
     framework-res__auto_generated_rro_product \
     framework-res_navbar_rro \
-    FrameworkResOverlay \
-    Settings__auto_generated_rro_product \
-    SettingsProvider__auto_generated_rro_product \
-    SysuiGoConfigOverlay
+    FrameworkResOverlay
 
 # PRODUCT_PACKAGES += \
 #     vndservicemanager \
