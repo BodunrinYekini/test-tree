@@ -22,6 +22,15 @@ PRODUCT_PACKAGES += \
     WallpaperPicker \
     apns-conf.xml
 
+    # GSI targets should install "unflattened" APEXes in /system
+TARGET_FLATTEN_APEX := false
+# GSI targets should install "flattened" APEXes in /system_ext as well
+PRODUCT_INSTALL_EXTRA_FLATTENED_APEXES := true
+# The flattened version of com.android.apex.cts.shim.v1 should be explicitly installed
+# because the shim apex is prebuilt one and PRODUCT_INSTALL_EXTRA_FLATTENED_APEXES is not
+# supported for prebuilt_apex modules yet.
+PRODUCT_PACKAGES += com.android.apex.cts.shim.v1_with_prebuilts.flattened
+
 # PRODUCT_PACKAGES += \
 #     vndservicemanager \
 #     cpio \
@@ -61,10 +70,6 @@ $(call find-copy-subdir-files,*,$(LOCAL_PATH)/modules/system_ext/bin/,$(TARGET_C
 $(call find-copy-subdir-files,*,$(LOCAL_PATH)/modules/system_ext/lib/,$(TARGET_COPY_OUT_SYSTEM_EXT)/lib) \
 $(call find-copy-subdir-files,*,$(LOCAL_PATH)/modules/system_ext/lib64/,$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64)
 
-
-#system
-PRODUCT_PACKAGES += \
-LiveWallpapersPicker
 
 #PRODUCT_COPY_FILES += \
 $(call find-copy-subdir-files,*,$(LOCAL_PATH)/modules/system/lib/,$(TARGET_COPY_OUT_SYSTEM)/lib) \
