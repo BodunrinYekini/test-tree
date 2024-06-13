@@ -18,7 +18,8 @@ DEVICE_PATH := device/ohrtech/aleph
 #product
 PRODUCT_PACKAGES += \
     WallpaperPicker \
-    apns-conf.xml
+    apns-conf.xml \
+    framework-res__auto_generated_rro_product
 
 # PRODUCT_PACKAGES += \
 #     vndservicemanager \
