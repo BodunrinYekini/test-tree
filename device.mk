@@ -27,7 +27,15 @@ PRODUCT_PACKAGES += \
     SysuiGoConfigOverlay \
     TeleService__auto_generated_rro_product \
     TeleServiceOverlay \
-    WallpaperOverlay
+    WallpaperOverlay \
+    unisoc-res__auto_generated_rro_product \
+    GoogleCaptivePortalLoginGoOverlay \
+    GoogleDocumentsUIOverlay \
+    GoogleExtServicesConfigOverlay \
+    GooglePermissionControllerFrameworkOverlay \
+    GooglePermissionControllerOverlay \
+    ModuleMetadataGoogleOverlay \
+    com.google.mainline.go.telemetry
 
 # PRODUCT_PACKAGES += \
 #     vndservicemanager \
