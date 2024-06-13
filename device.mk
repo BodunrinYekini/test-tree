@@ -24,12 +24,16 @@ PRODUCT_PACKAGES += \
 
     # GSI targets should install "unflattened" APEXes in /system
 TARGET_FLATTEN_APEX := false
-# GSI targets should install "flattened" APEXes in /system_ext as well
-PRODUCT_INSTALL_EXTRA_FLATTENED_APEXES := true
-# The flattened version of com.android.apex.cts.shim.v1 should be explicitly installed
-# because the shim apex is prebuilt one and PRODUCT_INSTALL_EXTRA_FLATTENED_APEXES is not
-# supported for prebuilt_apex modules yet.
+
 PRODUCT_PACKAGES += com.android.apex.cts.shim.v1_with_prebuilts.flattened
+
+# Support additional VNDK snapshots
+PRODUCT_EXTRA_VNDK_VERSIONS := \
+    28 \
+    29 \
+    30 \
+    31 \
+    32 \
 
 # PRODUCT_PACKAGES += \
 #     vndservicemanager \
