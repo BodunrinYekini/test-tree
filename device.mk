@@ -25,6 +25,9 @@ PRODUCT_PACKAGES += \
     # GSI targets should install "unflattened" APEXes in /system
 TARGET_FLATTEN_APEX := false
 
+# GSI targets should install "flattened" APEXes in /system_ext as well
+PRODUCT_INSTALL_EXTRA_FLATTENED_APEXES := true
+
 PRODUCT_PACKAGES += com.android.apex.cts.shim.v1_with_prebuilts.flattened
 
 # Support additional VNDK snapshots
