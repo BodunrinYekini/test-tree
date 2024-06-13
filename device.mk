@@ -24,10 +24,7 @@ PRODUCT_PACKAGES += \
     FrameworkResOverlay \
     Settings__auto_generated_rro_product \
     SettingsProvider__auto_generated_rro_product \
-    SysuiGoConfigOverlay \
-    TeleService__auto_generated_rro_product \
-    TeleServiceOverlay \
-    unisoc-res__auto_generated_rro_product
+    SysuiGoConfigOverlay
 
 # PRODUCT_PACKAGES += \
 #     vndservicemanager \
