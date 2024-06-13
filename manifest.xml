@@ -26,6 +26,16 @@
         </interface>
         <fqname>@7.0::IEffectsFactory/default</fqname>
     </hal>
+    <hal format="hidl">
+        <name>android.hardware.gatekeeper</name>
+        <transport>hwbinder</transport>
+        <version>1.0</version>
+        <interface>
+            <name>IGatekeeper</name>
+            <instance>default</instance>
+        </interface>
+        <fqname>@1.0::IGatekeeper/default</fqname>
+    </hal>
     <sepolicy>
         <version>33.0</version>
     </sepolicy>
