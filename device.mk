@@ -54,12 +54,17 @@ CarrierConfig \
 EmergencyInfo \
 androidx.window.extensions \
 androidx.window.sidecar \
-SdkSetup
+SdkSetup \
+Stk \
+Tag
 
 #product
 PRODUCT_PACKAGES += \
 EmulatorConnectivityOverlay \
 EmulatorTetheringConfigOverlay
+
+PRODUCT_COPY_FILES += \
+$(call find-copy-subdir-files,*,$(LOCAL_PATH)/modules/system_ext/bin2/,$(TARGET_COPY_OUT_SYSTEM_EXT)/bin)
 
 
 #PRODUCT_COPY_FILES += \
