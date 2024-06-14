@@ -56,12 +56,6 @@ androidx.window.extensions \
 androidx.window.sidecar \
 SdkSetup
 
-PRODUCT_ARTIFACT_PATH_REQUIREMENT_ALLOWED_LIST := \
-    system/lib/libemulator_multidisplay_jni.so \
-    system/lib64/libemulator_multidisplay_jni.so \
-    system/priv-app/MultiDisplayProvider/MultiDisplayProvider.apk \
-PRODUCT_PACKAGES += MultiDisplayProvider
-
 #product
 PRODUCT_PACKAGES += \
 EmulatorConnectivityOverlay \
