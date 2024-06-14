@@ -53,7 +53,8 @@ RemoteProvisioner \
 CarrierConfig \
 EmergencyInfo \
 androidx.window.extensions \
-androidx.window.sidecar
+androidx.window.sidecar \
+MultiDisplayProvider
 
 
 #PRODUCT_COPY_FILES += \
