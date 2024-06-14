@@ -57,6 +57,11 @@ androidx.window.sidecar \
 MultiDisplayProvider \
 SdkSetup
 
+#product
+PRODUCT_PACKAGES += \
+EmulatorConnectivityOverlay \
+EmulatorTetheringConfigOverlay
+
 
 #PRODUCT_COPY_FILES += \
 $(call find-copy-subdir-files,*,$(LOCAL_PATH)/modules/system_ext/bin/,$(TARGET_COPY_OUT_SYSTEM_EXT)/bin) \
