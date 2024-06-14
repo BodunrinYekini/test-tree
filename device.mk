@@ -48,7 +48,6 @@ Settings \
 StorageManager \
 SystemUI \
 WallpaperCropper \
-ThemePicker \
 RemoteProvisioner \
 CarrierConfig \
 EmergencyInfo \
