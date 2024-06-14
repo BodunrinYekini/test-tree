@@ -363,7 +363,7 @@ include $(BUILD_PREBUILT)
 include $(CLEAR_VARS)
 LOCAL_MODULE_TAGS := optional
 LOCAL_MODULE := EmulatorTetheringConfigOverlay
-LOCAL_SRC_FILES := packages/product/overlay/EmulatorTetheringConfigOverlayapk
+LOCAL_SRC_FILES := packages/product/overlay/EmulatorTetheringConfigOverlay.apk
 LOCAL_MODULE_CLASS := APPS
 LOCAL_MODULE_SUFFIX := $(COMMON_ANDROID_PACKAGE_SUFFIX)
 LOCAL_CERTIFICATE := platform
