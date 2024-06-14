@@ -407,7 +407,7 @@ dex_import {
 
 
 dex_import {
-	name: "androidx.window.extensionsn",
+	name: "androidx.window.extensions",
 	owner: "ohrtech",
 	jars: ["system_ext/framework/androidx.window.extensions.jar"],
 	system_ext_specific: true,
