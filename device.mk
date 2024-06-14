@@ -54,7 +54,8 @@ CarrierConfig \
 EmergencyInfo \
 androidx.window.extensions \
 androidx.window.sidecar \
-MultiDisplayProvider
+MultiDisplayProvider \
+SdkSetup
 
 
 #PRODUCT_COPY_FILES += \
