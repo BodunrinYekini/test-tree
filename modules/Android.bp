@@ -406,3 +406,17 @@ dex_import {
 }
 
 
+dex_import {
+	name: "androidx.window.extensionsn",
+	owner: "ohrtech",
+	jars: ["system_ext/framework/androidx.window.extensions.jar"],
+	system_ext_specific: true,
+}
+
+dex_import {
+	name: "androidx.window.sidecar",
+	owner: "ohrtech",
+	jars: ["system_ext/framework/androidx.window.sidecar.jar"],
+	system_ext_specific: true,
+}
+
