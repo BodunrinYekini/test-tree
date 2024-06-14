@@ -11,6 +11,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/virtual_ab_ota.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/aosp_base_telephony.mk)
 #$(call inherit-product, $(SRC_TARGET_DIR)/product/generic_system_arm64.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/gsi_release.mk)
+$(call inherit-product-if-exists, device/generic/goldfish/x86_64-vendor.mk)
 
 PRODUCT_ARTIFACT_PATH_REQUIREMENT_ALLOWED_LIST += \
     system/product% \
