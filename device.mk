@@ -12,7 +12,9 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/aosp_base_telephony.mk)
 #$(call inherit-product, $(SRC_TARGET_DIR)/product/generic_system_arm64.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/gsi_release.mk)
 
-
+PRODUCT_ARTIFACT_PATH_REQUIREMENT_ALLOWED_LIST += \
+    system/product% \
+    system/system_ext%
 
 
 DEVICE_PATH := device/ohrtech/aleph
@@ -622,4 +624,4 @@ PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH)
 
 # Inherit the proprietary files
-$(call inherit-product, vendor/ohrtech/aleph/aleph-vendor.mk)
+#$(call inherit-product, vendor/ohrtech/aleph/aleph-vendor.mk)
