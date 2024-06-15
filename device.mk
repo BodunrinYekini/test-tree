@@ -6,40 +6,35 @@
 
 
 $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
-$(call inherit-product, $(SRC_TARGET_DIR)/product/updatable_apex.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/virtual_ab_ota.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/aosp_base_telephony.mk)
-#$(call inherit-product, $(SRC_TARGET_DIR)/product/generic_system_arm64.mk)
+$(call inherit-product, $(SRC_TARGET_DIR)/product/generic_system.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/gsi_release.mk)
 
-
-PRODUCT_ARTIFACT_PATH_REQUIREMENT_ALLOWED_LIST += \
-    system/product% \
-    system/system_ext%
 
 
 DEVICE_PATH := device/ohrtech/aleph
 
 
-PRODUCT_PACKAGES += \
-    vndservicemanager \
-    cpio \
-    cplogctl
+# PRODUCT_PACKAGES += \
+#     vndservicemanager \
+#     cpio \
+#     cplogctl
 
-#vendor
-PRODUCT_PACKAGES += \
-libhwc2on1adapter \
-libtinycompress \
-librilutils \
-androidx.camera.extensions.impl
+# #vendor
+# PRODUCT_PACKAGES += \
+# libhwc2on1adapter \
+# libtinycompress \
+# librilutils \
+# androidx.camera.extensions.impl
 
-#vendor/lib
+# #vendor/lib
 
-PRODUCT_COPY_FILES += \
-$(call find-copy-subdir-files,*,$(LOCAL_PATH)/modules/vendor/lib/,$(TARGET_COPY_OUT_VENDOR)/lib) \
-$(call find-copy-subdir-files,*,$(LOCAL_PATH)/modules/vendor/lib64/,$(TARGET_COPY_OUT_VENDOR)/lib64) \
-$(call find-copy-subdir-files,*,$(LOCAL_PATH)/packages/vendor/app/LogManager/oat,$(TARGET_COPY_OUT_VENDOR)/app/LogManager/oat) \
-$(call find-copy-subdir-files,*,$(LOCAL_PATH)/packages/vendor/app/UASetting/oat,$(TARGET_COPY_OUT_VENDOR)/app/UASetting/oat)
+# PRODUCT_COPY_FILES += \
+# $(call find-copy-subdir-files,*,$(LOCAL_PATH)/modules/vendor/lib/,$(TARGET_COPY_OUT_VENDOR)/lib) \
+# $(call find-copy-subdir-files,*,$(LOCAL_PATH)/modules/vendor/lib64/,$(TARGET_COPY_OUT_VENDOR)/lib64) \
+# $(call find-copy-subdir-files,*,$(LOCAL_PATH)/packages/vendor/app/LogManager/oat,$(TARGET_COPY_OUT_VENDOR)/app/LogManager/oat) \
+# $(call find-copy-subdir-files,*,$(LOCAL_PATH)/packages/vendor/app/UASetting/oat,$(TARGET_COPY_OUT_VENDOR)/app/UASetting/oat)
 
 #system_ext
 PRODUCT_PACKAGES += \
@@ -54,17 +49,15 @@ CarrierConfig \
 EmergencyInfo \
 androidx.window.extensions \
 androidx.window.sidecar \
-SdkSetup \
-Stk \
-Tag
+SdkSetup
 
 #product
 PRODUCT_PACKAGES += \
 EmulatorConnectivityOverlay \
 EmulatorTetheringConfigOverlay
 
-PRODUCT_COPY_FILES += \
-$(call find-copy-subdir-files,*,$(LOCAL_PATH)/modules/system_ext/bin2/,$(TARGET_COPY_OUT_SYSTEM_EXT)/bin)
+# PRODUCT_COPY_FILES += \
+# $(call find-copy-subdir-files,*,$(LOCAL_PATH)/modules/system_ext/bin2/,$(TARGET_COPY_OUT_SYSTEM_EXT)/bin)
 
 
 #PRODUCT_COPY_FILES += \
@@ -75,7 +68,7 @@ $(call find-copy-subdir-files,*,$(LOCAL_PATH)/modules/system_ext/etc/,$(TARGET_C
 
 
 #system
-PRODUCT_PACKAGES += \
+#PRODUCT_PACKAGES += \
 LiveWallpapersPicker \
 libyuv
 
@@ -171,10 +164,10 @@ PRODUCT_COPY_FILES += \
     
 VENDOR_MODULES_PATH = $(DEVICE_PATH)/modules/vendor_dlkm/lib/modules
 
-PRODUCT_COPY_FILES += \
+#PRODUCT_COPY_FILES += \
     $(VENDOR_MODULES_PATH)/init.insmod.cfg:$(TARGET_COPY_OUT_VENDOR_DLKM)/lib/modules/init.insmod.cfg
     
-BOARD_VENDOR_KERNEL_MODULES := \
+#BOARD_VENDOR_KERNEL_MODULES := \
 $(VENDOR_MODULES_PATH)/aes-ce-ccm.ko \
 $(VENDOR_MODULES_PATH)/aes-neon-blk.ko \
 $(VENDOR_MODULES_PATH)/agdsp_access.ko \
@@ -302,7 +295,7 @@ $(VENDOR_MODULES_PATH)/zram.ko \
 $(VENDOR_MODULES_PATH)/zsmalloc.ko
 
 
-BOARD_VENDOR_CHARGER_KERNEL_MODULES := \
+#BOARD_VENDOR_CHARGER_KERNEL_MODULES := \
 $(VENDOR_MODULES_PATH)/sprd_systimer.ko \
 $(VENDOR_MODULES_PATH)/sprd-sc27xx-spi.ko \
 $(VENDOR_MODULES_PATH)/rtc-sc27xx.ko \
