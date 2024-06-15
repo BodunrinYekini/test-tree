@@ -58,6 +58,12 @@ PRODUCT_PACKAGES += \
 EmulatorConnectivityOverlay \
 EmulatorTetheringConfigOverlay
 
+#vendor
+AospBtOverlay \
+AospWifiOverlay_Marlin3 \
+AospWifiOverlay_Marlin3_Mainline \
+UniWifiOverlay_Marlin3
+
 # PRODUCT_COPY_FILES += \
 # $(call find-copy-subdir-files,*,$(LOCAL_PATH)/modules/system_ext/bin2/,$(TARGET_COPY_OUT_SYSTEM_EXT)/bin)
 
