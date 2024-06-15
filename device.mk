@@ -59,6 +59,7 @@ EmulatorConnectivityOverlay \
 EmulatorTetheringConfigOverlay
 
 #vendor
+PRODUCT_PACKAGES += \
 AospBtOverlay \
 AospWifiOverlay_Marlin3 \
 AospWifiOverlay_Marlin3_Mainline \
