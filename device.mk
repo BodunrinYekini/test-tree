@@ -22,11 +22,11 @@ DEVICE_PATH := device/ohrtech/aleph
 #     cplogctl
 
 # #vendor
-# PRODUCT_PACKAGES += \
-# libhwc2on1adapter \
-# libtinycompress \
-# librilutils \
-# androidx.camera.extensions.impl
+PRODUCT_PACKAGES += \
+libhwc2on1adapter \
+libtinycompress \
+librilutils \
+androidx.camera.extensions.impl
 
 # #vendor/lib
 
@@ -135,38 +135,37 @@ PRODUCT_CHARACTERISTICS := default
 
 
 # Rootdir
+
+
 PRODUCT_PACKAGES += \
-create_splloader_dual_slot_byname_path.sh
+    log_to_csv.sh \
+    loading.sh \
+    para.sh \
+    total.sh \
+    create_splloader_dual_slot_byname_path.sh \
+    idlefast.sh \
+    init.insmod.sh \
+    setup_console.sh \
+    zramwb.sh
 
-# PRODUCT_PACKAGES += \
-#     log_to_csv.sh \
-#     loading.sh \
-#     para.sh \
-#     total.sh \
-#     create_splloader_dual_slot_byname_path.sh \
-#     idlefast.sh \
-#     init.insmod.sh \
-#     setup_console.sh \
-#     zramwb.sh
-
-# PRODUCT_PACKAGES += \
-#     fstab.ums9230_1h10 \
-#     init.cali.rc \
-#     init.ram.gms.rc \
-#     init.ram.native.rc \
-#     init.ram.rc \
-#     init.storage.rc \
-#     init.ums9230_1h10.rc \
-#     init.ums9230_1h10.usb.rc \
-#     init.ums9230_1h10_go.rc \
-#     init.ums9230_1h10_go.usb.rc \
-#     init.ums9230_4h10.rc \
-#     init.ums9230_4h10.usb.rc \
-#     init.ums9230_4h10_go.rc \
-#     init.ums9230_4h10_go.usb.rc \
-#     init.ums9230_4h10_go_AG801.rc \
-#     init.ums9230_4h10_go_AG801.usb.rc \
-#     init.zramwb.rc \
+PRODUCT_PACKAGES += \
+    fstab.ums9230_1h10 \
+    init.cali.rc \
+    init.ram.gms.rc \
+    init.ram.native.rc \
+    init.ram.rc \
+    init.storage.rc \
+    init.ums9230_1h10.rc \
+    init.ums9230_1h10.usb.rc \
+    init.ums9230_1h10_go.rc \
+    init.ums9230_1h10_go.usb.rc \
+    init.ums9230_4h10.rc \
+    init.ums9230_4h10.usb.rc \
+    init.ums9230_4h10_go.rc \
+    init.ums9230_4h10_go.usb.rc \
+    init.ums9230_4h10_go_AG801.rc \
+    init.ums9230_4h10_go_AG801.usb.rc \
+    init.zramwb.rc \
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/rootdir/etc/fstab.ums9230_1h10:$(TARGET_VENDOR_RAMDISK_OUT)/first_stage_ramdisk/fstab.ums9230_1h10
