@@ -6,35 +6,39 @@
 
 
 $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
-$(call inherit-product, $(SRC_TARGET_DIR)/product/virtual_ab_ota.mk)
-$(call inherit-product, $(SRC_TARGET_DIR)/product/aosp_base_telephony.mk)
-#$(call inherit-product, $(SRC_TARGET_DIR)/product/generic_system.mk)
-$(call inherit-product, $(SRC_TARGET_DIR)/product/gsi_release.mk)
+$(call inherit-product, $(SRC_TARGET_DIR)/product/updatable_apex.mk)
+$(call inherit-product, $(SRC_TARGET_DIR)/product/generic_ramdisk.mk)
+$(call inherit-product, $(SRC_TARGET_DIR)/product/virtual_ab_ota/compression.mk)
+$(call inherit-product, $(SRC_TARGET_DIR)/product/aosp_base.mk)
+$(call inherit-product, $(SRC_TARGET_DIR)/product/base.mk)
 
 
 
 DEVICE_PATH := device/ohrtech/aleph
+TARGET_PREBUILT_KERNEL :=$(DEVICE_PATH)/prebuilts/kernel
+PRODUCT_COPY_FILES += \
+	$(TARGET_PREBUILT_KERNEL):kernel
 
+PRODUCT_PACKAGES += \
+    vndservicemanager \
+    cpio \
+    cplogctl \
+    messaging
 
-# PRODUCT_PACKAGES += \
-#     vndservicemanager \
-#     cpio \
-#     cplogctl
-
-# #vendor
+#vendor
 PRODUCT_PACKAGES += \
 libhwc2on1adapter \
 libtinycompress \
 librilutils \
 androidx.camera.extensions.impl
 
-# #vendor/lib
+#vendor/lib
 
-# PRODUCT_COPY_FILES += \
-# $(call find-copy-subdir-files,*,$(LOCAL_PATH)/modules/vendor/lib/,$(TARGET_COPY_OUT_VENDOR)/lib) \
-# $(call find-copy-subdir-files,*,$(LOCAL_PATH)/modules/vendor/lib64/,$(TARGET_COPY_OUT_VENDOR)/lib64) \
-# $(call find-copy-subdir-files,*,$(LOCAL_PATH)/packages/vendor/app/LogManager/oat,$(TARGET_COPY_OUT_VENDOR)/app/LogManager/oat) \
-# $(call find-copy-subdir-files,*,$(LOCAL_PATH)/packages/vendor/app/UASetting/oat,$(TARGET_COPY_OUT_VENDOR)/app/UASetting/oat)
+#PRODUCT_COPY_FILES += \
+$(call find-copy-subdir-files,*,$(LOCAL_PATH)/modules/vendor/lib/,$(TARGET_COPY_OUT_VENDOR)/lib) \
+$(call find-copy-subdir-files,*,$(LOCAL_PATH)/modules/vendor/lib64/,$(TARGET_COPY_OUT_VENDOR)/lib64) \
+$(call find-copy-subdir-files,*,$(LOCAL_PATH)/packages/vendor/app/LogManager/oat,$(TARGET_COPY_OUT_VENDOR)/app/LogManager/oat) \
+$(call find-copy-subdir-files,*,$(LOCAL_PATH)/packages/vendor/app/UASetting/oat,$(TARGET_COPY_OUT_VENDOR)/app/UASetting/oat)
 
 #system_ext
 PRODUCT_PACKAGES += \
@@ -44,44 +48,31 @@ Settings \
 StorageManager \
 SystemUI \
 WallpaperCropper \
+ThemePicker \
 RemoteProvisioner \
 CarrierConfig \
 EmergencyInfo \
-androidx.window.extensions \
-androidx.window.sidecar \
-SdkSetup \
-Stk \
-Tag
-
-#product
-PRODUCT_PACKAGES += \
-EmulatorConnectivityOverlay \
-EmulatorTetheringConfigOverlay
-
-#vendor
-PRODUCT_PACKAGES += \
-AospBtOverlay \
-AospWifiOverlay_Marlin3 \
-AospWifiOverlay_Marlin3_Mainline \
-UniWifiOverlay_Marlin3
-
-# PRODUCT_COPY_FILES += \
-# $(call find-copy-subdir-files,*,$(LOCAL_PATH)/modules/system_ext/bin2/,$(TARGET_COPY_OUT_SYSTEM_EXT)/bin)
+com.unisoc.sdk.common \
+smartlink_sdk \
+unipnp-framework \
+unisoc-framework \
+uni-telephony-common
 
 
-#PRODUCT_COPY_FILES += \
+PRODUCT_COPY_FILES += \
 $(call find-copy-subdir-files,*,$(LOCAL_PATH)/modules/system_ext/bin/,$(TARGET_COPY_OUT_SYSTEM_EXT)/bin) \
 $(call find-copy-subdir-files,*,$(LOCAL_PATH)/modules/system_ext/lib/,$(TARGET_COPY_OUT_SYSTEM_EXT)/lib) \
-$(call find-copy-subdir-files,*,$(LOCAL_PATH)/modules/system_ext/lib64/,$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64) \
-$(call find-copy-subdir-files,*,$(LOCAL_PATH)/modules/system_ext/etc/,$(TARGET_COPY_OUT_SYSTEM_EXT)/etc)
+$(call find-copy-subdir-files,*,$(LOCAL_PATH)/modules/system_ext/lib64/,$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64)
 
 
 #system
-#PRODUCT_PACKAGES += \
+PRODUCT_PACKAGES += \
+CarrierDefaultApp \
+CallLogBackup \
 LiveWallpapersPicker \
-libyuv
+ONS
 
-#PRODUCT_COPY_FILES += \
+PRODUCT_COPY_FILES += \
 $(call find-copy-subdir-files,*,$(LOCAL_PATH)/modules/system/lib/,$(TARGET_COPY_OUT_SYSTEM)/lib) \
 $(call find-copy-subdir-files,*,$(LOCAL_PATH)/modules/system/lib64/,$(TARGET_COPY_OUT_SYSTEM)/lib64) \
 
@@ -108,6 +99,7 @@ AB_OTA_POSTINSTALL_CONFIG += \
 
 PRODUCT_PACKAGES += \
     otapreopt_script
+    #checkpoint_gc
     
 # API levels
 PRODUCT_SHIPPING_API_LEVEL := 33
@@ -135,8 +127,6 @@ PRODUCT_CHARACTERISTICS := default
 
 
 # Rootdir
-
-
 PRODUCT_PACKAGES += \
     log_to_csv.sh \
     loading.sh \
@@ -146,7 +136,39 @@ PRODUCT_PACKAGES += \
     idlefast.sh \
     init.insmod.sh \
     setup_console.sh \
-    zramwb.sh
+    zramwb.sh \
+    framework-res__auto_generated_rro_product \
+    framework-res_navbar_rro \
+    FrameworkResOverlay \
+    GoogleCaptivePortalLoginGoOverlay \
+    GoogleDocumentsUIOverlay \
+    GoogleExtServicesConfigOverlay \
+    GooglePermissionControllerFrameworkOverlay \
+    GooglePermissionControllerOverlay \
+    ModuleMetadataGoogleOverlay \
+    Settings__auto_generated_rro_product \
+    SettingsProvider__auto_generated_rro_product \
+    SysuiGoConfigOverlay \
+    TeleService__auto_generated_rro_product \
+    TeleServiceOverlay \
+    unisoc-res__auto_generated_rro_product \
+    WallpaperOverlay \
+    com.google.mainline.go.telemetry \
+    apns-conf.xml \
+    AospBtOverlay \
+    AospWifiOverlay_Marlin3 \
+    AospWifiOverlay_Marlin3_Mainline \
+    UniWifiOverlay_Marlin3 \
+    MultiuserOverlays \
+    NetworkStackOverlayGo \
+    NetworkStackOverlayGsi \
+    Settings__auto_generated_rro_vendor \
+    TetheringConfigOverlayGo \
+    TetheringConfigOverlayGsi \
+    unisoc_go_overlay_frameworks_res \
+    unisoc_overlay_frameworks_res \
+    ProxyNFwLocation \
+    WirelessTools
 
 PRODUCT_PACKAGES += \
     fstab.ums9230_1h10 \
@@ -174,10 +196,10 @@ PRODUCT_COPY_FILES += \
     
 VENDOR_MODULES_PATH = $(DEVICE_PATH)/modules/vendor_dlkm/lib/modules
 
-#PRODUCT_COPY_FILES += \
+PRODUCT_COPY_FILES += \
     $(VENDOR_MODULES_PATH)/init.insmod.cfg:$(TARGET_COPY_OUT_VENDOR_DLKM)/lib/modules/init.insmod.cfg
     
-#BOARD_VENDOR_KERNEL_MODULES := \
+BOARD_VENDOR_KERNEL_MODULES := \
 $(VENDOR_MODULES_PATH)/aes-ce-ccm.ko \
 $(VENDOR_MODULES_PATH)/aes-neon-blk.ko \
 $(VENDOR_MODULES_PATH)/agdsp_access.ko \
@@ -305,7 +327,7 @@ $(VENDOR_MODULES_PATH)/zram.ko \
 $(VENDOR_MODULES_PATH)/zsmalloc.ko
 
 
-#BOARD_VENDOR_CHARGER_KERNEL_MODULES := \
+BOARD_VENDOR_CHARGER_KERNEL_MODULES := \
 $(VENDOR_MODULES_PATH)/sprd_systimer.ko \
 $(VENDOR_MODULES_PATH)/sprd-sc27xx-spi.ko \
 $(VENDOR_MODULES_PATH)/rtc-sc27xx.ko \
@@ -596,4 +618,4 @@ PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH)
 
 # Inherit the proprietary files
-#$(call inherit-product, vendor/ohrtech/aleph/aleph-vendor.mk)
+$(call inherit-product, vendor/ohrtech/aleph/aleph-vendor.mk)
