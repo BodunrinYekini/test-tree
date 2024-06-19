@@ -13,6 +13,6 @@
         <sepolicy-version>33.0</sepolicy-version>
     </sepolicy>
     <avb>
-        <vbmeta-version>1.0</vbmeta-version>
+        <vbmeta-version>1.1</vbmeta-version>
     </avb>
 </compatibility-matrix>
