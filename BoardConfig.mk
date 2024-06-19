@@ -214,10 +214,6 @@ BOARD_MOVE_GSI_AVB_KEYS_TO_VENDOR_BOOT := true
 # VINTF
 DEVICE_MANIFEST_FILE += $(DEVICE_PATH)/manifest.xml
 
-
-
-
-
 #/odm/etc/vintf/manifest.xml
 ODM_MANIFEST_FILES+= $(DEVICE_PATH)/odm_manifest.xml
 
