@@ -8,7 +8,7 @@
 $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/updatable_apex.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/generic_ramdisk.mk)
-$(call inherit-product, $(SRC_TARGET_DIR)/product/virtual_ab_ota/compression.mk)
+$(call inherit-product, $(SRC_TARGET_DIR)/product/virtual_ab_ota.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/aosp_base.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/base.mk)
 
@@ -51,15 +51,15 @@ WallpaperCropper \
 ThemePicker \
 RemoteProvisioner \
 CarrierConfig \
-EmergencyInfo \
-com.unisoc.sdk.common \
-smartlink_sdk \
-unipnp-framework \
-unisoc-framework \
-uni-telephony-common
+EmergencyInfo
+# com.unisoc.sdk.common \
+# smartlink_sdk \
+# unipnp-framework \
+# unisoc-framework \
+# uni-telephony-common
 
 
-PRODUCT_COPY_FILES += \
+#PRODUCT_COPY_FILES += \
 $(call find-copy-subdir-files,*,$(LOCAL_PATH)/modules/system_ext/bin/,$(TARGET_COPY_OUT_SYSTEM_EXT)/bin) \
 $(call find-copy-subdir-files,*,$(LOCAL_PATH)/modules/system_ext/lib/,$(TARGET_COPY_OUT_SYSTEM_EXT)/lib) \
 $(call find-copy-subdir-files,*,$(LOCAL_PATH)/modules/system_ext/lib64/,$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64)
@@ -91,15 +91,15 @@ AB_OTA_POSTINSTALL_CONFIG += \
     FILESYSTEM_TYPE_system=erofs \
     POSTINSTALL_OPTIONAL_system=true
 
-#AB_OTA_POSTINSTALL_CONFIG += \
+AB_OTA_POSTINSTALL_CONFIG += \
     RUN_POSTINSTALL_vendor=true \
     POSTINSTALL_PATH_vendor=bin/checkpoint_gc \
     FILESYSTEM_TYPE_vendor=erofs \
     POSTINSTALL_OPTIONAL_vendor=true
 
 PRODUCT_PACKAGES += \
-    otapreopt_script
-    #checkpoint_gc
+    otapreopt_script \
+    checkpoint_gc
     
 # API levels
 PRODUCT_SHIPPING_API_LEVEL := 33
@@ -136,39 +136,39 @@ PRODUCT_PACKAGES += \
     idlefast.sh \
     init.insmod.sh \
     setup_console.sh \
-    zramwb.sh \
-    framework-res__auto_generated_rro_product \
-    framework-res_navbar_rro \
-    FrameworkResOverlay \
-    GoogleCaptivePortalLoginGoOverlay \
-    GoogleDocumentsUIOverlay \
-    GoogleExtServicesConfigOverlay \
-    GooglePermissionControllerFrameworkOverlay \
-    GooglePermissionControllerOverlay \
-    ModuleMetadataGoogleOverlay \
-    Settings__auto_generated_rro_product \
-    SettingsProvider__auto_generated_rro_product \
-    SysuiGoConfigOverlay \
-    TeleService__auto_generated_rro_product \
-    TeleServiceOverlay \
-    unisoc-res__auto_generated_rro_product \
-    WallpaperOverlay \
-    com.google.mainline.go.telemetry \
-    apns-conf.xml \
-    AospBtOverlay \
-    AospWifiOverlay_Marlin3 \
-    AospWifiOverlay_Marlin3_Mainline \
-    UniWifiOverlay_Marlin3 \
-    MultiuserOverlays \
-    NetworkStackOverlayGo \
-    NetworkStackOverlayGsi \
-    Settings__auto_generated_rro_vendor \
-    TetheringConfigOverlayGo \
-    TetheringConfigOverlayGsi \
-    unisoc_go_overlay_frameworks_res \
-    unisoc_overlay_frameworks_res \
-    ProxyNFwLocation \
-    WirelessTools
+    zramwb.sh
+    # framework-res__auto_generated_rro_product \
+    # framework-res_navbar_rro \
+    # FrameworkResOverlay \
+    # GoogleCaptivePortalLoginGoOverlay \
+    # GoogleDocumentsUIOverlay \
+    # GoogleExtServicesConfigOverlay \
+    # GooglePermissionControllerFrameworkOverlay \
+    # GooglePermissionControllerOverlay \
+    # ModuleMetadataGoogleOverlay \
+    # Settings__auto_generated_rro_product \
+    # SettingsProvider__auto_generated_rro_product \
+    # SysuiGoConfigOverlay \
+    # TeleService__auto_generated_rro_product \
+    # TeleServiceOverlay \
+    # unisoc-res__auto_generated_rro_product \
+    # WallpaperOverlay \
+    # com.google.mainline.go.telemetry \
+    # apns-conf.xml \
+    # AospBtOverlay \
+    # AospWifiOverlay_Marlin3 \
+    # AospWifiOverlay_Marlin3_Mainline \
+    # UniWifiOverlay_Marlin3 \
+    # MultiuserOverlays \
+    # NetworkStackOverlayGo \
+    # NetworkStackOverlayGsi \
+    # Settings__auto_generated_rro_vendor \
+    # TetheringConfigOverlayGo \
+    # TetheringConfigOverlayGsi \
+    # unisoc_go_overlay_frameworks_res \
+    # unisoc_overlay_frameworks_res \
+    # ProxyNFwLocation \
+    # WirelessTools
 
 PRODUCT_PACKAGES += \
     fstab.ums9230_1h10 \
@@ -618,4 +618,4 @@ PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH)
 
 # Inherit the proprietary files
-$(call inherit-product, vendor/ohrtech/aleph/aleph-vendor.mk)
+#$(call inherit-product, vendor/ohrtech/aleph/aleph-vendor.mk)
