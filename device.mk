@@ -72,11 +72,11 @@ CallLogBackup \
 LiveWallpapersPicker \
 ONS
 
-PRODUCT_COPY_FILES += \
+#PRODUCT_COPY_FILES += \
 $(call find-copy-subdir-files,*,$(LOCAL_PATH)/modules/system/lib/,$(TARGET_COPY_OUT_SYSTEM)/lib) \
 $(call find-copy-subdir-files,*,$(LOCAL_PATH)/modules/system/lib64/,$(TARGET_COPY_OUT_SYSTEM)/lib64) \
 
-#PRODUCT_PACKAGES += \
+PRODUCT_PACKAGES += \
     android.hardware.boot@1.2-impl \
     android.hardware.boot@1.2-impl.recovery
 
@@ -196,10 +196,10 @@ PRODUCT_COPY_FILES += \
     
 VENDOR_MODULES_PATH = $(DEVICE_PATH)/modules/vendor_dlkm/lib/modules
 
-PRODUCT_COPY_FILES += \
+#PRODUCT_COPY_FILES += \
     $(VENDOR_MODULES_PATH)/init.insmod.cfg:$(TARGET_COPY_OUT_VENDOR_DLKM)/lib/modules/init.insmod.cfg
     
-BOARD_VENDOR_KERNEL_MODULES := \
+#BOARD_VENDOR_KERNEL_MODULES := \
 $(VENDOR_MODULES_PATH)/aes-ce-ccm.ko \
 $(VENDOR_MODULES_PATH)/aes-neon-blk.ko \
 $(VENDOR_MODULES_PATH)/agdsp_access.ko \
@@ -327,7 +327,7 @@ $(VENDOR_MODULES_PATH)/zram.ko \
 $(VENDOR_MODULES_PATH)/zsmalloc.ko
 
 
-BOARD_VENDOR_CHARGER_KERNEL_MODULES := \
+#BOARD_VENDOR_CHARGER_KERNEL_MODULES := \
 $(VENDOR_MODULES_PATH)/sprd_systimer.ko \
 $(VENDOR_MODULES_PATH)/sprd-sc27xx-spi.ko \
 $(VENDOR_MODULES_PATH)/rtc-sc27xx.ko \
