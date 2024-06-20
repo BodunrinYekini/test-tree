@@ -20,17 +20,17 @@ PRODUCT_COPY_FILES += \
 	$(TARGET_PREBUILT_KERNEL):kernel
 
 PRODUCT_PACKAGES += \
-    vndservicemanager \
-    cpio \
-    cplogctl \
     messaging
+    # vndservicemanager \
+    # cpio \
+    # cplogctl \
+    
 
 #vendor
-PRODUCT_PACKAGES += \
+#PRODUCT_PACKAGES += \
 libhwc2on1adapter \
 libtinycompress \
-librilutils \
-androidx.camera.extensions.impl
+librilutils
 
 #vendor/lib
 
