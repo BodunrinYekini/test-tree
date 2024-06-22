@@ -81,8 +81,7 @@ SoterService \
 SprdCommLogService \
 UnisocStk \
 USCPhotosProvider \
-ValidationTools \
-unisoc-res
+ValidationTools 
 
 PRODUCT_COPY_FILES += \
 $(call find-copy-subdir-files,*,$(LOCAL_PATH)/modules/system_ext/app_lib/,$(TARGET_COPY_OUT_SYSTEM_EXT)/app) \
