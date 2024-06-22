@@ -1,0 +1,6 @@
+prebuilt_etc {
+    name: "unisoc-res",
+    src: "system_ext/framework/unisoc-res.apk",
+    sub_dir: "framework",
+    system_ext_specific: true,
+}
