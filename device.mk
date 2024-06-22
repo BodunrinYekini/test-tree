@@ -82,10 +82,12 @@ SprdCommLogService \
 UnisocStk \
 USCPhotosProvider \
 ValidationTools \
-unisoc-res
+unisoc-res \
+PowerSaveModeLauncherPrebuilt
 
 PRODUCT_COPY_FILES += \
 $(call find-copy-subdir-files,*,$(LOCAL_PATH)/modules/system_ext/app_lib/,$(TARGET_COPY_OUT_SYSTEM_EXT)/app) \
+$(call find-copy-subdir-files,*,$(LOCAL_PATH)/modules/system_ext/priv-app_lib/,$(TARGET_COPY_OUT_SYSTEM_EXT)/priv-app) \
 $(call find-copy-subdir-files,*,$(LOCAL_PATH)/modules/system_ext/etc/,$(TARGET_COPY_OUT_SYSTEM_EXT)/etc) \
 $(call find-copy-subdir-files,*,$(LOCAL_PATH)/modules/system_ext/framework/,$(TARGET_COPY_OUT_SYSTEM_EXT)/framework) \
 $(call find-copy-subdir-files,*,$(LOCAL_PATH)/modules/system_ext/bin/,$(TARGET_COPY_OUT_SYSTEM_EXT)/bin) \
