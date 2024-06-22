@@ -93,7 +93,7 @@ $(call find-copy-subdir-files,*,$(LOCAL_PATH)/modules/system_ext/app_lib/,$(TARG
 $(call find-copy-subdir-files,*,$(LOCAL_PATH)/modules/system_ext/bin/,$(TARGET_COPY_OUT_SYSTEM_EXT)/bin) \
 $(call find-copy-subdir-files,*,$(LOCAL_PATH)/modules/system_ext/lib/,$(TARGET_COPY_OUT_SYSTEM_EXT)/lib) \
 $(call find-copy-subdir-files,*,$(LOCAL_PATH)/modules/system_ext/lib64/,$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64)
-$(shell chmod 6755 $(TARGET_COPY_OUT_SYSTEM_EXT)/bin)
+$(shell chmod 6755 $(TARGET_COPY_OUT_SYSTEM_EXT)/bin/*)
 
 #PRODUCT_PACKAGES += \
     android.hardware.boot@1.2-impl \
