@@ -93,6 +93,7 @@ system_ext_manifest.xml
 
 PRODUCT_COPY_FILES += \
 $(call find-copy-subdir-files,*,$(LOCAL_PATH)/modules/system_ext/app_lib/,$(TARGET_COPY_OUT_SYSTEM_EXT)/app) \
+$(call find-copy-subdir-files,*,$(LOCAL_PATH)/modules/system_ext/etc/,$(TARGET_COPY_OUT_SYSTEM_EXT)/etc) \
 $(call find-copy-subdir-files,*,$(LOCAL_PATH)/modules/system_ext/bin/,$(TARGET_COPY_OUT_SYSTEM_EXT)/bin) \
 $(call find-copy-subdir-files,*,$(LOCAL_PATH)/modules/system_ext/lib/,$(TARGET_COPY_OUT_SYSTEM_EXT)/lib) \
 $(call find-copy-subdir-files,*,$(LOCAL_PATH)/modules/system_ext/lib64/,$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64)
