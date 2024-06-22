@@ -82,14 +82,7 @@ SprdCommLogService \
 UnisocStk \
 USCPhotosProvider \
 ValidationTools \
-com.unisoc.sdk.common \
-smartlink_sdk \
-unipnp-framework \
-unisoc-framework \
-uni-telephony-common \
-selinux_policy_system_ext \
-system_ext_manifest.xml 
-    
+unisoc-res
 
 PRODUCT_COPY_FILES += \
 $(call find-copy-subdir-files,*,$(LOCAL_PATH)/modules/system_ext/app_lib/,$(TARGET_COPY_OUT_SYSTEM_EXT)/app) \
