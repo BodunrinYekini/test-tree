@@ -214,10 +214,10 @@ PRODUCT_PACKAGES += \
 strip_packages
 
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/rootdir/etc/fstab.ums9230_1h10:$(TARGET_COPY_OUT_VENDOR_RAMDISK_OUT)/first_stage_ramdisk/fstab.ums9230_1h10 \
-    $(DEVICE_PATH)/vendor_compatibility_matrix.xml:$(TARGET_COPY_OUT_VENDOR)/etc/vintf/compatibility_matrix.xml \
-    $(DEVICE_PATH)/compatibility_matrix.device.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/vintf/compatibility_matrix.device.xml \
-    $(DEVICE_PATH)/system_framework_manifest.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/vintf/manifest.xml
+    $(LOCAL_PATH)/rootdir/etc/fstab.ums9230_1h10:$(TARGET_COPY_OUT_VENDOR_RAMDISK_OUT)/first_stage_ramdisk/fstab.ums9230_1h10
+    # $(DEVICE_PATH)/vendor_compatibility_matrix.xml:$(TARGET_COPY_OUT_VENDOR)/etc/vintf/compatibility_matrix.xml \
+    # $(DEVICE_PATH)/compatibility_matrix.device.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/vintf/compatibility_matrix.device.xml \
+    # $(DEVICE_PATH)/system_framework_manifest.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/vintf/manifest.xml
    
 
     
