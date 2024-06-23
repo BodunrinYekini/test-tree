@@ -216,6 +216,7 @@ DEVICE_MANIFEST_FILE := $(DEVICE_PATH)/manifest.xml
 
 #/vendor/etc/vintf/compatibility_matrix.xml
 DEVICE_MATRIX_FILE := $(DEVICE_PATH)/vendor_compatibility_matrix.xml
+DEVICE_MATRIX_INPUT_FILE := $(DEVICE_MATRIX_FILE)
 
 #/odm/etc/vintf/manifest.xml
 ODM_MANIFEST_FILES := $(DEVICE_PATH)/odm_manifest.xml
