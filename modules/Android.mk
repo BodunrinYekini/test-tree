@@ -8,3 +8,11 @@ LOCAL_CERTIFICATE := platform
 LOCAL_MODULE_PATH := $(TARGET_OUT_SYSTEM_EXT)/priv-app/OmacpPrebuilt/PowerSaveModeLauncherPrebuilt
 LOCAL_IS_RUNTIME_RESOURCE_OVERLAY := true
 include $(BUILD_PREBUILT)
+
+include $(CLEAR_VARS)
+UNWANTED_OVERRIDE_PACKAGES := \
+   system_ext_manifest.xml
+LOCAL_MODULE := strip_packages
+LOCAL_MODULE_TAGS := optional
+PACKAGES.$(LOCAL_MODULE).OVERRIDES := $(strip $(UNWANTED_OVERRIDE_PACKAGES))
+include $(BUILD_PHONY_PACKAGE)
