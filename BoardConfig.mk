@@ -215,7 +215,10 @@ BOARD_MOVE_GSI_AVB_KEYS_TO_VENDOR_BOOT := true
 DEVICE_MANIFEST_FILE += $(DEVICE_PATH)/manifest.xml
 
 #/odm/etc/vintf/manifest.xml
-ODM_MANIFEST_FILES+= $(DEVICE_PATH)/odm_manifest.xml
+ODM_MANIFEST_FILES += $(DEVICE_PATH)/odm_manifest.xml
+
+#/system_ext/etc/vintf/manifest.xml
+SYSTEM_EXT_MANIFEST_FILES += $(DEVICE_PATH)/system_ext_manifest.xml
 
 #/vendor/etc/vintf/compatibility_matrix.xml
 DEVICE_MATRIX_FILE += $(DEVICE_PATH)/vendor_compatibility_matrix.xml
