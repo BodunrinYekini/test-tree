@@ -11,7 +11,8 @@ include $(BUILD_PREBUILT)
 
 include $(CLEAR_VARS)
 UNWANTED_OVERRIDE_PACKAGES := \
-   system_ext_manifest.xml
+Launcher3QuickStep \
+system_ext_manifest.xml
 LOCAL_MODULE := strip_packages
 LOCAL_MODULE_TAGS := optional
 PACKAGES.$(LOCAL_MODULE).OVERRIDES := $(strip $(UNWANTED_OVERRIDE_PACKAGES))
