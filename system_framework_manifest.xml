@@ -3,7 +3,7 @@
         manifest.xml
 -->
 <manifest version="5.0" type="framework">
-    <!--hal format="hidl" max-level="6">
+    <hal format="hidl" max-level="6">
         <name>android.frameworks.displayservice</name>
         <transport>hwbinder</transport>
         <version>1.0</version>
@@ -12,8 +12,8 @@
             <instance>default</instance>
         </interface>
         <fqname>@1.0::IDisplayService/default</fqname>
-    </hal-->
-    <!--hal format="hidl" max-level="5">
+    </hal>
+    <hal format="hidl" max-level="5">
         <name>android.frameworks.schedulerservice</name>
         <transport>hwbinder</transport>
         <version>1.0</version>
@@ -22,8 +22,8 @@
             <instance>default</instance>
         </interface>
         <fqname>@1.0::ISchedulingPolicyService/default</fqname>
-    </hal-->
-    <!--hal format="hidl">
+    </hal>
+    <hal format="hidl">
         <name>android.frameworks.sensorservice</name>
         <transport>hwbinder</transport>
         <version>1.0</version>
@@ -32,8 +32,8 @@
             <instance>default</instance>
         </interface>
         <fqname>@1.0::ISensorManager/default</fqname>
-    </hal-->
-    <!--hal format="hidl">
+    </hal>
+    <hal format="hidl">
         <name>android.hidl.manager</name>
         <transport>hwbinder</transport>
         <version>1.2</version>
@@ -42,8 +42,8 @@
             <instance>default</instance>
         </interface>
         <fqname>@1.2::IServiceManager/default</fqname>
-    </hal-->
-    <!--hal format="hidl">
+    </hal>
+    <hal format="hidl">
         <name>android.hidl.memory</name>
         <transport arch="32+64">passthrough</transport>
         <version>1.0</version>
@@ -52,7 +52,7 @@
             <instance>ashmem</instance>
         </interface>
         <fqname>@1.0::IMapper/ashmem</fqname>
-    </hal-->
+    </hal>
     <hal format="hidl">
         <name>android.hidl.token</name>
         <transport>hwbinder</transport>
