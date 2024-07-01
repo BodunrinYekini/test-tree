@@ -218,6 +218,9 @@ PRODUCT_COPY_FILES += \
     # $(DEVICE_PATH)/vendor_compatibility_matrix.xml:$(TARGET_COPY_OUT_VENDOR)/etc/vintf/compatibility_matrix.xml \
     # $(DEVICE_PATH)/compatibility_matrix.device.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/vintf/compatibility_matrix.device.xml \
     # $(DEVICE_PATH)/system_framework_manifest.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/vintf/manifest.xml
+
+PRODUCT_COPY_FILES += \
+    $(call find-copy-subdir-files,*,$(LOCAL_PATH)/modules/system/xbin/,$(TARGET_COPY_OUT_SYSTEM)/xbin)
    
 
     
