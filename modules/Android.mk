@@ -10,6 +10,16 @@ LOCAL_IS_RUNTIME_RESOURCE_OVERLAY := true
 include $(BUILD_PREBUILT)
 
 include $(CLEAR_VARS)
+LOCAL_MODULE_TAGS := optional
+LOCAL_MODULE := com.google.mainline.primary
+LOCAL_SRC_FILES := modules/system/priv-app/com.google.mainline.primary/com.google.mainline.primary.apk
+LOCAL_MODULE_CLASS := APPS
+LOCAL_MODULE_SUFFIX := $(COMMON_ANDROID_PACKAGE_SUFFIX)
+LOCAL_CERTIFICATE := platform
+LOCAL_MODULE_PATH := $(TARGET_OUT_SYSTEM)/priv-app
+include $(BUILD_PREBUILT)
+
+include $(CLEAR_VARS)
 UNWANTED_OVERRIDE_PACKAGES := \
 system_ext_manifest.xml
 # product_compatibility_matrix.xml \
