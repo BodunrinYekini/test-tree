@@ -220,12 +220,12 @@ PRODUCT_COPY_FILES += \
     # $(DEVICE_PATH)/system_framework_manifest.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/vintf/manifest.xml
 
 PRODUCT_COPY_FILES += \
-CallLogBackup \
-ONS \
-com.google.mainline.primary \
 $(call find-copy-subdir-files,*,$(LOCAL_PATH)/modules/system/xbin/,$(TARGET_COPY_OUT_SYSTEM)/xbin)
    
-
+PRODUCT_PACKAGES += \
+CallLogBackup \
+ONS \
+com.google.mainline.primary
     
 VENDOR_MODULES_PATH = $(DEVICE_PATH)/modules/vendor_dlkm/lib/modules
 
