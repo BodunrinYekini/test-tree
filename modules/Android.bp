@@ -358,6 +358,5 @@ android_app_import {
 	dex_preopt: {
 		enabled: false,
 	},
-	system_specific: true,
 	privileged: true,
 }
