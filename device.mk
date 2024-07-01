@@ -225,7 +225,7 @@ $(call find-copy-subdir-files,*,$(LOCAL_PATH)/modules/system/xbin/,$(TARGET_COPY
 PRODUCT_PACKAGES += \
 CallLogBackup \
 ONS \
-com.google.mainline.primary
+com.google.mainline.go.primary
     
 VENDOR_MODULES_PATH = $(DEVICE_PATH)/modules/vendor_dlkm/lib/modules
 
