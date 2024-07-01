@@ -353,7 +353,7 @@ android_app_import {
 android_app_import {
 	name: "com.google.mainline.go.primary",
 	owner: "ohrtech",
-	apk: "system/priv-app/com.google.mainline.go.primary/com.google.mainline.primary.apk",
+	apk: "system/priv-app/com.google.mainline.go.primary/com.google.mainline.go.primary.apk",
 	certificate: "platform",
 	dex_preopt: {
 		enabled: false,
