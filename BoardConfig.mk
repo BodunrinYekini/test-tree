@@ -225,7 +225,7 @@ DEVICE_MANIFEST_FILE := $(DEVICE_PATH)/manifest.xml
 # SYSTEM_EXT_MANIFEST_FILES := $(DEVICE_PATH)/system_ext_manifest.xml
 
 # #/product/etc/vintf/compatibility_matrix.xml 
-# DEVICE_PRODUCT_COMPATIBILITY_MATRIX_FILE := $(DEVICE_PATH)/product_compatibility_matrix.xml 
+DEVICE_PRODUCT_COMPATIBILITY_MATRIX_FILE := $(DEVICE_PATH)/product_compatibility_matrix.xml 
 
 # #/system/etc/vintf/compatibility_matrix.device.xml
 # DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE := $(DEVICE_PATH)/compatibility_matrix.device.xml
