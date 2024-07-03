@@ -37,7 +37,7 @@ $(call find-copy-subdir-files,*,$(LOCAL_PATH)/manifests/vendor/manifest/,$(TARGE
 
 
 PRODUCT_PACKAGES += \
-    android.hardware.gatekeeper@1.0
+    android.hardware.gatekeeper@1.0-service.trusty
 
 
 PRODUCT_SHIPPING_API_LEVEL := 33
