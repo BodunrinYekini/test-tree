@@ -36,6 +36,10 @@ messaging
 $(call find-copy-subdir-files,*,$(LOCAL_PATH)/manifests/vendor/manifest/,$(TARGET_COPY_OUT_VENDOR)/etc/vintf/manifest) \
 
 
+PRODUCT_PACKAGES += \
+    android.hardware.gatekeeper@1.0
+
+
 PRODUCT_SHIPPING_API_LEVEL := 33
 
 PRODUCT_BUILD_SUPER_PARTITION := false
