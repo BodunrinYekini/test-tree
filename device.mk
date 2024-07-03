@@ -30,7 +30,8 @@ ThemePicker \
 RemoteProvisioner \
 CarrierConfig \
 EmergencyInfo \
-messaging
+messaging \
+vendor_compatibility_matrix.xml
 
 PRODUCT_SHIPPING_API_LEVEL := 33
 
