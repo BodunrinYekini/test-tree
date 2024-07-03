@@ -211,8 +211,8 @@ BOARD_EXCLUDE_KERNEL_FROM_RECOVERY_IMAGE :=
 BOARD_MOVE_GSI_AVB_KEYS_TO_VENDOR_BOOT := true
 
 
-# # VINTF
-# DEVICE_MANIFEST_FILE := $(DEVICE_PATH)/manifest.xml
+# 	/vendor/etc/vintf/manifest.xml
+DEVICE_MANIFEST_FILE := $(DEVICE_PATH)/manifest.xml
 
 # #/vendor/etc/vintf/compatibility_matrix.xml
 # DEVICE_MATRIX_FILE := $(DEVICE_PATH)/vendor_compatibility_matrix.xml
