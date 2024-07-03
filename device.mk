@@ -39,7 +39,8 @@ $(call find-copy-subdir-files,*,$(LOCAL_PATH)/manifests/vendor/manifest/,$(TARGE
 PRODUCT_PACKAGES += \
     android.hardware.gatekeeper@1.0-service.trusty \
 	android.hardware.health-service.example \
-	android.hardware.thermal@2.0-service.mock
+	android.hardware.thermal@2.0-service.mock \
+	android.hardware.power-service.example
 
 
 PRODUCT_SHIPPING_API_LEVEL := 33
