@@ -32,7 +32,7 @@ CarrierConfig \
 EmergencyInfo \
 messaging
 
-PRODUCT_COPY_FILES += \
+#PRODUCT_COPY_FILES += \
 $(call find-copy-subdir-files,*,$(LOCAL_PATH)/manifests/vendor/manifest/,$(TARGET_COPY_OUT_VENDOR)/etc/vintf/manifest) \
 
 
