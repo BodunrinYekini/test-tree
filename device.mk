@@ -56,6 +56,10 @@ PRODUCT_PACKAGES += \
     init.zramwb.rc \
 
 
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/rootdir/etc/fstab.ums9230_1h10:$(TARGET_COPY_OUT_VENDOR_RAMDISK_OUT)/first_stage_ramdisk/fstab.ums9230_1h10
+
+
 PRODUCT_PACKAGES += \
     android.hardware.gatekeeper@1.0-service.trusty \
 	android.hardware.health-service.example \
