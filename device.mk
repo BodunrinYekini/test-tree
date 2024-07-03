@@ -30,8 +30,11 @@ ThemePicker \
 RemoteProvisioner \
 CarrierConfig \
 EmergencyInfo \
-messaging \
-vendor_compatibility_matrix.xml
+messaging
+
+PRODUCT_COPY_FILES += \
+$(call find-copy-subdir-files,*,$(LOCAL_PATH)/manifests/vendor/manifest/,$(TARGET_COPY_OUT_VENDOR)/etc/vintf/manifest) \
+
 
 PRODUCT_SHIPPING_API_LEVEL := 33
 
