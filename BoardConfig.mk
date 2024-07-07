@@ -12,7 +12,23 @@ BUILD_BROKEN_VINTF_PRODUCT_COPY_FILES := true
 DONT_DEXPREOPT_PREBUILTS := true
 BOARD_BOOT_HEADER_VERSION := 4
 PRODUCT_ENFORCE_VINTF_MANIFEST := true
-BOARD_VNDK_VERSION := current
+# BOARD_VNDK_VERSION := current
+
+# from Generic system
+TARGET_NO_BOOTLOADER := true
+TARGET_NO_RECOVERY := true
+BOARD_EXT4_SHARE_DUP_BLOCKS := true
+TARGET_USERIMAGES_USE_EXT4 := true
+BOARD_USES_METADATA_PARTITION := true
+BOARD_VNDK_VERSION ?= current
+TARGET_USES_64_BIT_BINDER := true
+TARGET_ENABLE_MEDIADRM_64 := true
+BOARD_USES_SYSTEM_OTHER_ODEX := true
+USE_XML_AUDIO_POLICY_CONF := 1
+BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := build/make/target/board/mainline_arm64/bluetooth
+BOARD_CHARGER_ENABLE_SUSPEND := true
+BOARD_PROPERTY_OVERRIDES_SPLIT_ENABLED := true
+TARGET_LMKD_STATS_LOG := true
 
 # A/B
 AB_OTA_UPDATER := true
@@ -212,8 +228,16 @@ BOARD_EXCLUDE_KERNEL_FROM_RECOVERY_IMAGE :=
 BOARD_MOVE_GSI_AVB_KEYS_TO_VENDOR_BOOT := true
 
 
+
+
 # 	/vendor/etc/vintf/manifest.xml
-DEVICE_MANIFEST_FILE := $(DEVICE_PATH)/manifests/manifest.xml
+#DEVICE_MANIFEST_FILE := $(DEVICE_PATH)/manifests/manifest.xml
+
+# #/product/etc/vintf/compatibility_matrix.xml 
+#DEVICE_PRODUCT_COMPATIBILITY_MATRIX_FILE := $(DEVICE_PATH)/manifests/product_compatibility_matrix.xml 
+
+
+
 
 # #/vendor/etc/vintf/compatibility_matrix.xml
 # DEVICE_MATRIX_FILE := $(DEVICE_PATH)/vendor_compatibility_matrix.xml
@@ -225,8 +249,7 @@ DEVICE_MANIFEST_FILE := $(DEVICE_PATH)/manifests/manifest.xml
 # #/system_ext/etc/vintf/manifest.xml
 # SYSTEM_EXT_MANIFEST_FILES := $(DEVICE_PATH)/system_ext_manifest.xml
 
-# #/product/etc/vintf/compatibility_matrix.xml 
-DEVICE_PRODUCT_COMPATIBILITY_MATRIX_FILE := $(DEVICE_PATH)/manifests/product_compatibility_matrix.xml 
+
 
 # #/system/etc/vintf/compatibility_matrix.device.xml
 # DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE := $(DEVICE_PATH)/compatibility_matrix.device.xml

@@ -49,7 +49,7 @@ device/sample/etc/apns-full-conf.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/apns-conf.xm
 $(call find-copy-subdir-files,*,$(LOCAL_PATH)/manifests/vendor/manifest/,$(TARGET_COPY_OUT_VENDOR)/etc/vintf/manifest) 
 
 
-#PRODUCT_PACKAGES += \
+PRODUCT_PACKAGES += \
     android.hardware.gatekeeper@1.0-service.trusty \
 	android.hardware.health-service.example \
 	android.hardware.thermal@2.0-service.mock \
