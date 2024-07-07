@@ -32,7 +32,9 @@ DisplayCutoutEmulationWaterfall \
 NavigationBarModeGesturalWideBack \
 FontNotoSerifSource \
 fs_config_dirs_product \
-fs_config_files_product
+fs_config_files_product \
+fs_config_dirs_system_ext \
+fs_config_files_system_ext 
 LOCAL_MODULE := strip_packages
 LOCAL_MODULE_TAGS := optional
 PACKAGES.$(LOCAL_MODULE).OVERRIDES := $(strip $(UNWANTED_OVERRIDE_PACKAGES))
