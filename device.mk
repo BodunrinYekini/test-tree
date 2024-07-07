@@ -33,7 +33,8 @@ Browser2 \
 Camera2 \
 Dialer \
 LatinIME \
-messaging
+messaging \
+Gallery2
 
 
 
