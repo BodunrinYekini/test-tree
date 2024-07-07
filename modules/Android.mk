@@ -11,13 +11,26 @@ include $(BUILD_PREBUILT)
 
 include $(CLEAR_VARS)
 UNWANTED_OVERRIDE_PACKAGES := \
-system_ext_manifest.xml
-# product_compatibility_matrix.xml \
-# product_manifest.xml \
-# system_manifest.xml \
-# system_compatibility_matrix.xml \
-# vendor_compatibility_matrix.xml
-
+PhotoTable \
+Calendar \
+DeskClock \
+Music \
+QuickSearchBox \
+Contacts \
+ImsServiceEntitlement \
+OneTimeInitializer \
+SettingsIntelligence \
+DisplayCutoutEmulationCorner \
+NavigationBarMode3Button \
+DisplayCutoutEmulationDouble \
+NavigationBarModeGestural \
+DisplayCutoutEmulationHole \
+NavigationBarModeGesturalExtraWideBack \
+DisplayCutoutEmulationTall \
+NavigationBarModeGesturalNarrowBack \
+DisplayCutoutEmulationWaterfall \
+NavigationBarModeGesturalWideBack \
+FontNotoSerifSource
 LOCAL_MODULE := strip_packages
 LOCAL_MODULE_TAGS := optional
 PACKAGES.$(LOCAL_MODULE).OVERRIDES := $(strip $(UNWANTED_OVERRIDE_PACKAGES))
