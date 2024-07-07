@@ -39,9 +39,7 @@ messaging
 
 # from GSI
 PRODUCT_PACKAGES += \
-vndk_apex_snapshot_package \
-com.android.apex.cts.shim.v1_with_prebuilts.flattened \
-com.android.adbd
+vndk_apex_snapshot_package
 
 PRODUCT_COPY_FILES += \
 device/sample/etc/apns-full-conf.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/apns-conf.xml
