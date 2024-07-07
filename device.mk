@@ -45,9 +45,6 @@ PRODUCT_COPY_FILES += \
 device/sample/etc/apns-full-conf.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/apns-conf.xml
 
 
-  PRODUCT_PACKAGES += com.android.apex.cts.shim.v1_prebuilt
-  PRODUCT_VENDOR_PROPERTIES := ro.apex.updatable=true
-  PRODUCT_COMPRESSED_APEX := true
 
 #PRODUCT_COPY_FILES += \
 $(call find-copy-subdir-files,*,$(LOCAL_PATH)/manifests/vendor/manifest/,$(TARGET_COPY_OUT_VENDOR)/etc/vintf/manifest) 
