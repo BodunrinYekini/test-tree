@@ -11,7 +11,8 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/generic_ramdisk.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/generic_system.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/base.mk)
-
+# Default AOSP sounds
+$(call inherit-product-if-exists, frameworks/base/data/sounds/AllAudio.mk)
 
 DEVICE_PATH := device/ohrtech/aleph
 TARGET_PREBUILT_KERNEL :=$(DEVICE_PATH)/prebuilts/kernel
@@ -39,7 +40,7 @@ messaging
 # from GSI
 PRODUCT_PACKAGES += \
 vndk_apex_snapshot_package \
-
+com.android.apex.cts.shim.v1_with_prebuilts.flattened
 
 PRODUCT_COPY_FILES += \
 device/sample/etc/apns-full-conf.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/apns-conf.xml
