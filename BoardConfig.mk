@@ -231,8 +231,7 @@ BOARD_EXCLUDE_KERNEL_FROM_RECOVERY_IMAGE :=
 BOARD_MOVE_GSI_AVB_KEYS_TO_VENDOR_BOOT := true
 
 
-DEVICE_MANIFEST_FILE := device/google/coral/manifest.xml
-DEVICE_PRODUCT_COMPATIBILITY_MATRIX_FILE := device/google/coral/compatibility_matrix.xml
+
 
 # 	/vendor/etc/vintf/manifest.xml
 #DEVICE_MANIFEST_FILE := $(DEVICE_PATH)/manifests/manifest.xml
