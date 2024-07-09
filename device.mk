@@ -9,22 +9,10 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 #$(call inherit-product, $(SRC_TARGET_DIR)/product/updatable_apex.mk)
 #$(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/generic_ramdisk.mk)
-$(call inherit-product, $(SRC_TARGET_DIR)/product/generic_system.mk)
-#$(call inherit-product, $(SRC_TARGET_DIR)/product/base.mk)
+#$(call inherit-product, $(SRC_TARGET_DIR)/product/generic_system.mk)
 
-$(call inherit-product, $(SRC_TARGET_DIR)/product/telephony_product.mk)
-$(call inherit-product, $(SRC_TARGET_DIR)/product/handheld_product.mk)
+$(call inherit-product, $(SRC_TARGET_DIR)/product/aosp_base_telephony.mk)
 
-$(call inherit-product, $(SRC_TARGET_DIR)/product/telephony_vendor.mk)
-$(call inherit-product, $(SRC_TARGET_DIR)/product/handheld_vendor.mk)
-
-$(call inherit-product, $(SRC_TARGET_DIR)/product/telephony_system_ext.mk)
-$(call inherit-product, $(SRC_TARGET_DIR)/product/handheld_system_ext.mk)
-
-
-
-# Default AOSP sounds
-$(call inherit-product-if-exists, frameworks/base/data/sounds/AllAudio.mk)
 
 DEVICE_PATH := device/ohrtech/aleph
 TARGET_PREBUILT_KERNEL :=$(DEVICE_PATH)/prebuilts/kernel
