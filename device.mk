@@ -10,11 +10,8 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 #$(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/generic_ramdisk.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/generic_system.mk)
-#$(call inherit-product, $(SRC_TARGET_DIR)/product/base.mk)
+$(call inherit-product, $(SRC_TARGET_DIR)/product/base.mk)
 
-$(call inherit-product, $(SRC_TARGET_DIR)/product/base_system.mk)
-$(call inherit-product, $(SRC_TARGET_DIR)/product/base_system_ext.mk)
-$(call inherit-product, $(SRC_TARGET_DIR)/product/base_product.mk)
 
 # Default AOSP sounds
 $(call inherit-product-if-exists, frameworks/base/data/sounds/AllAudio.mk)
