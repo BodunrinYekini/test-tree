@@ -10,7 +10,17 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 #$(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/generic_ramdisk.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/generic_system.mk)
-$(call inherit-product, $(SRC_TARGET_DIR)/product/base.mk)
+#$(call inherit-product, $(SRC_TARGET_DIR)/product/base.mk)
+
+$(call inherit-product, $(SRC_TARGET_DIR)/product/telephony_product.mk)
+$(call inherit-product, $(SRC_TARGET_DIR)/product/handheld_product.mk)
+
+$(call inherit-product, $(SRC_TARGET_DIR)/product/telephony_vendor.mk)
+$(call inherit-product, $(SRC_TARGET_DIR)/product/handheld_vendor.mk)
+
+$(call inherit-product, $(SRC_TARGET_DIR)/product/telephony_system_ext.mk)
+$(call inherit-product, $(SRC_TARGET_DIR)/product/handheld_system_ext.mk)
+
 
 
 # Default AOSP sounds
@@ -23,20 +33,9 @@ PRODUCT_COPY_FILES += \
 
 
 PRODUCT_PACKAGES += \
-Launcher3QuickStep \
-Provision \
 RemoteProvisioner \
-Settings \
-StorageManager \
-SystemUI \
-CarrierConfig \
-webview \
-Browser2 \
-Camera2 \
-Dialer \
-LatinIME \
 messaging \
-Gallery2
+
 
 
 
