@@ -25,10 +25,35 @@ $(call find-copy-subdir-files,*,$(LOCAL_PATH)/manifests/vendor/manifest/,$(TARGE
 
 
 PRODUCT_PACKAGES += \
-    android.hardware.gatekeeper@1.0-service.trusty \
-	android.hardware.health-service.example \
-	android.hardware.thermal@2.0-service.mock \
-	android.hardware.power-service.example
+ai_engine-default \
+android.hardware.cas@1.2-service-lazy \
+android.hardware.drm-service.clearkey \
+android.hardware.gatekeeper@1.0-service.trusty \
+android.hardware.health-service.example \
+android.hardware.security.keymint@2.0-unisoc.service.trusty \
+android.hardware.sensors-multihal \
+android.hardware.usb-service.example \
+android.hardware.wifi.hostapd \
+android.hardware.wifi.supplicant \
+android.hardware.wifi@1.0-service \
+aprd-default \
+bluetooth_audio \
+combinedservice \
+cplog_svc-default \
+enhance-default \
+face-default \
+manifest_android.hardware.drm-service.widevine \
+manifest_dualsim \
+manifest_media_c2_V1_1_unisoc \
+network-default \
+power.stats-default \
+soter_default \
+trusty-default \
+vendor-log-default \
+vendor-oemlock-default \
+vendor-power-default \
+vendor.sprd.hardware.boot@1.2 \
+vendor.sprd.hardware.gnss@2.2-service
 
 
 PRODUCT_SHIPPING_API_LEVEL := 33
