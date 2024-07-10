@@ -20,68 +20,6 @@ PRODUCT_COPY_FILES += \
 	$(TARGET_PREBUILT_KERNEL):kernel
 
 
-# Audio
-PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/configs/audio/a2dp_audio_policy_configuration.xml:$(TARGET_COPY_OUT_VENDOR)/etc/a2dp_audio_policy_configuration.xml \
-    $(LOCAL_PATH)/configs/audio/audio_effects.conf:$(TARGET_COPY_OUT_VENDOR)/etc/audio_effects.conf \
-    $(LOCAL_PATH)/configs/audio/audio_effects.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_effects.xml \
-    $(LOCAL_PATH)/configs/audio/audio_hw.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_hw.xml \
-    $(LOCAL_PATH)/configs/audio/audio_para:$(TARGET_COPY_OUT_VENDOR)/etc/audio_para \
-    $(LOCAL_PATH)/configs/audio/audio_policy_configuration.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_policy_configuration.xml \
-    $(LOCAL_PATH)/configs/audio/audio_policy_configuration_smart_pa.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_policy_configuration_smart_pa.xml \
-    $(LOCAL_PATH)/configs/audio/audio_policy_volumes.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_policy_volumes.xml \
-    $(LOCAL_PATH)/configs/audio/primary_audio_policy_configuration.xml:$(TARGET_COPY_OUT_VENDOR)/etc/primary_audio_policy_configuration.xml \
-    $(LOCAL_PATH)/configs/audio/primary_audio_policy_configuration_smart_pa.xml:$(TARGET_COPY_OUT_VENDOR)/etc/primary_audio_policy_configuration_smart_pa.xml \
-    $(LOCAL_PATH)/configs/audio/r_submix_audio_policy_configuration.xml:$(TARGET_COPY_OUT_VENDOR)/etc/r_submix_audio_policy_configuration.xml \
-    $(LOCAL_PATH)/configs/audio/usb_audio_policy_configuration.xml:$(TARGET_COPY_OUT_VENDOR)/etc/usb_audio_policy_configuration.xml \
-
-# Keylayout
-PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/configs/keylayout/gpio-keys.kl:$(TARGET_COPY_OUT_VENDOR)/usr/keylayout/gpio-keys.kl \
-
-# Media
-PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/configs/media/media_codecs.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs.xml \
-    $(LOCAL_PATH)/configs/media/media_codecs_google_audio.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_google_audio.xml \
-    $(LOCAL_PATH)/configs/media/media_codecs_google_telephony.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_google_telephony.xml \
-    $(LOCAL_PATH)/configs/media/media_codecs_google_video.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_google_video.xml \
-    $(LOCAL_PATH)/configs/media/media_codecs_performance.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_performance.xml \
-    $(LOCAL_PATH)/configs/media/media_profiles_V1_0.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_profiles_V1_0.xml \
-    $(LOCAL_PATH)/configs/media/media_profiles_turnkey.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_profiles_turnkey.xml \
-
-# Overlays
-DEVICE_PACKAGE_OVERLAYS += \
-    $(LOCAL_PATH)/overlay
-
-# Permissions
-PRODUCT_COPY_FILES += \
-    frameworks/native/data/etc/android.hardware.bluetooth_le.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.bluetooth_le.xml \
-    frameworks/native/data/etc/android.hardware.camera.flash-autofocus.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.camera.flash-autofocus.xml \
-    frameworks/native/data/etc/android.hardware.camera.front.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.camera.front.xml \
-    frameworks/native/data/etc/android.hardware.fingerprint.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.fingerprint.xml \
-    frameworks/native/data/etc/android.hardware.location.gps.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.location.gps.xml \
-    frameworks/native/data/etc/android.hardware.opengles.aep.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.opengles.aep.xml \
-    frameworks/native/data/etc/android.hardware.telephony.gsm.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.telephony.gsm.xml \
-    frameworks/native/data/etc/android.hardware.touchscreen.multitouch.distinct.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.touchscreen.multitouch.distinct.xml \
-    frameworks/native/data/etc/android.hardware.touchscreen.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.touchscreen.xml \
-    frameworks/native/data/etc/android.hardware.usb.accessory.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.usb.accessory.xml \
-    frameworks/native/data/etc/android.hardware.usb.host.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.usb.host.xml \
-    frameworks/native/data/etc/android.hardware.wifi.direct.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.wifi.direct.xml \
-    frameworks/native/data/etc/android.hardware.wifi.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.wifi.xml \
-    frameworks/native/data/etc/android.software.cts.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.software.cts.xml \
-    frameworks/native/data/etc/android.software.midi.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.software.midi.xml \
-    frameworks/native/data/etc/android.software.verified_boot.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.software.verified_boot.xml \
-    frameworks/native/data/etc/handheld_core_hardware.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/handheld_core_hardware.xml \
-
-# from GSI
-PRODUCT_PACKAGES += \
-vndk_apex_snapshot_package
-
-PRODUCT_COPY_FILES += \
-device/sample/etc/apns-full-conf.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/apns-conf.xml
-
-
-
 #PRODUCT_COPY_FILES += \
 $(call find-copy-subdir-files,*,$(LOCAL_PATH)/manifests/vendor/manifest/,$(TARGET_COPY_OUT_VENDOR)/etc/vintf/manifest) 
 
@@ -101,6 +39,7 @@ PRODUCT_USE_DYNAMIC_PARTITION_SIZE := true
 
 PRODUCT_CHARACTERISTICS := default
 
+#vendor_boot
 
 VENDOR_BOOT_MODULES_PATH = $(DEVICE_PATH)/modules/vendor_boot/lib/modules
 BOARD_VENDOR_RAMDISK_KERNEL_MODULES := \
@@ -328,10 +267,205 @@ $(VENDOR_BOOT_MODULES_PATH)/sprd-compr-2stage-dma.ko \
 $(VENDOR_BOOT_MODULES_PATH)/snd-soc-sprd-card.ko
 
 
+# vendor_dlkm
+VENDOR_MODULES_PATH = $(DEVICE_PATH)/modules/vendor_dlkm/lib/modules
+
+PRODUCT_COPY_FILES += \
+    $(VENDOR_MODULES_PATH)/init.insmod.cfg:$(TARGET_COPY_OUT_VENDOR_DLKM)/lib/modules/init.insmod.cfg
+    
+BOARD_VENDOR_KERNEL_MODULES := \
+$(VENDOR_MODULES_PATH)/aes-ce-ccm.ko \
+$(VENDOR_MODULES_PATH)/aes-neon-blk.ko \
+$(VENDOR_MODULES_PATH)/agdsp_access.ko \
+$(VENDOR_MODULES_PATH)/apsys-dvfs.ko \
+$(VENDOR_MODULES_PATH)/arc4.ko \
+$(VENDOR_MODULES_PATH)/asix.ko \
+$(VENDOR_MODULES_PATH)/audio-dsp-dump.ko \
+$(VENDOR_MODULES_PATH)/audio-pipe.ko \
+$(VENDOR_MODULES_PATH)/audio_mem.ko \
+$(VENDOR_MODULES_PATH)/audio_sipc.ko \
+$(VENDOR_MODULES_PATH)/ax88179_178a.ko \
+$(VENDOR_MODULES_PATH)/bq2560x-charger.ko \
+$(VENDOR_MODULES_PATH)/bq2597x-charger.ko \
+$(VENDOR_MODULES_PATH)/core.ko \
+$(VENDOR_MODULES_PATH)/cpufreq_userspace.ko \
+$(VENDOR_MODULES_PATH)/extcon-usb-gpio.ko \
+$(VENDOR_MODULES_PATH)/flash_ic_aw3641.ko \
+$(VENDOR_MODULES_PATH)/flash_ic_ocp8137.ko \
+$(VENDOR_MODULES_PATH)/flash_ic_sc2730_rgb.ko \
+$(VENDOR_MODULES_PATH)/focaltech_ft8756_spi_ts.ko \
+$(VENDOR_MODULES_PATH)/ghash-ce.ko \
+$(VENDOR_MODULES_PATH)/gnss_common_ctl_all.ko \
+$(VENDOR_MODULES_PATH)/gnss_dbg.ko \
+$(VENDOR_MODULES_PATH)/gnss_pmnotify_ctl.ko \
+$(VENDOR_MODULES_PATH)/gpio.ko \
+$(VENDOR_MODULES_PATH)/gslX680_sharkl3.ko \
+$(VENDOR_MODULES_PATH)/hall_mh248.ko \
+$(VENDOR_MODULES_PATH)/hl1506_charger.ko \
+$(VENDOR_MODULES_PATH)/ims_bridge.ko \
+$(VENDOR_MODULES_PATH)/ion_cma_heap.ko \
+$(VENDOR_MODULES_PATH)/ion_ipc_trusty.ko \
+$(VENDOR_MODULES_PATH)/jpg.ko \
+$(VENDOR_MODULES_PATH)/leds-sc27xx-bltc.ko \
+$(VENDOR_MODULES_PATH)/ledtrig-pattern.ko \
+$(VENDOR_MODULES_PATH)/mali_kbase.ko \
+$(VENDOR_MODULES_PATH)/mcdt_hw_r2p0.ko \
+$(VENDOR_MODULES_PATH)/microarray_fp.ko \
+$(VENDOR_MODULES_PATH)/mipi_driver.ko \
+$(VENDOR_MODULES_PATH)/misc_sprd_uid.ko \
+$(VENDOR_MODULES_PATH)/mmdvfs.ko \
+$(VENDOR_MODULES_PATH)/musb_hdrc.ko \
+$(VENDOR_MODULES_PATH)/musb_sprd.ko \
+$(VENDOR_MODULES_PATH)/nu1619_wireless_charger.ko \
+$(VENDOR_MODULES_PATH)/nvt_nt36xxx_spi_ts.ko \
+$(VENDOR_MODULES_PATH)/phy-sprd-commonphy.ko \
+$(VENDOR_MODULES_PATH)/phy-sprd-qogirl6.ko \
+$(VENDOR_MODULES_PATH)/pinctrl-sprd-qogirl6.ko \
+$(VENDOR_MODULES_PATH)/pinctrl-sprd.ko \
+$(VENDOR_MODULES_PATH)/pinctrl.ko \
+$(VENDOR_MODULES_PATH)/pwm-sprd.ko \
+$(VENDOR_MODULES_PATH)/sc27xx-poweroff.ko \
+$(VENDOR_MODULES_PATH)/sc27xx-vibra.ko \
+$(VENDOR_MODULES_PATH)/sc27xx_adc.ko \
+$(VENDOR_MODULES_PATH)/sc27xx_fast_charger.ko \
+$(VENDOR_MODULES_PATH)/sc27xx_fuel_gauge.ko \
+$(VENDOR_MODULES_PATH)/sc27xx_pd.ko \
+$(VENDOR_MODULES_PATH)/sc27xx_tsensor_thermal.ko \
+$(VENDOR_MODULES_PATH)/sc27xx_typec.ko \
+$(VENDOR_MODULES_PATH)/sc8549-charger.ko \
+$(VENDOR_MODULES_PATH)/sgm41511-charger.ko \
+$(VENDOR_MODULES_PATH)/sha1-ce.ko \
+$(VENDOR_MODULES_PATH)/snd-soc-sprd-card.ko \
+$(VENDOR_MODULES_PATH)/snd-soc-sprd-codec-sc2730-power-dev.ko \
+$(VENDOR_MODULES_PATH)/snd-soc-sprd-codec-sc2730-power.ko \
+$(VENDOR_MODULES_PATH)/snd-soc-sprd-codec-sc2730.ko \
+$(VENDOR_MODULES_PATH)/snd-soc-sprd-codec-ump518-power-dev.ko \
+$(VENDOR_MODULES_PATH)/snd-soc-sprd-codec-ump518-power.ko \
+$(VENDOR_MODULES_PATH)/snd-soc-sprd-codec-ump518.ko \
+$(VENDOR_MODULES_PATH)/snd-soc-sprd-dummy-codec.ko \
+$(VENDOR_MODULES_PATH)/snd-soc-sprd-pdm-r2p0.ko \
+$(VENDOR_MODULES_PATH)/snd-soc-sprd-vbc-fe.ko \
+$(VENDOR_MODULES_PATH)/snd-soc-sprd-vbc-v4.ko \
+$(VENDOR_MODULES_PATH)/spi-sprd.ko \
+$(VENDOR_MODULES_PATH)/sprd-bc1p2.ko \
+$(VENDOR_MODULES_PATH)/sprd-charger-manager.ko \
+$(VENDOR_MODULES_PATH)/sprd-compr-2stage-dma.ko \
+$(VENDOR_MODULES_PATH)/sprd-dma.ko \
+$(VENDOR_MODULES_PATH)/sprd-dmaengine-pcm.ko \
+$(VENDOR_MODULES_PATH)/sprd-drm.ko \
+$(VENDOR_MODULES_PATH)/sprd-gsp.ko \
+$(VENDOR_MODULES_PATH)/sprd-ion.ko \
+$(VENDOR_MODULES_PATH)/sprd-platform-pcm-routing.ko \
+$(VENDOR_MODULES_PATH)/sprd-top-dvfs.ko \
+$(VENDOR_MODULES_PATH)/sprd-vsp-pw-domain.ko \
+$(VENDOR_MODULES_PATH)/sprdbt_tty.ko \
+$(VENDOR_MODULES_PATH)/sprd_apipe.ko \
+$(VENDOR_MODULES_PATH)/sprd_audcp_boot.ko \
+$(VENDOR_MODULES_PATH)/sprd_audcp_dvfs.ko \
+$(VENDOR_MODULES_PATH)/sprd_battery_info.ko \
+$(VENDOR_MODULES_PATH)/sprd_camera.ko \
+$(VENDOR_MODULES_PATH)/sprd_camsys_pw_domain.ko \
+$(VENDOR_MODULES_PATH)/sprd_cpp.ko \
+$(VENDOR_MODULES_PATH)/sprd_cpu_cooling.ko \
+$(VENDOR_MODULES_PATH)/sprd_cp_dvfs.ko \
+$(VENDOR_MODULES_PATH)/sprd_ddr_dvfs.ko \
+$(VENDOR_MODULES_PATH)/sprd_flash_drv.ko \
+$(VENDOR_MODULES_PATH)/sprd_fm.ko \
+$(VENDOR_MODULES_PATH)/sprd_fuel_gauge.ko \
+$(VENDOR_MODULES_PATH)/sprd_gpu_cooling.ko \
+$(VENDOR_MODULES_PATH)/sprd_map.ko \
+$(VENDOR_MODULES_PATH)/sprd_mipi.ko \
+$(VENDOR_MODULES_PATH)/sprd_pmic_syscon.ko \
+$(VENDOR_MODULES_PATH)/sprd_pmic_wdt.ko \
+$(VENDOR_MODULES_PATH)/sprd_sensor.ko \
+$(VENDOR_MODULES_PATH)/sprd_soc_id.ko \
+$(VENDOR_MODULES_PATH)/sprd_soc_thm.ko \
+$(VENDOR_MODULES_PATH)/sprd_suspend_helper.ko \
+$(VENDOR_MODULES_PATH)/sprd_tcpm.ko \
+$(VENDOR_MODULES_PATH)/sprd_thermal.ko \
+$(VENDOR_MODULES_PATH)/sprd_usbpinmux_qogirl6.ko \
+$(VENDOR_MODULES_PATH)/sprd_usb_f_rndis.ko \
+$(VENDOR_MODULES_PATH)/sprd_u_ether.ko \
+$(VENDOR_MODULES_PATH)/sprd_wdf.ko \
+$(VENDOR_MODULES_PATH)/sprd_wlan_combo.ko \
+$(VENDOR_MODULES_PATH)/thermal-generic-adc.ko \
+$(VENDOR_MODULES_PATH)/trusty-tui.ko \
+$(VENDOR_MODULES_PATH)/twofish_common.ko \
+$(VENDOR_MODULES_PATH)/twofish_generic.ko \
+$(VENDOR_MODULES_PATH)/unisoc-iommu.ko \
+$(VENDOR_MODULES_PATH)/upm6710-charger.ko \
+$(VENDOR_MODULES_PATH)/virt-dma.ko \
+$(VENDOR_MODULES_PATH)/vsp.ko \
+$(VENDOR_MODULES_PATH)/wcn_bsp.ko \
+$(VENDOR_MODULES_PATH)/zram.ko \
+$(VENDOR_MODULES_PATH)/zsmalloc.ko
+
+
+BOARD_VENDOR_CHARGER_KERNEL_MODULES := \
+$(VENDOR_MODULES_PATH)/sprd_systimer.ko \
+$(VENDOR_MODULES_PATH)/sprd-sc27xx-spi.ko \
+$(VENDOR_MODULES_PATH)/rtc-sc27xx.ko \
+$(VENDOR_MODULES_PATH)/gslX680_sharkl3.ko \
+$(VENDOR_MODULES_PATH)/sprd_soc_id.ko \
+$(VENDOR_MODULES_PATH)/trusty-tui.ko \
+$(VENDOR_MODULES_PATH)/flash_ic_sc2730_rgb.ko \
+$(VENDOR_MODULES_PATH)/flash_ic_aw3641.ko \
+$(VENDOR_MODULES_PATH)/sprd-dma.ko \
+$(VENDOR_MODULES_PATH)/virt-dma.ko \
+$(VENDOR_MODULES_PATH)/ion_ipc_trusty.ko \
+$(VENDOR_MODULES_PATH)/ion_cma_heap.ko \
+$(VENDOR_MODULES_PATH)/sprd-ion.ko \
+$(VENDOR_MODULES_PATH)/unisoc-iommu.ko \
+$(VENDOR_MODULES_PATH)/sprd-drm.ko \
+$(VENDOR_MODULES_PATH)/sprd-gsp.ko \
+$(VENDOR_MODULES_PATH)/apsys-dvfs.ko \
+$(VENDOR_MODULES_PATH)/sprd_cpu_cooling.ko \
+$(VENDOR_MODULES_PATH)/sprd_gpu_cooling.ko \
+$(VENDOR_MODULES_PATH)/sprd_soc_thm.ko \
+$(VENDOR_MODULES_PATH)/extcon-usb-gpio.ko \
+$(VENDOR_MODULES_PATH)/leds-sc27xx-bltc.ko \
+$(VENDOR_MODULES_PATH)/ledtrig-pattern.ko \
+$(VENDOR_MODULES_PATH)/pinctrl-sprd.ko \
+$(VENDOR_MODULES_PATH)/pinctrl-sprd-qogirl6.ko \
+$(VENDOR_MODULES_PATH)/pwm-sprd.ko \
+$(VENDOR_MODULES_PATH)/sc27xx_adc.ko \
+$(VENDOR_MODULES_PATH)/sc27xx-poweroff.ko \
+$(VENDOR_MODULES_PATH)/sprd_pmic_syscon.ko \
+$(VENDOR_MODULES_PATH)/sc27xx_tsensor_thermal.ko \
+$(VENDOR_MODULES_PATH)/sprd_thermal.ko \
+$(VENDOR_MODULES_PATH)/thermal-generic-adc.ko \
+$(VENDOR_MODULES_PATH)/sc27xx-vibra.ko \
+$(VENDOR_MODULES_PATH)/sprd_usbpinmux_qogirl6.ko \
+$(VENDOR_MODULES_PATH)/sprd-bc1p2.ko \
+$(VENDOR_MODULES_PATH)/phy-sprd-commonphy.ko \
+$(VENDOR_MODULES_PATH)/phy-sprd-qogirl6.ko \
+$(VENDOR_MODULES_PATH)/sprd_tcpm.ko \
+$(VENDOR_MODULES_PATH)/sc27xx_typec.ko \
+$(VENDOR_MODULES_PATH)/sc27xx_pd.ko \
+$(VENDOR_MODULES_PATH)/sc27xx_fast_charger.ko \
+$(VENDOR_MODULES_PATH)/sprd_battery_info.ko \
+$(VENDOR_MODULES_PATH)/sprd_fuel_gauge.ko \
+$(VENDOR_MODULES_PATH)/sc27xx_fuel_gauge.ko \
+$(VENDOR_MODULES_PATH)/bq2560x-charger.ko \
+$(VENDOR_MODULES_PATH)/sgm41511-charger.ko \
+$(VENDOR_MODULES_PATH)/bq2597x-charger.ko \
+$(VENDOR_MODULES_PATH)/sc8549-charger.ko \
+$(VENDOR_MODULES_PATH)/upm6710-charger.ko \
+$(VENDOR_MODULES_PATH)/hl1506_charger.ko \
+$(VENDOR_MODULES_PATH)/nu1619_wireless_charger.ko \
+$(VENDOR_MODULES_PATH)/sprd-charger-manager.ko \
+$(VENDOR_MODULES_PATH)/sprd_map.ko \
+$(VENDOR_MODULES_PATH)/focaltech_ft8756_spi_ts.ko \
+$(VENDOR_MODULES_PATH)/nvt_nt36xxx_spi_ts.ko \
+$(VENDOR_MODULES_PATH)/musb_hdrc.ko \
+$(VENDOR_MODULES_PATH)/musb_sprd.ko
+
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH)
 
 
-PRODUCT_PACKAGES += \
+#PRODUCT_PACKAGES += \
 strip_packages
+
+$(call inherit-product, vendor/ohrtech/aleph/aleph-vendor.mk)
