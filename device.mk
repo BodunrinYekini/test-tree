@@ -26,7 +26,7 @@ $(call find-copy-subdir-files,*,$(LOCAL_PATH)/manifests/vendor/manifest/,$(TARGE
 
 PRODUCT_PACKAGES += \
 android.hardware.thermal@2.0-service.mock \
-android.hardware.power-service.example
+android.hardware.power-service.example \
 ai_engine-default \
 android.hardware.cas@1.2-service-lazy \
 android.hardware.drm-service.clearkey \
