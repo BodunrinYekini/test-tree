@@ -240,10 +240,10 @@ DEVICE_MANIFEST_FILE := $(DEVICE_PATH)/manifests/manifest.xml
 DEVICE_PRODUCT_COMPATIBILITY_MATRIX_FILE := $(DEVICE_PATH)/manifests/product_compatibility_matrix.xml 
 
 #/odm/etc/vintf/manifest.xml
-ODM_MANIFEST_FILES := $(DEVICE_PATH)/odm_manifest.xml
+ODM_MANIFEST_FILES := $(DEVICE_PATH)/manifests/odm_manifest.xml
 
 #/vendor/etc/vintf/compatibility_matrix.xml
-DEVICE_MATRIX_FILE := $(DEVICE_PATH)/vendor_compatibility_matrix.xml
+DEVICE_MATRIX_FILE := $(DEVICE_PATH)/manifests/vendor_compatibility_matrix.xml
 
 
 
