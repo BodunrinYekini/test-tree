@@ -297,10 +297,10 @@ $(VENDOR_BOOT_MODULES_PATH)/snd-soc-sprd-card.ko
 # vendor_dlkm
 VENDOR_MODULES_PATH = $(DEVICE_PATH)/modules/vendor_dlkm/lib/modules
 
-PRODUCT_COPY_FILES += \
+#PRODUCT_COPY_FILES += \
     $(VENDOR_MODULES_PATH)/init.insmod.cfg:$(TARGET_COPY_OUT_VENDOR_DLKM)/lib/modules/init.insmod.cfg
     
-BOARD_VENDOR_KERNEL_MODULES := \
+#BOARD_VENDOR_KERNEL_MODULES := \
 $(VENDOR_MODULES_PATH)/aes-ce-ccm.ko \
 $(VENDOR_MODULES_PATH)/aes-neon-blk.ko \
 $(VENDOR_MODULES_PATH)/agdsp_access.ko \
@@ -428,7 +428,7 @@ $(VENDOR_MODULES_PATH)/zram.ko \
 $(VENDOR_MODULES_PATH)/zsmalloc.ko
 
 
-BOARD_VENDOR_CHARGER_KERNEL_MODULES := \
+#BOARD_VENDOR_CHARGER_KERNEL_MODULES := \
 $(VENDOR_MODULES_PATH)/sprd_systimer.ko \
 $(VENDOR_MODULES_PATH)/sprd-sc27xx-spi.ko \
 $(VENDOR_MODULES_PATH)/rtc-sc27xx.ko \
@@ -495,4 +495,4 @@ PRODUCT_SOONG_NAMESPACES += \
 #PRODUCT_PACKAGES += \
 strip_packages
 
-$(call inherit-product, vendor/ohrtech/aleph/aleph-vendor.mk)
+#$(call inherit-product, vendor/ohrtech/aleph/aleph-vendor.mk)
