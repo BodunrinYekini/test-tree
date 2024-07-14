@@ -20,12 +20,8 @@ PRODUCT_COPY_FILES += \
 	$(TARGET_PREBUILT_KERNEL):kernel
 
 
-PRODUCT_COPY_FILES += \
-$(call find-copy-subdir-files,*,$(LOCAL_PATH)/manifests/vendor/manifest/,$(TARGET_COPY_OUT_VENDOR)/etc/vintf/manifest) 
-
 #copy
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/manifests/vendor_compatibility_matrix.xml:$(TARGET_COPY_OUT_VENDOR)/etc/vintf/compatibility_matrix.xml \
 	$(LOCAL_PATH)/rootdir/etc/recovery.fstab:$(TARGET_COPY_OUT_RECOVERY)/root/system/etc/recovery.fstab
 	
 
@@ -35,6 +31,22 @@ PRODUCT_COPY_FILES += \
 	android.hardware.health-service.example \
 	android.hardware.thermal@2.0-service.mock \
 	android.hardware.power-service.example
+
+PRODUCT_PACKAGES += \
+    AospBtOverlay \
+    AospWifiOverlay_Marlin3 \
+    AospWifiOverlay_Marlin3_Mainline \
+    UniWifiOverlay_Marlin3 \
+    MultiuserOverlays \
+    NetworkStackOverlayGo \
+    NetworkStackOverlayGsi \
+    Settings__auto_generated_rro_vendor \
+    TetheringConfigOverlayGo \
+    TetheringConfigOverlayGsi \
+    unisoc_go_overlay_frameworks_res \
+    unisoc_overlay_frameworks_res \
+    ProxyNFwLocation \
+    WirelessTools
 
 
 PRODUCT_SHIPPING_API_LEVEL := 33
