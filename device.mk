@@ -23,6 +23,9 @@ PRODUCT_COPY_FILES += \
 #PRODUCT_COPY_FILES += \
 $(call find-copy-subdir-files,*,$(LOCAL_PATH)/manifests/vendor/manifest/,$(TARGET_COPY_OUT_VENDOR)/etc/vintf/manifest) 
 
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/manifests/vendor_compatibility_matrix.xml:$(TARGET_COPY_OUT_VENDOR)/etc/vintf/compatibility_matrix.xml
+
 
 #PRODUCT_PACKAGES += \
     android.hardware.gatekeeper@1.0-service.trusty \
