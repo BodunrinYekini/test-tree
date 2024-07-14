@@ -5,3 +5,8 @@
         manifest_gnss.xml
         manifest_network.xml
 -->
+<manifest version="5.0" type="device" target-level="7">
+    <sepolicy>
+        <version>33.0</version>
+    </sepolicy>
+</manifest>

@@ -2,3 +2,11 @@
     Input:
         compatibility_matrix.xml
 -->
+<compatibility-matrix version="5.0" type="device">
+    <vendor-ndk>
+        <version>33</version>
+    </vendor-ndk>
+    <system-sdk>
+        <version>33</version>
+    </system-sdk>
+</compatibility-matrix>
