@@ -9,4 +9,10 @@
         <name>android.hardware.biometrics.fingerprint</name>
         <transport>hwbinder</transport>
     </hal>
+    <hal format="aidl" override="true">
+        <name>vendor.sprd.hardware.fingerprintmmi</name>
+    </hal>
+    <hal format="aidl" override="true">
+        <name>vendor.sprd.hardware.soter</name>
+    </hal>
 </manifest>
