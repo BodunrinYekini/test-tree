@@ -4,9 +4,3 @@
         manifest_disable_fp.xml
         manifest_disable_fpmmi.xml
 -->
-<manifest version="5.0" type="device">
-    <hal format="hidl" override="true">
-        <name>android.hardware.biometrics.fingerprint</name>
-        <transport>hwbinder</transport>
-    </hal>
-</manifest>
