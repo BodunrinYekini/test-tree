@@ -26,9 +26,8 @@ $(call find-copy-subdir-files,*,$(LOCAL_PATH)/manifests/vendor/manifest/,$(TARGE
 #copy
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/manifests/vendor_compatibility_matrix.xml:$(TARGET_COPY_OUT_VENDOR)/etc/vintf/compatibility_matrix.xml \
-	$(LOCAL_PATH)/rootdir/etc/recovery.fstab:$(TARGET_COPY_OUT_RECOVERY)/root/system/etc/recovery.fstab
-
-#$(call find-copy-subdir-files,*,$(LOCAL_PATH)/rootdir/lib/modules/,$(TARGET_COPY_OUT_VENDOR_DLKM)/lib/modules) 
+	$(LOCAL_PATH)/rootdir/etc/recovery.fstab:$(TARGET_COPY_OUT_RECOVERY)/root/system/etc/recovery.fstab \
+    $(call find-copy-subdir-files,*,$(LOCAL_PATH)/rootdir/lib/modules/,$(TARGET_COPY_OUT_VENDOR_DLKM)/lib/modules) 
 	
 
 
