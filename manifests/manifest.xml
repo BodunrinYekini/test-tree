@@ -171,6 +171,10 @@
         </interface>
         <fqname>@1.0::IGatekeeper/default</fqname>
     </hal>
+   <hal format="aidl">
+        <name>android.hardware.health</name>
+        <fqname>IHealth/default</fqname>
+    </hal>
     <sepolicy>
         <version>33.0</version>
     </sepolicy>
