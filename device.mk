@@ -19,12 +19,33 @@ TARGET_PREBUILT_KERNEL :=$(DEVICE_PATH)/prebuilts/kernel
 PRODUCT_COPY_FILES += \
 	$(TARGET_PREBUILT_KERNEL):kernel
 
+PRODUCT_PACKAGES += \
+    fstab.cali \
+    init.cali.rc \
+    init.ram.gms.rc \
+    init.ram.native.rc \
+    init.ram.rc \
+    init.storage.rc \
+    init.ums9230_1h10.rc \
+    init.ums9230_1h10.usb.rc \
+    init.ums9230_1h10_go.rc \
+    init.ums9230_1h10_go.usb.rc \
+    init.ums9230_4h10.rc \
+    init.ums9230_4h10.usb.rc \
+    init.ums9230_4h10_go.rc \
+    init.ums9230_4h10_go.usb.rc \
+    init.ums9230_4h10_go_AG801.rc \
+    init.ums9230_4h10_go_AG801.usb.rc \
+    init.zramwb.rc
+	
 
 #PRODUCT_COPY_FILES += \
 $(call find-copy-subdir-files,*,$(LOCAL_PATH)/manifests/vendor/manifest/,$(TARGET_COPY_OUT_VENDOR)/etc/vintf/manifest) 
 
+#copy
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/manifests/vendor_compatibility_matrix.xml:$(TARGET_COPY_OUT_VENDOR)/etc/vintf/compatibility_matrix.xml
+	$(LOCAL_PATH)custom/system/etc/recovery.fstab:$(TARGET_COPY_OUT_SYSTEM)/etc/vintf/compatibility_matrix.xml
 
 
 #PRODUCT_PACKAGES += \
