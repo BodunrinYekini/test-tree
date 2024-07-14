@@ -243,12 +243,7 @@ DEVICE_MATRIX_FILE := $(DEVICE_PATH)/manifests/vendor_compatibility_matrix.xml
 ODM_MANIFEST_FILES := $(DEVICE_PATH)/manifests/odm_manifest.xml
 
 #/product/etc/vintf/compatibility_matrix.xml 
-DEVICE_PRODUCT_COMPATIBILITY_MATRIX_FILE := $(DEVICE_PATH)/manifests/product_compatibility_matrix.xml 
-
-
-
-
-
+DEVICE_PRODUCT_COMPATIBILITY_MATRIX_FILE := $(DEVICE_PATH)/manifests/product_compatibility_matrix.xml
 
 
 

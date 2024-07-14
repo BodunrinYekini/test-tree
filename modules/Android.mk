@@ -11,30 +11,63 @@ include $(BUILD_PREBUILT)
 
 include $(CLEAR_VARS)
 UNWANTED_OVERRIDE_PACKAGES := \
-PhotoTable \
-Calendar \
-DeskClock \
-Music \
-QuickSearchBox \
-Contacts \
-ImsServiceEntitlement \
-OneTimeInitializer \
-SettingsIntelligence \
-DisplayCutoutEmulationCorner \
-NavigationBarMode3Button \
-DisplayCutoutEmulationDouble \
-NavigationBarModeGestural \
-DisplayCutoutEmulationHole \
-NavigationBarModeGesturalExtraWideBack \
-DisplayCutoutEmulationTall \
-NavigationBarModeGesturalNarrowBack \
-DisplayCutoutEmulationWaterfall \
-NavigationBarModeGesturalWideBack \
-FontNotoSerifSource \
-fs_config_dirs_product \
-fs_config_files_product \
-fs_config_dirs_system_ext \
-fs_config_files_system_ext 
+    rild \
+    audio.primary.default \
+    local_time.default \
+    power.default \
+    vibrator.default \
+    libaudiopreprocessing \
+    adbd.recovery \
+    android.hardware.health@2.0-impl-default.recovery \
+    cgroups.recovery.json \
+    charger.recovery \
+    init_second_stage.recovery \
+    ld.config.recovery.txt \
+    linker.recovery \
+    otacerts.recovery \
+    recovery \
+    servicemanager.recovery \
+    shell_and_utilities_recovery \
+    watchdogd.recovery \
+    e2fsdroid \
+    mke2fs \
+    sload_f2fs \
+    make_f2fs \
+    icu-data_host_i18n_apex \
+    android.hardware.cas@1.2-service \
+    android.hardware.media.omx@1.0-service \
+    boringssl_self_test_vendor \
+    dumpsys_vendor \
+    fs_config_files_nonsystem \
+    fs_config_dirs_nonsystem \
+    gralloc.default \
+    group_odm \
+    group_vendor \
+    init_vendor \
+    libbundlewrapper \
+    libclearkeycasplugin \
+    libdownmix \
+    libdrmclearkeyplugin \
+    libdynproc \
+    libeffectproxy \
+    libeffects \
+    libhapticgenerator \
+    libldnhncr \
+    libreference-ril \
+    libreverbwrapper \
+    libril \
+    libvisualizer \
+    passwd_odm \
+    passwd_vendor \
+    selinux_policy_nonsystem \
+    shell_and_utilities_vendor \
+    android.hardware.configstore@1.1-service \
+    vndservice \
+    vndservicemanager \
+    vendor_compatibility_matrix.xml \
+    adb_debug.prop \
+    userdebug_plat_sepolicy.cil
+ 
 LOCAL_MODULE := strip_packages
 LOCAL_MODULE_TAGS := optional
 PACKAGES.$(LOCAL_MODULE).OVERRIDES := $(strip $(UNWANTED_OVERRIDE_PACKAGES))
