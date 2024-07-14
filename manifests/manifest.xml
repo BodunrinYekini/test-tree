@@ -151,38 +151,6 @@
         </interface>
         <fqname>@1.0::IDevice/default</fqname>
     </hal>
-    <hal format="hidl">
-        <name>vendor.sprd.hardware.connmgr</name>
-        <transport>hwbinder</transport>
-        <version>1.0</version>
-        <interface>
-            <name>IConnmgr</name>
-            <instance>default</instance>
-        </interface>
-        <fqname>@1.0::IConnmgr/default</fqname>
-    </hal>
-    <hal format="aidl">
-        <name>vendor.sprd.hardware.enhance</name>
-        <interface>
-            <name>IEnhance</name>
-            <instance>default</instance>
-        </interface>
-        <fqname>IEnhance/default</fqname>
-    </hal>
-    <hal format="aidl">
-        <name>vendor.sprd.hardware.network</name>
-        <fqname>INetworkControl/default</fqname>
-    </hal>
-    <hal format="hidl">
-        <name>vendor.sprd.hardware.wcn</name>
-        <transport>hwbinder</transport>
-        <version>1.0</version>
-        <interface>
-            <name>IWcnVendorInterface</name>
-            <instance>default</instance>
-        </interface>
-        <fqname>@1.0::IWcnVendorInterface/default</fqname>
-    </hal>
     <sepolicy>
         <version>33.0</version>
     </sepolicy>
