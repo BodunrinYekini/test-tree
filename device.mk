@@ -44,8 +44,7 @@ $(call find-copy-subdir-files,*,$(LOCAL_PATH)/manifests/vendor/manifest/,$(TARGE
 
 #copy
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/manifests/vendor_compatibility_matrix.xml:$(TARGET_COPY_OUT_VENDOR)/etc/vintf/compatibility_matrix.xml \
-	$(LOCAL_PATH)custom/system/etc/recovery.fstab:$(TARGET_COPY_OUT_SYSTEM)/etc/vintf/compatibility_matrix.xml
+    $(LOCAL_PATH)/manifests/vendor_compatibility_matrix.xml:$(TARGET_COPY_OUT_VENDOR)/etc/vintf/compatibility_matrix.xml
 
 
 #PRODUCT_PACKAGES += \
