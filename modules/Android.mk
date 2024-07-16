@@ -38,8 +38,6 @@ UNWANTED_OVERRIDE_PACKAGES := \
     android.hardware.media.omx@1.0-service \
     boringssl_self_test_vendor \
     dumpsys_vendor \
-    fs_config_files_nonsystem \
-    fs_config_dirs_nonsystem \
     gralloc.default \
     group_odm \
     group_vendor \
@@ -72,3 +70,6 @@ LOCAL_MODULE := strip_packages
 LOCAL_MODULE_TAGS := optional
 PACKAGES.$(LOCAL_MODULE).OVERRIDES := $(strip $(UNWANTED_OVERRIDE_PACKAGES))
 include $(BUILD_PHONY_PACKAGE)
+
+    #fs_config_files_nonsystem \
+    #fs_config_dirs_nonsystem \
