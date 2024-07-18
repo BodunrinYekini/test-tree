@@ -1,4 +1,0 @@
-service log_service /system_ext/bin/log_service
-    class main
-    user root
-    group readproc

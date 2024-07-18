@@ -1,4 +1,0 @@
-service linkturbonative /system_ext/bin/linkturbonative
-    class main
-    user root
-    group system

@@ -32,22 +32,6 @@ PRODUCT_COPY_FILES += \
 	android.hardware.thermal@2.0-service.mock \
 	android.hardware.power-service.example
 
-#PRODUCT_PACKAGES += \
-    AospBtOverlay \
-    AospWifiOverlay_Marlin3 \
-    AospWifiOverlay_Marlin3_Mainline \
-    UniWifiOverlay_Marlin3 \
-    MultiuserOverlays \
-    NetworkStackOverlayGo \
-    NetworkStackOverlayGsi \
-    Settings__auto_generated_rro_vendor \
-    TetheringConfigOverlayGo \
-    TetheringConfigOverlayGsi \
-    unisoc_go_overlay_frameworks_res \
-    unisoc_overlay_frameworks_res \
-    ProxyNFwLocation \
-    WirelessTools
-
 
 PRODUCT_SHIPPING_API_LEVEL := 33
 
