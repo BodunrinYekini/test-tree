@@ -32,7 +32,7 @@ PRODUCT_COPY_FILES += \
 	android.hardware.thermal@2.0-service.mock \
 	android.hardware.power-service.example
 
-PRODUCT_PACKAGES += \
+#PRODUCT_PACKAGES += \
     AospBtOverlay \
     AospWifiOverlay_Marlin3 \
     AospWifiOverlay_Marlin3_Mainline \
