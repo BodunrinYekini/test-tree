@@ -64,12 +64,12 @@ UNWANTED_OVERRIDE_PACKAGES := \
     vndservicemanager \
     vendor_compatibility_matrix.xml \
     adb_debug.prop \
-    userdebug_plat_sepolicy.cil
+    userdebug_plat_sepolicy.cil \
+    fs_config_files_nonsystem \
+    fs_config_dirs_nonsystem
  
-LOCAL_MODULE := strip_packages
+LOCAL_MODULE := strip_vendor_packages
 LOCAL_MODULE_TAGS := optional
 PACKAGES.$(LOCAL_MODULE).OVERRIDES := $(strip $(UNWANTED_OVERRIDE_PACKAGES))
 include $(BUILD_PHONY_PACKAGE)
 
-    #fs_config_files_nonsystem \
-    #fs_config_dirs_nonsystem \
