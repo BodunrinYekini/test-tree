@@ -52,6 +52,7 @@ UNWANTED_OVERRIDE_PACKAGES := \
     libreverbwrapper \
     libril \
     libvisualizer \
+    selinux_policy_nonsystem \
     shell_and_utilities_vendor \
     android.hardware.configstore@1.1-service \
     vndservice \
@@ -72,4 +73,3 @@ group_vendor \
 init_vendor \
 passwd_odm \
 passwd_vendor \
-selinux_policy_nonsystem \
