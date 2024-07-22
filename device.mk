@@ -272,10 +272,10 @@ $(VENDOR_BOOT_MODULES_PATH)/snd-soc-sprd-card.ko
 # vendor_dlkm
 VENDOR_MODULES_PATH = $(DEVICE_PATH)/modules/vendor_dlkm/lib/modules
 
-PRODUCT_COPY_FILES += \
+#PRODUCT_COPY_FILES += \
     $(VENDOR_MODULES_PATH)/init.insmod.cfg:$(TARGET_COPY_OUT_VENDOR_DLKM)/lib/modules/init.insmod.cfg
     
-BOARD_VENDOR_KERNEL_MODULES := \
+#BOARD_VENDOR_KERNEL_MODULES := \
 $(VENDOR_MODULES_PATH)/aes-ce-ccm.ko \
 $(VENDOR_MODULES_PATH)/aes-neon-blk.ko \
 $(VENDOR_MODULES_PATH)/agdsp_access.ko \
@@ -333,7 +333,7 @@ $(VENDOR_MODULES_PATH)/zram.ko \
 $(VENDOR_MODULES_PATH)/zsmalloc.ko
 
 
-BOARD_VENDOR_CHARGER_KERNEL_MODULES := \
+#BOARD_VENDOR_CHARGER_KERNEL_MODULES := \
 $(VENDOR_MODULES_PATH)/gslX680_sharkl3.ko \
 $(VENDOR_MODULES_PATH)/trusty-tui.ko \
 $(VENDOR_MODULES_PATH)/flash_ic_sc2730_rgb.ko \
