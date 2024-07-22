@@ -31,6 +31,8 @@ PRODUCT_COPY_FILES += \
 	android.hardware.thermal@2.0-service.mock \
 	android.hardware.power-service.example
 
+PRODUCT_PACKAGES += \
+plat_pub_versioned.cil
 
 PRODUCT_SHIPPING_API_LEVEL := 33
 
@@ -360,7 +362,7 @@ PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH)
 
 
-PRODUCT_PACKAGES += \
+#PRODUCT_PACKAGES += \
 strip_vendor_packages
 
 $(call inherit-product, vendor/ohrtech/aleph/aleph-vendor.mk)
