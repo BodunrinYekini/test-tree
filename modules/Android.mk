@@ -39,9 +39,6 @@ UNWANTED_OVERRIDE_PACKAGES := \
     boringssl_self_test_vendor \
     dumpsys_vendor \
     gralloc.default \
-    group_odm \
-    group_vendor \
-    init_vendor \
     libbundlewrapper \
     libclearkeycasplugin \
     libdownmix \
@@ -55,8 +52,6 @@ UNWANTED_OVERRIDE_PACKAGES := \
     libreverbwrapper \
     libril \
     libvisualizer \
-    passwd_odm \
-    passwd_vendor \
     selinux_policy_nonsystem \
     shell_and_utilities_vendor \
     android.hardware.configstore@1.1-service \
@@ -72,4 +67,9 @@ PACKAGES.$(LOCAL_MODULE).OVERRIDES := $(strip $(UNWANTED_OVERRIDE_PACKAGES))
 include $(BUILD_PHONY_PACKAGE)
 
 #fs_config_files_nonsystem \
-#fs_config_dirs_nonsystem \
+fs_config_dirs_nonsystem \
+group_odm \
+group_vendor \
+init_vendor \
+passwd_odm \
+passwd_vendor \
