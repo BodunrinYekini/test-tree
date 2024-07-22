@@ -31,8 +31,37 @@ PRODUCT_COPY_FILES += \
 	android.hardware.thermal@2.0-service.mock \
 	android.hardware.power-service.example
 
+# # Rootdir
 PRODUCT_PACKAGES += \
-plat_pub_versioned.cil
+    log_to_csv.sh \
+    loading.sh \
+    para.sh \
+    total.sh \
+    create_splloader_dual_slot_byname_path.sh \
+    idlefast.sh \
+    init.insmod.sh \
+    setup_console.sh \
+    zramwb.sh
+
+PRODUCT_PACKAGES += \
+    fstab.ums9230_1h10 \
+    init.cali.rc \
+    init.ram.gms.rc \
+    init.ram.native.rc \
+    init.ram.rc \
+    init.storage.rc \
+    init.ums9230_1h10.rc \
+    init.ums9230_1h10.usb.rc \
+    init.ums9230_1h10_go.rc \
+    init.ums9230_1h10_go.usb.rc \
+    init.ums9230_4h10.rc \
+    init.ums9230_4h10.usb.rc \
+    init.ums9230_4h10_go.rc \
+    init.ums9230_4h10_go.usb.rc \
+    init.ums9230_4h10_go_AG801.rc \
+    init.ums9230_4h10_go_AG801.usb.rc \
+    init.zramwb.rc \ 
+
 
 PRODUCT_SHIPPING_API_LEVEL := 33
 
