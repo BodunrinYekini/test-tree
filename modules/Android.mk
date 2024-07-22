@@ -58,7 +58,8 @@ UNWANTED_OVERRIDE_PACKAGES := \
     vndservice \
     vndservicemanager \
     vendor_compatibility_matrix.xml \
-    adb_debug.prop
+    adb_debug.prop \
+    userdebug_plat_sepolicy.cil
  
 LOCAL_MODULE := strip_vendor_packages
 LOCAL_MODULE_TAGS := optional
@@ -72,4 +73,3 @@ group_vendor \
 init_vendor \
 passwd_odm \
 passwd_vendor \
-userdebug_plat_sepolicy.cil \
