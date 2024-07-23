@@ -21,8 +21,9 @@ PRODUCT_COPY_FILES += \
 
 #copy
 PRODUCT_COPY_FILES += \
-	$(LOCAL_PATH)/rootdir/etc/recovery.fstab:$(TARGET_COPY_OUT_RECOVERY)/root/system/etc/recovery.fstab \
-	$(DEVICE_PATH)/manifests/vendor_compatibility_matrix.xml:$(TARGET_COPY_OUT_VENDOR)/etc/vintf/compatibility_matrix.xml
+	$(LOCAL_PATH)/rootdir/etc/recovery.fstab:$(TARGET_COPY_OUT_RECOVERY)/root/system/etc/recovery.fstab
+	
+#$(DEVICE_PATH)/manifests/vendor_compatibility_matrix.xml:$(TARGET_COPY_OUT_VENDOR)/etc/vintf/compatibility_matrix.xml
 
 
 #PRODUCT_PACKAGES += \
@@ -31,8 +32,11 @@ PRODUCT_COPY_FILES += \
 	android.hardware.thermal@2.0-service.mock \
 	android.hardware.power-service.example
 
-# # Rootdir
 PRODUCT_PACKAGES += \
+create_splloader_dual_slot_byname_path.sh 
+
+# # Rootdir
+#PRODUCT_PACKAGES += \
     log_to_csv.sh \
     loading.sh \
     para.sh \
@@ -43,7 +47,7 @@ PRODUCT_PACKAGES += \
     setup_console.sh \
     zramwb.sh
 
-PRODUCT_PACKAGES += \
+#PRODUCT_PACKAGES += \
     fstab.ums9230_1h10 \
     init.cali.rc \
     init.ram.gms.rc \
@@ -391,7 +395,7 @@ PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH)
 
 
-PRODUCT_PACKAGES += \
+#PRODUCT_PACKAGES += \
 strip_vendor_packages
 
-$(call inherit-product, vendor/ohrtech/aleph/aleph-vendor.mk)
+#$(call inherit-product, vendor/ohrtech/aleph/aleph-vendor.mk)
