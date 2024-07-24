@@ -11,19 +11,14 @@ include $(BUILD_PREBUILT)
 
 include $(CLEAR_VARS)
 UNWANTED_OVERRIDE_PACKAGES := \
-    rild
-LOCAL_MODULE := strip_vendor_packages
-LOCAL_MODULE_TAGS := optional
-PACKAGES.$(LOCAL_MODULE).OVERRIDES := $(strip $(UNWANTED_OVERRIDE_PACKAGES))
-include $(BUILD_PHONY_PACKAGE)
-
-#fs_config_files_nonsystem \
-fs_config_dirs_nonsystem \
-group_odm \
-group_vendor \
-init_vendor \
-passwd_odm \
-passwd_vendor \
+    rild \
+    fs_config_files_nonsystem \
+    fs_config_dirs_nonsystem \
+    group_odm \
+    group_vendor \
+    init_vendor \
+    passwd_odm \
+    passwd_vendor \
     audio.primary.default \
     local_time.default \
     power.default \
@@ -72,3 +67,8 @@ passwd_vendor \
     vendor_compatibility_matrix.xml \
     adb_debug.prop \
     userdebug_plat_sepolicy.cil
+LOCAL_MODULE := strip_vendor_packages
+LOCAL_MODULE_TAGS := optional
+PACKAGES.$(LOCAL_MODULE).OVERRIDES := $(strip $(UNWANTED_OVERRIDE_PACKAGES))
+include $(BUILD_PHONY_PACKAGE)
+
