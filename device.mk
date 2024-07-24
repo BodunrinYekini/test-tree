@@ -25,6 +25,9 @@ PRODUCT_COPY_FILES += \
 	$(DEVICE_PATH)/manifests/vendor_compatibility_matrix.xml:$(TARGET_COPY_OUT_VENDOR)/etc/vintf/compatibility_matrix.xml \
      $(call find-copy-subdir-files,*,$(DEVICE_PATH)/manifests/vendor/manifest/,$(TARGET_COPY_OUT_VENDOR)/etc/vintf/manifest)
 
+PRODUCT_PACKAGES += \
+userdebug_plat_sepolicy.cil \
+selinux_policy_nonsystem
 
 #PRODUCT_PACKAGES += \
     android.hardware.gatekeeper@1.0-service.trusty \
