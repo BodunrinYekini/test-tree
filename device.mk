@@ -28,7 +28,7 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
 odm_hwservice_contexts \
 odm_file_contexts \
-odm_mac_permissions \
+odm_mac_permissions.xml \
 odm_property_contexts \
 odm_seapp_contexts \
 odm_sepolicy.cil
