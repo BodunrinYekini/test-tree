@@ -26,8 +26,12 @@ PRODUCT_COPY_FILES += \
      $(call find-copy-subdir-files,*,$(DEVICE_PATH)/manifests/vendor/manifest/,$(TARGET_COPY_OUT_VENDOR)/etc/vintf/manifest)
 
 PRODUCT_PACKAGES += \
-userdebug_plat_sepolicy.cil \
-selinux_policy_nonsystem
+odm_hwservice_contexts \
+odm_file_contexts \
+odm_mac_permissions \
+odm_property_contexts \
+odm_seapp_contexts \
+odm_sepolicy.cil
 
 #PRODUCT_PACKAGES += \
     android.hardware.gatekeeper@1.0-service.trusty \
