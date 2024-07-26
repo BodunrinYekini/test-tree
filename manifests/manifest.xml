@@ -6,6 +6,16 @@
         manifest_network.xml
 -->
 <manifest version="5.0" type="device" target-level="7">
+    <hal format="hidl">
+        <name>android.hardware.audio</name>
+        <transport>hwbinder</transport>
+        <version>7.1</version>
+        <interface>
+            <name>IDevicesFactory</name>
+            <instance>default</instance>
+        </interface>
+        <fqname>@7.1::IDevicesFactory/default</fqname>
+    </hal>
     <sepolicy>
         <version>33.0</version>
     </sepolicy>
