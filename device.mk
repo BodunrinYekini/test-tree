@@ -4,6 +4,7 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
+$(call inherit-product, vendor/ohrtech/aleph/aleph-vendor.mk)
 
 $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 #$(call inherit-product, $(SRC_TARGET_DIR)/product/updatable_apex.mk)
@@ -405,4 +406,3 @@ PRODUCT_SOONG_NAMESPACES += \
 PRODUCT_PACKAGES += \
 strip_vendor_packages
 
-$(call inherit-product, vendor/ohrtech/aleph/aleph-vendor.mk)
