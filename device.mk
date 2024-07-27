@@ -402,7 +402,7 @@ PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH)
 
 
-#PRODUCT_PACKAGES += \
+PRODUCT_PACKAGES += \
 strip_vendor_packages
 
-#$(call inherit-product, vendor/ohrtech/aleph/aleph-vendor.mk)
+$(call inherit-product, vendor/ohrtech/aleph/aleph-vendor.mk)
