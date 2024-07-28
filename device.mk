@@ -4,7 +4,7 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
-$(call inherit-product, vendor/ohrtech/aleph/aleph-vendor.mk)
+
 
 $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 #$(call inherit-product, $(SRC_TARGET_DIR)/product/updatable_apex.mk)
@@ -21,12 +21,12 @@ PRODUCT_COPY_FILES += \
 
 
 #copy
-PRODUCT_COPY_FILES += \
+#PRODUCT_COPY_FILES += \
 	$(LOCAL_PATH)/rootdir/etc/recovery.fstab:$(TARGET_COPY_OUT_RECOVERY)/root/system/etc/recovery.fstab \
 	$(DEVICE_PATH)/manifests/vendor_compatibility_matrix.xml:$(TARGET_COPY_OUT_VENDOR)/etc/vintf/compatibility_matrix.xml \
      $(call find-copy-subdir-files,*,$(DEVICE_PATH)/manifests/vendor/manifest/,$(TARGET_COPY_OUT_VENDOR)/etc/vintf/manifest)
 
-PRODUCT_PACKAGES += \
+#PRODUCT_PACKAGES += \
 odm_hwservice_contexts \
 odm_file_contexts \
 odm_mac_permissions.xml \
@@ -403,6 +403,7 @@ PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH)
 
 
-PRODUCT_PACKAGES += \
+#PRODUCT_PACKAGES += \
 strip_vendor_packages
 
+#$(call inherit-product, vendor/ohrtech/aleph/aleph-vendor.mk)
